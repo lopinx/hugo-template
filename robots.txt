@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lopins.github.io/hugo-template/sitemap.xml
