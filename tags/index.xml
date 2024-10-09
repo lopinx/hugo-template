@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on PaperMod</title>
+    <title>Tags on The Compose</title>
     <link>https://lopins.github.io/hugo-template/tags/</link>
-    <description>Recent content in Tags on PaperMod</description>
-    <image>
-      <url>https://lopins.github.io/hugo-template/papermod-cover.png</url>
-      <link>https://lopins.github.io/hugo-template/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Tags on The Compose</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lopins.github.io/hugo-template/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>emoji</title>
+      <title>Emoji</title>
       <link>https://lopins.github.io/hugo-template/tags/emoji/</link>
       <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://lopins.github.io/hugo-template/tags/emoji/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
