@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>The Compose</title>
+    <title>PaperMod</title>
     <link>https://lopins.github.io/hugo-template/</link>
-    <description>Recent content on The Compose</description>
-    <generator>Hugo</generator>
+    <description>Recent content on PaperMod</description>
+    <image>
+      <title>PaperMod</title>
+      <url>https://lopins.github.io/hugo-template/papermod-cover.png</url>
+      <link>https://lopins.github.io/hugo-template/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.135.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Oct 2024 12:59:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jan 2022 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://lopins.github.io/hugo-template/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Guide to emoji usage in Hugo</title>
+      <title>Hello World</title>
       <link>https://lopins.github.io/hugo-template/posts/hello-world/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 16 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://lopins.github.io/hugo-template/posts/hello-world/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Archive</title>
-      <link>https://lopins.github.io/hugo-template/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lopins.github.io/hugo-template/archives/</guid>
-      <description>archives</description>
-    </item>
-    <item>
-      <title>Search</title>
-      <link>https://lopins.github.io/hugo-template/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lopins.github.io/hugo-template/search/</guid>
-      <description></description>
+      <description>Guide to Hugo-PaperMod-Template</description>
     </item>
   </channel>
 </rss>
