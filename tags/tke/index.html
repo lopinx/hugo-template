@@ -1,0 +1,66 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Huabing Blog"><meta property="og:type" content="article"><meta property="og:image" content="https://lopins.github.io/hugo-template//img/home-bg-jeep.jpg"><meta property="twitter:image" content="https://lopins.github.io/hugo-template//img/home-bg-jeep.jpg"><meta name=title content><meta property="og:title" content><meta property="twitter:title" content><meta name=description content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="twitter:card" content="summary"><meta name=keyword content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"><link rel="shortcut icon" href=/hugo-template/img/favicon.ico><title>TKE | 赵化冰的博客 | Zhaohuabing Blog</title>
+<link rel=canonical href=/hugo-template/tags/tke/><link rel=stylesheet href=/hugo-template/css/bootstrap.min.css><link rel=stylesheet href=/hugo-template/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/hugo-template/css/zanshang.css><link rel=stylesheet href=/hugo-template/css/font-awesome.all.min.css><script src=/hugo-template/js/jquery.min.js></script><script src=/hugo-template/js/bootstrap.min.js></script><script src=/hugo-template/js/hux-blog.min.js></script><script src=/hugo-template/js/lazysizes.min.js></script></head><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=/>Huabing Blog</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>All Posts</a></li><li><a href=/hugo-template/categories/books/>books</a></li><li><a href=/hugo-template/categories/open-source/>open source</a></li><li><a href=/hugo-template/categories/presentations/>presentations</a></li><li><a href=/hugo-template/categories/tech/>tech</a></li><li><a href=/archive//>ARCHIVE</a></li><li><a href=/notes//>NOTES</a></li><li><a href=/about//>ABOUT</a></li><li><a href=/hugo-template/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><header class=intro-header style=background-image:url(/hugo-template/img/home-bg-jeep.jpg)><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=site-heading><h1>Huabing Blog</h1><span class=subheading>路在脚下，心向远方</span></div></div></div></div></header><div data-pagefind-ignore=all class=container><div class=row><div class="col-lg-8 col-lg-offset-1
+col-md-8 col-md-offset-1
+col-sm-12
+col-xs-12
+post-container"><div data-pagefind-ignore=all><div class=post-preview><a href=https://lopins.github.io/hugo-template/post/2021-03-24-tke-network-mode/><h2 class=post-title>腾讯云容器网络介绍</h2><div class=post-content-preview>在实现 K8s 网络模型时，为了应对不同的使用场景，TKE（Tencent Kubernetes Engine）提供了 Global Router 和 VPC-CNI 两种网络模式。本文中，我们将通过这两种模式下数据包的转发流程来分析这两种模式各自的实现原理。本文还会对比分析不同网络模式下的网络效率和资源使用情况，以便于大家在创建 TKE 集群时根据应用对网络的需求和使用成本选择合适的网络模型。</div></a><p class=post-meta>Posted by     "赵化冰" on Wednesday, March 24, 2021</p></div><hr></div></div><div class="col-lg-3 col-lg-offset-0
+col-md-3 col-md-offset-0
+col-sm-12
+col-xs-12
+sidebar-container"><section class="visible-md visible-lg"><div class=short-about><a href=/about><img src=/hugo-template/img/zhaohuabing.png alt=avatar style=cursor:pointer></a><p>Software Developer, Open Source Enthusiast and Life Adventurer</p><ul class=list-inline><li><a href=mailto:youremail@gmail.com><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i>
+<i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=/hugo-template/your%20wechat%20qr%20code%20image><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-weixin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/yourgithub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/yourlinkedinid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://stackoverflow.com/users/yourstackoverflowid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li></ul></div></section><section><hr class="hidden-sm hidden-xs"><h5>FEATURED TAGS</h5><div class=tags><a href=/tags/aeraki title=aeraki>aeraki
+</a><a href=/tags/aeraki-mesh title="aeraki mesh">aeraki mesh
+</a><a href=/tags/ambient-mesh title="ambient mesh">ambient mesh
+</a><a href=/tags/api-gateway title="api gateway">api gateway
+</a><a href=/tags/bitcoin title=bitcoin>bitcoin
+</a><a href=/tags/blockchain title=blockchain>blockchain
+</a><a href=/tags/cka title=cka>cka
+</a><a href=/tags/cncf title=cncf>cncf
+</a><a href=/tags/cryptocurrency title=cryptocurrency>cryptocurrency
+</a><a href=/tags/digital-signature title="digital signature">digital signature
+</a><a href=/tags/docker title=docker>docker
+</a><a href=/tags/dubbo title=dubbo>dubbo
+</a><a href=/tags/envoy title=envoy>envoy
+</a><a href=/tags/envoy-gateway title="envoy gateway">envoy gateway
+</a><a href=/tags/ingress title=ingress>ingress
+</a><a href=/tags/istio title=istio>istio
+</a><a href=/tags/jaeger title=jaeger>jaeger
+</a><a href=/tags/kafka title=kafka>kafka
+</a><a href=/tags/knowledge-graph title="knowledge graph">knowledge graph
+</a><a href=/tags/kubecon title=kubecon>kubecon
+</a><a href=/tags/kubernetes title=kubernetes>kubernetes
+</a><a href=/tags/linux title=linux>linux
+</a><a href=/tags/loadbalancer title=loadbalancer>loadbalancer
+</a><a href=/tags/metaprotocol title=metaprotocol>metaprotocol
+</a><a href=/tags/microservice title=microservice>microservice
+</a><a href=/tags/network title=network>network
+</a><a href=/tags/network-service-mesh title="network service mesh">network service mesh
+</a><a href=/tags/nfv title=nfv>nfv
+</a><a href=/tags/nodeport title=nodeport>nodeport
+</a><a href=/tags/onap title=onap>onap
+</a><a href=/tags/opentracing title=opentracing>opentracing
+</a><a href=/tags/pilot title=pilot>pilot
+</a><a href=/tags/proxy-protocol title="proxy protocol">proxy protocol
+</a><a href=/tags/redis title=redis>redis
+</a><a href=/tags/sdn title=sdn>sdn
+</a><a href=/tags/security title=security>security
+</a><a href=/tags/service-mesh title="service mesh">service mesh
+</a><a href=/tags/tencent title=tencent>tencent
+</a><a href=/tags/x-forwarded-for title=x-forwarded-for>x-forwarded-for</a></div></section><section><hr class="hidden-sm hidden-xs"><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://zhaozhihan.com>Linda的博客</a></li></ul></section></div></div></div><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:youremail@gmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=/hugo-template/your%20wechat%20qr%20code%20image><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-weixin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/yourgithub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/yourlinkedinid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://stackoverflow.com/users/yourstackoverflowid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li><li><a href=/hugo-template/tags/tke/index.xml rel=alternate type=application/rss+xml title="Huabing Blog"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Huabing Blog 2024<br><a href=https://themes.gohugo.io/hugo-theme-cleanwhite>CleanWhite Hugo Theme</a> by <a href=https://zhaohuabing.com>Huabing</a> |
+<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=100px height=20px src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/hugo-template/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script></body></html>

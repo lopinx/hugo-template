@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jekyll:q on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/jekyllq/</link><description>Recent content in Jekyll:q on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 21 May 2018 11:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/jekyllq/index.xml" rel="self" type="application/rss+xml"/><item><title>使用Algolia为Gitpage博客提供站内搜索</title><link>https://lopins.github.io/hugo-template/2018/05/21/algolia-integration-with-jekyll/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/2018/05/21/algolia-integration-with-jekyll/</guid><description>&lt;blockquote>
+&lt;p>This series of articles are my notes of &amp;ldquo;Bitcoin and Cryptocurrency Technologies&amp;rdquo; online course.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="table-of-content">Table of Content&lt;/h2>
+&lt;p>{:.no_toc}&lt;/p>
+&lt;ul>
+&lt;li>Table of Content
+{:toc}&lt;/li>
+&lt;/ul>
+&lt;h2 id="scrooge-coin-transaction">Scrooge Coin Transaction&lt;/h2>
+&lt;p>Scrooge Coin programming assignment is a little bit tricky, the video of this lesson hasn&amp;rsquo;t explained some implementation details. To help you understand the transaction data structure used in Scrooge Coin, I draw this diagram:
+
+ &lt;img src="https://zhaohuabing.com/static/img//2018-5-20-cryptocurrency_week1_scroogecoin/scroogecoin.png" alt="Scrooge Coin">
+
+&lt;/p></description></item></channel></rss>

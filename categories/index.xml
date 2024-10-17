@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Categories on PaperMod</title>
-    <link>https://lopins.github.io/hugo-template/categories/</link>
-    <description>Recent content in Categories on PaperMod</description>
-    <image>
-      <title>PaperMod</title>
-      <url>https://lopins.github.io/hugo-template/papermod-cover.png</url>
-      <link>https://lopins.github.io/hugo-template/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- 0.135.0</generator>
-    <language>en</language>
-    <atom:link href="https://lopins.github.io/hugo-template/categories/index.xml" rel="self" type="application/rss+xml" />
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Huabing Blog</title><link>https://lopins.github.io/hugo-template/categories/</link><description>Recent content in Categories on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Open Source</title><link>https://lopins.github.io/hugo-template/categories/open-source/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/categories/open-source/</guid><description/></item><item><title>Tech</title><link>https://lopins.github.io/hugo-template/categories/tech/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/categories/tech/</guid><description/></item><item><title>Presentations</title><link>https://lopins.github.io/hugo-template/categories/presentations/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/categories/presentations/</guid><description/></item><item><title>Books</title><link>https://lopins.github.io/hugo-template/categories/books/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/categories/books/</guid><description/></item></channel></rss>

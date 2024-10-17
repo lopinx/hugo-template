@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Knowledge Graph on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/knowledge-graph/</link><description>Recent content in Knowledge Graph on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/knowledge-graph/index.xml" rel="self" type="application/rss+xml"/><item><title>Istio 知识图谱</title><link>https://lopins.github.io/hugo-template/post/2020-04-02-istio-mindmap/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2020-04-02-istio-mindmap/</guid><description>&lt;p>&lt;a href="https://lopins.github.io/hugo-template/mindmap/istio.html">Mind Map&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Istio
+&lt;ul>
+&lt;li>流量管理
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2018-09-25-istio-traffic-management-impl-intro/">Istio流量管理实现机制深度解析
+&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-12-07-cnbps2020-istio-traffic-management/">Istio 流量管理原理与协议扩展&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>可见性
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-06-22-using-opentracing-with-istio/">实现方法级调用跟踪&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-07-02-using-opentracing-with-istio/">实现 Kafka 消息调用跟踪&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>协议扩展
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2021-03-02-manage-any-layer-7-traffic-in-istio/">如何在 Isito 中支持 Dubbo、Thrift、Redis，以及任何七层协议？&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-10-14-redis-cluster-with-istio/">在 Istio 中实现 Redis 集群的数据分片、读写分离和流量镜像&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/aeraki-mesh/aeraki">Aeraki: Manage any layer 7 traffic in an Istio service mesh&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>故障定位
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-09-11-headless-mtls/">Headless Service&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-09-05-istio-sidecar-dependency/">Sidecar 启动依赖&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tencentcloudcontainerteam.github.io/tke-handbook/skill/capture-packets-in-container.html">Pod 内抓包&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>源码分析
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-10-21-pilot-discovery-code-analysis/">Pilot 源码解析&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-02-18-pilot-service-registry-code-analysis/">Istio 服务注册机制&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2018-10-29-envoy-build/">Envoy Proxy 构建分析&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/2018/05/23/istio-auto-injection-with-webhook/">Sidecar 自动注入&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Kubernetes 知识图谱</title><link>https://lopins.github.io/hugo-template/post/2020-02-22-k8s-mindmap/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2020-02-22-k8s-mindmap/</guid><description>&lt;p>&lt;a href="https://lopins.github.io/hugo-template/mindmap/k8s.html">Mind Map&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Kubernetes
+&lt;ul>
+&lt;li>基本理念
+&lt;ul>
+&lt;li>自动化部署，缩扩容和管理容器应用&lt;/li>
+&lt;li>预期状态管理(Desired State Management)
+&lt;ul>
+&lt;li>Kubernetes API 对象（声明预期状态）&lt;/li>
+&lt;li>Kubernetes Control Plane（确保集群当前状态匹配预期状态）
+&lt;ul>
+&lt;li>Kubernetes Master
+&lt;ul>
+&lt;li>kube-apiserver（API Server）
+&lt;ul>
+&lt;li>对外提供各种对象的CRUD REST接口&lt;/li>
+&lt;li>对外提供Watch机制，通知对象变化&lt;/li>
+&lt;li>将对象存储到Etcd中&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>kube-controller-manager（守护进程）
+&lt;ul>
+&lt;li>功能：通过apiserver监视集群的状态，并做出相应更改，以使得集群的当前状态向预期状态靠拢&lt;/li>
+&lt;li>controllers
+&lt;ul>
+&lt;li>replication controller&lt;/li>
+&lt;li>endpoints controller&lt;/li>
+&lt;li>namespace controller&lt;/li>
+&lt;li>serviceaccounts controller&lt;/li>
+&lt;li>&amp;hellip;&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>kube-scheduler（调度器）
+&lt;ul>
+&lt;li>功能：将Pod调度到合适的工作节点上运行&lt;/li>
+&lt;li>调度的考虑因素
+&lt;ul>
+&lt;li>资源需求&lt;/li>
+&lt;li>服务治理要求&lt;/li>
+&lt;li>硬件/软件/策略限制&lt;/li>
+&lt;li>亲和以及反亲和要求&lt;/li>
+&lt;li>数据局域性&lt;/li>
+&lt;li>负载间的干扰&lt;/li>
+&lt;li>&amp;hellip;&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Work Node
+&lt;ul>
+&lt;li>Kubelet（节点代理）
+&lt;ul>
+&lt;li>接受通过各种机制（主要是通过apiserver）提供的一组PodSpec&lt;/li>
+&lt;li>确保PodSpec中描述的容器处于运行状态且运行状况良好&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kube-proxy（节点网络代理）
+&lt;ul>
+&lt;li>在节点上提供Kubernetes API中定义Service&lt;/li>
+&lt;li>设置Service对应的IPtables规则&lt;/li>
+&lt;li>进行流量转发（userspace模式）&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>部署模式
+&lt;ul>
+&lt;li>Single node&lt;/li>
+&lt;li>Single head node，multiple workers
+&lt;ul>
+&lt;li>API Server，Scheduler，and Controller Manager run on a single node&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Single etcd，HA heade nodes，multiple workers
+&lt;ul>
+&lt;li>Multiple API Server instances fronted by a load balancer&lt;/li>
+&lt;li>Multiple Scheduler and Controller Manager instances with leader election&lt;/li>
+&lt;li>Single etcd node&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HA etcd，HA head nodes，multiple workers
+&lt;ul>
+&lt;li>Multiple API Server instances fronted by a load balancer&lt;/li>
+&lt;li>Multiple Scheduler and Controller Manager instances with leader election&lt;/li>
+&lt;li>Etcd cluster run on nodes seperate from the Kubernetes head nodes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kubernetes Federation&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>商业模式
+&lt;ul>
+&lt;li>云服务用户：避免使用单一云提供商导致的厂商锁定，避免技术和成本风险&lt;/li>
+&lt;li>云服务厂商：使用Kubernetes来打破AWS的先入垄断地位，抢夺市场份额&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Workload
+&lt;ul>
+&lt;li>Pod
+&lt;ul>
+&lt;li>Smalleset deployable computing unit
+- Consist of one or more containers
+- All containers in a pod share &lt;a href="https://kubernetes.io/docs/concepts/storage/volumes/">storage&lt;/a>, &lt;a href="https://zhaohuabing.com/post/2020-03-12-linux-network-virtualization/#network-namespace">network namespacem&lt;/a> and &lt;a href="https://man7.org/linux/man-pages/man7/cgroups.7.html">cgroup&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Workload resources(Controllers)
+&lt;ul>
+&lt;li>Deployment &amp;amp; RelicaSet
+&lt;ul>
+&lt;li>Deployment is used to deploy stateless appliations.&lt;/li>
+&lt;li>ReplicaSet ensured a specified numbers of pod replicas are running at a given time.&lt;/li>
+&lt;li>Deployment is used to rollout/update/rollback ReplicaSet.&lt;/li>
+&lt;li>ReplicaSet is not supposed to be used directly, it should be managed by Deployments.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>StatefulSet
+&lt;ul>
+&lt;li>StatefulSet is used to deploy stateful applications.&lt;/li>
+&lt;li>SetatefSet require a Headless Service to provide network identity for the pods.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DaemonSet
+&lt;ul>
+&lt;li>DaemonSet ensures that all(or some) Nodes run a copy of a Pod.&lt;/li>
+&lt;li>Use cases: cluster storage daemon, logs collection daemon, node monitoring daemon.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Job &amp;amp; CronJob
+&lt;ul>
+&lt;li>Job runs pods until a specified number of them have been succcessfully executed.&lt;/li>
+&lt;li>CronJob runs a job periodically on a given schedule.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Storage
+&lt;ul>
+&lt;li>Volume
+&lt;ul>
+&lt;li>purpose
+&lt;ul>
+&lt;li>Persist data across the life span of a Pod
+&lt;ul>
+&lt;li>Data won&amp;rsquo;t lost when a container is restarted&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Share data between containers running together in a Pod
+&lt;ul>
+&lt;li>Volume can be mounted to mutiple containers inside a Pod&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>type
+&lt;ul>
+&lt;li>configMap&lt;/li>
+&lt;li>emptyDir&lt;/li>
+&lt;li>hostPath&lt;/li>
+&lt;li>local&lt;/li>
+&lt;li>persistentVolumeClaim&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Policies
+&lt;ul>
+&lt;li>ResourceQuota
+&lt;ul>
+&lt;li>purpose
+&lt;ul>
+&lt;li>Limit the aggregated resource consumption of a Namespace&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Scope
+&lt;ul>
+&lt;li>Namespaced: ResourceQuota is enforced in a Namespace scope, different Namespaces have different Resouce limit&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Type
+&lt;ul>
+&lt;li>Compute Resource Quota
+&lt;ul>
+&lt;li>CPU (limits.cpu requests.cpu)&lt;/li>
+&lt;li>Memory (limits.memory requets.memory)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Storage Resource Quota
+&lt;ul>
+&lt;li>Persistent Storage (storage)&lt;/li>
+&lt;li>Ephemeral Storage (ephermal-storage)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Object Count Quota
+&lt;ul>
+&lt;li>Limit of total number of Namespaced resources (count/services)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Request and Limit
+&lt;ul>
+&lt;li>Request: Resources that are guaranteed to get&lt;/li>
+&lt;li>Limit: The maximum amount of resources that one can get&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Network
+&lt;ul>
+&lt;li>Linux Network Virtualization
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-02-24-linux-taptun/">Linux tun/tap&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-03-12-linux-network-virtualization/#network-namespace">Network Namespace&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-03-12-linux-network-virtualization/#veth">Veth Pair&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-03-12-linux-network-virtualization/#bridge">Linux bridge&lt;/a>&lt;/li>
+&lt;li>Vlan&lt;/li>
+&lt;li>Vxlan
+&lt;ul>
+&lt;li>&lt;a href="https://cizixs.com/2017/09/25/vxlan-protocol-introduction/">Vxlan原理&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cizixs.com/2017/09/28/linux-vxlan/">Linux 上实现 vxlan 网络&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Routing Protocol
+&lt;ul>
+&lt;li>Distance Vector Protocol
+&lt;ul>
+&lt;li>BGP&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Link-State Protocol
+&lt;ul>
+&lt;li>OSPF&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>K8s Network
+&lt;ul>
+&lt;li>Service
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-03-29-how-to-choose-ingress-for-service-mesh/#cluster-ip">Cluster IP&lt;/a>
+&lt;ul>
+&lt;li>Provides access in the cluster internally&lt;/li>
+&lt;li>The ClusterIP range is defined in API server startup option &lt;code>-service-cluster-ip-range&lt;/code>&lt;/li>
+&lt;li>Service port is defined in the Service Manifest&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-03-29-how-to-choose-ingress-for-service-mesh/#nodeport">NodePort&lt;/a>
+&lt;ul>
+&lt;li>Provides access at the node level&lt;/li>
+&lt;li>The NodePort range is defined in API server startup option &lt;code>--service-node-port-range&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-03-29-how-to-choose-ingress-for-service-mesh/#loadbalancer">LoadBalancer&lt;/a>
+&lt;ul>
+&lt;li>Provides an external IP to allow access from outside of the cluster&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/concepts/services-networking/service/#externalname">ExternalName&lt;/a>
+&lt;ul>
+&lt;li>An alias to an external service&lt;/li>
+&lt;li>DNS redirection&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-09-11-headless-mtls/#%E4%BB%80%E4%B9%88%E6%98%AF%E6%97%A0%E5%A4%B4%E6%9C%8D%E5%8A%A1">Headless&lt;/a>
+&lt;ul>
+&lt;li>Define a Headless service: specify &amp;ldquo;None&amp;rdquo; in for the cluster IP(.spec.clusterIP)&lt;/li>
+&lt;li>No cluster IP allocated to Headless services&lt;/li>
+&lt;li>No load balancing and proxying for Headless service&lt;/li>
+&lt;li>Kube dns returns the IP of the pods backing the service&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#proxy">Kube Proxy&lt;/a>
+&lt;ul>
+&lt;li>Provides a proxy server or appliction-level gateway between localhost and the K8s API server&lt;/li>
+&lt;li>Handles locating the apiserver and authenticating (uses cluster configuration and user credential in .kube/config)&lt;/li>
+&lt;li>Can send requests to API server (for example: get the list of services in default namespace &lt;code>localhost:proxy-port/api/v1/namespaces/default/services&lt;/code>)&lt;/li>
+&lt;li>Can send requests to services via url &lt;code>localhost:proxy-port/api/v1/namespaces/namespace_name/services/service_name[:port_name]/proxy/[application url] &lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Kubectl port-forward
+&lt;ul>
+&lt;li>Forward local ports to a pod&lt;/li>
+&lt;li>kebectl port-forward deployment/mydeployment localport:port&lt;/li>
+&lt;li>kebectl port-forward service/myservice localport:port&lt;/li>
+&lt;li>kebectl port-forward pod/mypod localport:port&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Ingress
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-03-29-how-to-choose-ingress-for-service-mesh/#k8s-ingress">K8s Ingress&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-03-29-how-to-choose-ingress-for-service-mesh/#istio-gateway">Istio Ingress Gateway&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>DNS
+&lt;ul>
+&lt;li>&lt;a href="https://kubernetes.io/docs/concepts/services-networking/dns-pod-service/#services">Service&lt;/a>
+&lt;ul>
+&lt;li>Normal Service
+&lt;ul>
+&lt;li>A/AAA record which resolves name to the Cluster IP
+&lt;ul>
+&lt;li>Name: &lt;code>my-svc.my-namespace.svc.cluster-domain.example&lt;/code>&lt;/li>
+&lt;li>Example: &lt;code>kubernetes.default.svc.cluster.local. 30 IN A	172.20.252.11&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SRV record for each named service port
+&lt;ul>
+&lt;li>Name: &lt;code>_my-port-name._my-port-protocol.my-svc.my-namespace.svc.cluster-domain.&lt;/code>example&lt;/li>
+&lt;li>Example: &lt;code>_https._tcp.kubernetes.default.svc.cluster.local. 5 IN SRV 0 100 443 kubernetes.default.svc.cluster.local.&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A PTR record which resolves Cluster IP to domain name
+&lt;ul>
+&lt;li>Example &lt;code>1.252.20.172.in-addr.arpa. 5	IN	PTR	kubernetes.default.svc.cluster.local.&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Headless Service
+&lt;ul>
+&lt;li>A/AAA record which resolves to the set of IPs of the pods selected by the service&lt;/li>
+&lt;li>N*M SRV records (N pods, M named ports in service)&lt;/li>
+&lt;li>A PTR record which resolves pod IP to domain name of each pod&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>ExternalName
+&lt;ul>
+&lt;li>A CNAME pointing to the domain name of the external service&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pod
+&lt;ul>
+&lt;li>A/AAA record which resolves name to the pod IP&lt;/li>
+&lt;li>General name
+&lt;ul>
+&lt;li>Name: &lt;code>pod-ip-address.my-namespace.pod.cluster-domain.example&lt;/code>&lt;/li>
+&lt;li>Example: &lt;code>172-20-0-57.default.pod.cluster.local. 3 IN A	172.20.0.57&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pod created by Deployment or DaemonSet exposed by a Service
+&lt;ul>
+&lt;li>&lt;code>pod-ip-address.deployment-name.my-namespace.svc.cluster-domain.example&lt;/code>&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/tasks/administer-cluster/dns-custom-nameservers/#coredns">CoreDNS&lt;/a>
+&lt;ul>
+&lt;li>Plugins
+&lt;ul>
+&lt;li>errors: Erros are logged to stdout&lt;/li>
+&lt;li>prometheus: Metrics of CoreDNS are available at &lt;code>http://localhost:9153/metrics&lt;/code> in Prometheus format&lt;/li>
+&lt;li>&lt;a href="https://coredns.io/plugins/kubernetes/">kubernetes&lt;/a>: CoreDNS will reply to DNS queries based on IP of the services and pods of Kubernetes.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>腾讯云
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2021-03-24-tke-network-mode/#global-router-%E6%A8%A1%E5%BC%8F">Global Router&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2021-03-24-tke-network-mode/#vpc-cni-%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%BC%8F">VPC-CNI&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2019-03-29-how-to-choose-ingress-for-service-mesh/#api-gateway--sidecar-proxy">API Gateway+Service Mesh&lt;/a>&lt;/li>
+&lt;li>Kubernetes CNI插件
+&lt;ul>
+&lt;li>&lt;a href="https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2017/04/11/calico-usage.html">Calico&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Scheduling
+&lt;ul>
+&lt;li>Algorithm: Predicate find a set of available nodes -&amp;gt; Priority select the best suitable node
+&lt;ul>
+&lt;li>Predicates: find available nodes through some conditions: check memory, cpu, disk, etc.&lt;/li>
+&lt;li>Priorities: select a node to run the scheduled pod: select the node with the least amount of pods by default&lt;/li>
+&lt;li>Policy: specify a number of predicates and priorities&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Run a customscheduler
+&lt;ul>
+&lt;li>Policy: &lt;code>--policy-config-file&lt;/code>&lt;/li>
+&lt;li>Name: &lt;code>--scheduler-name&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Pod Specification: hits for pod scheduling
+&lt;ul>
+&lt;li>NodeName: assign pods to the named node&lt;/li>
+&lt;li>NodeSelector: assign pods to a group of nodes with particular labels&lt;/li>
+&lt;li>Affinity and anti-affinity:
+&lt;ul>
+&lt;li>Node
+&lt;ul>
+&lt;li>Node affinity: has the same ability to constrain pods to particular nodes, but is more expressive and powerful&lt;/li>
+&lt;li>Node anti-affinity: use &lt;code>NotIn&lt;/code> and &lt;code>DoesNotExist&lt;/code> to achieve node anti-affinity&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Inter-Pod
+&lt;ul>
+&lt;li>Inter-Pod affinity: co-locate some pods in the same nodes&lt;/li>
+&lt;li>Inter-Pod anti-affinity: distribute some pods in different nodes&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>taints and tolerations
+&lt;ul>
+&lt;li>allow a node to repel a set of pods&lt;/li>
+&lt;li>allow pods to be scheduled onto nodes with matching taints&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>SchedulerName: choose a specific scheduler to schedule a pod&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Security
+&lt;ul>
+&lt;li>Background Knowledge
+&lt;ul>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-03-19-pki/">Certificate and PKI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-05-19-k8s-certificate/">Kubernetes 中使用到的证书&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>User Type
+&lt;ul>
+&lt;li>Service Account
+&lt;ul>
+&lt;li>Managed by Kubernetes&lt;/li>
+&lt;li>Represent workloads in the cluster&lt;/li>
+&lt;li>Bound to a specific namespace&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/#normal-user">Normal User&lt;/a>
+&lt;ul>
+&lt;li>Managed out side of Kubernetes&lt;/li>
+&lt;li>Authenticated with a valid certicated signed by the cluster&amp;rsquo;s CA
+&lt;ul>
+&lt;li>User name: Certificate subject &lt;a href="https://docs.oracle.com/cd/E24191_01/common/tutorials/authz_cert_attributes.html">Common Name&lt;/a> field&lt;/li>
+&lt;li>Group: Certificate subject &lt;a href="https://docs.oracle.com/cd/E24191_01/common/tutorials/authz_cert_attributes.html">Organization&lt;/a> field&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Authentication
+&lt;ul>
+&lt;li>Service account tokens for service accounts&lt;/li>
+&lt;li>Client certifications for normal users&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-05-19-k8s-certificate/#service-account--%E8%AF%81%E4%B9%A6">Certifications for control plane components communication&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://zhaohuabing.com/post/2020-05-19-k8s-certificate/#%E4%BD%BF%E7%94%A8-tls-bootstrapping-%E7%AE%80%E5%8C%96-kubelet-%E8%AF%81%E4%B9%A6%E5%88%B6%E4%BD%9C">Bootstrap Token&lt;/a> for clusters and nodes bootstrapping&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Authorization
+&lt;ul>
+&lt;li>&lt;a href="https://kubernetes.io/docs/reference/access-authn-authz/rbac/">RBAC&lt;/a>
+&lt;ul>
+&lt;li>Namespace Scope
+&lt;ul>
+&lt;li>Role&lt;/li>
+&lt;li>RoleBinding (Associate users retrived from authentication process to Roles)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Cluster Scope
+&lt;ul>
+&lt;li>ClusterRole&lt;/li>
+&lt;li>CluseterRoleBinding (Associate users retrived from authentication process to ClusteRoles)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Helm: package management tool for K8s applications
+&lt;ul>
+&lt;li>Chart: package all k8s manifests as a single tarball
+&lt;ul>
+&lt;li>Chart.yaml: this files contains metadata about this Chart: name, version, keywords&lt;/li>
+&lt;li>templeates: this directorey contains the resource manifests that makes up this application
+&lt;ul>
+&lt;li>deployment&lt;/li>
+&lt;li>services&lt;/li>
+&lt;li>secretes&lt;/li>
+&lt;li>&amp;hellip;&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>values.yaml: this files contains keys and values that are used to generate the release. These values are replaced in the resource manifests using the Go template syntax&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Repository: HTTP servers that contains charts&lt;/li>
+&lt;li>Helm commands
+&lt;ul>
+&lt;li>helm search hub redis: find redis chart and its repository in helm hub&lt;/li>
+&lt;li>helm sarch repo redis: find redis chart in repositories&lt;/li>
+&lt;li>helm install redis bitnami/redis: install redis chart&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Extending the Kubernetes API
+&lt;ul>
+&lt;li>Custom Resource
+&lt;ul>
+&lt;li>CRD: Define custom resources&lt;/li>
+&lt;li>Custom Resources/Ojbects: Declare the desired spec of a custom resource&lt;/li>
+&lt;li>Custom Controllers: watch-loop to make sure the actual state meet the declared spec&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/apiserver-aggregation/">Aggregated API Server&lt;/a>
+&lt;ul>
+&lt;li>Deploy an extension API server&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/tasks/extend-kubernetes/configure-aggregation-layer/">Register APIService objects&lt;/a>
+&lt;ul>
+&lt;li>Group: API groups this extension API server hosts&lt;/li>
+&lt;li>Version: API version this extension API server hosts&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>kube-apiserver proxies client requests to the extension API server&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item></channel></rss>

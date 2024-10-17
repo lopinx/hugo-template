@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/docker/</link><description>Recent content in Docker on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 13 Mar 2018 18:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>如何配置docker使用HTTP代理</title><link>https://lopins.github.io/hugo-template/2018/03/13/use-docker-behind-http-proxy/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/2018/03/13/use-docker-behind-http-proxy/</guid><description>&lt;h2 id="ubuntu">Ubuntu&lt;/h2>
+&lt;h3 id="设置docker使用http-proxy">设置docker使用http proxy&lt;/h3>
+&lt;pre tabindex="0">&lt;code>sudo /etc/default/docker
+
+export http_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;
+export https_proxy=&amp;#34;http://127.0.0.1:3128/&amp;#34;
+export HTTP_PROXY=&amp;#34;http://127.0.0.1:3128/&amp;#34;
+export HTTPS_PROXY=&amp;#34;http://127.0.0.1:3128/&amp;#34;
+&lt;/code>&lt;/pre></description></item><item><title>Docker Tips</title><link>https://lopins.github.io/hugo-template/post/2018-02-09-docker-without-sudo/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2018-02-09-docker-without-sudo/</guid><description>&lt;h1 id="allow-none-root-users">Allow none-root users&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo groupadd docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>sudo gpasswd -a &lt;span style="color:#8be9fd;font-style:italic">$USER&lt;/span> docker
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>newgrp docker
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="solve-no-space-left-on-device">Solve &amp;ldquo;no space left on device&amp;rdquo;&lt;/h1>
+&lt;h2 id="ubuntu">ubuntu&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>sudo vi /etc/docker/daemon.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre tabindex="0">&lt;code class="language-josn" data-lang="josn">{
+ &amp;#34;storage-driver&amp;#34;: &amp;#34;devicemapper&amp;#34;,
+ &amp;#34;storage-opts&amp;#34;: [
+ &amp;#34;dm.basesize=40G&amp;#34;
+ ]
+}
+&lt;/code>&lt;/pre>&lt;h2 id="mac">Mac&lt;/h2>
+&lt;p>Docker -&amp;gt; settings -&amp;gt; Resources -&amp;gt; Disk Image Size&lt;/p></description></item></channel></rss>

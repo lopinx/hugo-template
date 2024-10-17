@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dubbo on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/dubbo/</link><description>Recent content in Dubbo on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 24 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/dubbo/index.xml" rel="self" type="application/rss+xml"/><item><title>Aeraki Mesh Community Meeting - February 23rd, 2023</title><link>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting/</guid><description>&lt;p>During this community meeting, we introduced Aeraki Mesh’s newly released Access Log and Service Metrics features. We also invited experts from Boss Zhipin and Shopline to share hands-on examples of Dubbo based on Aeraki Mesh. Furthermore, we introduced the new features of multiplexing and Gateway support for the MetaProtocol application protocol, which are being contributed by the Tencent Games project and Boss Zhipin.&lt;/p>
+&lt;p>The Access Log and Service Metrics functionalities will help users better understand their network performance, troubleshoot issues, and optimize their applications. We’re excited to see how these new features will improve our users&amp;rsquo; experiences with Aeraki Mesh.&lt;/p></description></item><item><title>Aeraki Mesh 社区例会 - 2023-02-23</title><link>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting-en/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting-en/</guid><description>&lt;p>本次社区会议介绍了 Aeraki Mesh 最新发布的 Access Log，Sevice Metrics 功能，并邀请了来自 Boss 直聘，Shopline 的专家分享基于 Aeraki Mesh 的 Dubbo 实操案例。此外，还介绍了来着腾讯游戏项目和 Boss 直聘正在贡献的多路复用和 Gateway 支持 MetaProtocol 应用协议的新特性。&lt;/p></description></item><item><title>5分钟内将 Dubbo 服务接入 Istio 服务网格</title><link>https://lopins.github.io/hugo-template/post/2022-11-18-dubbo-aeraki-mesh-in-5-minutes/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-11-18-dubbo-aeraki-mesh-in-5-minutes/</guid><description>&lt;p>&lt;a href="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/">幻灯片&lt;/a>
+&lt;a href="https://aeraki.net">Aeraki Mesh 官网&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/dubbo">Dubbo 接入教程&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/implement-a-custom-protocol">私有协议接入教程&lt;/a>
+&lt;a href="https://github.com/aeraki-mesh">Github&lt;/a>&lt;/p>
+
+&lt;link rel="stylesheet" href="https://lopins.github.io/hugo-template/css/hugo-easy-gallery.css" />
+&lt;div class="box" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img">
+ &lt;img itemprop="thumbnail" src="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/0.png" />
+ &lt;/div>
+ &lt;a href="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/" itemprop="contentUrl">&lt;/a>
+ &lt;/figure>
+&lt;/div>
+
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1fP411g7zN&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div></description></item><item><title>Service Mesh Summit 2022 Dubbo Demo</title><link>https://lopins.github.io/hugo-template/post/2022-09-26-servicemesh-summit2022-dubbo-aeraki-mesh/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-26-servicemesh-summit2022-dubbo-aeraki-mesh/</guid><description>&lt;p>&lt;a href="https://aeraki.net">Aeraki Mesh 官网&lt;/a>
+&lt;a href="https://zhaohuabing.com/zh/docs/v1.x/tutorials/dubbo">Dubbo 接入教程&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/implement-a-custom-protocol">私有协议接入教程&lt;/a>
+&lt;a href="https://github.com/aeraki-mesh">Github&lt;/a>&lt;/p>
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1oe4y167kz&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div></description></item><item><title>脑动极光 Aeraki Mesh Dubbo 架构微服务治理实践应用</title><link>https://lopins.github.io/hugo-template/post/2022-09-27-aeraki-mesh-ngjg-use-case/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-27-aeraki-mesh-ngjg-use-case/</guid><description>&lt;p>&lt;a href="https://www.66nao.com/home">脑动极光&lt;/a> 在 Aeraki Mesh 社区会议上分享的 Dubbo 微服务治理实践。
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/1.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/2.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/3.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/4.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/5.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/6.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/7.png" alt="">
+
+
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1Ee4y1b7H2&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div>
+
+&lt;/p></description></item><item><title>使用 Aeraki Mesh 实现零代码侵入的 Dubbo 服务调用跟踪</title><link>https://lopins.github.io/hugo-template/post/2022-09-06-aeraki-mesh-tracing/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-06-aeraki-mesh-tracing/</guid><description>&lt;h2 id="安装示例程序">安装示例程序&lt;/h2>
+&lt;p>如果你还没有安装示例程序，请参照 &lt;a href="https://lopins.github.io/hugo-template/zh/docs/v1.0/quickstart/">快速开始&lt;/a> 安装 Aeraki，Istio 及示例程序。&lt;/p>
+&lt;p>执行完成后，在 meta-dubbo 这个 NS 中安装了基于 MetaProtocol 实现的 Dubbo 协议的示例程序。
+我们将采用该 Dubbo 示例程序来进行测试。Dubbo Demo 程序的调用关系为：dubbo-sample-consumer &amp;ndash;&amp;gt; dubbo-sample-provider &amp;ndash;&amp;gt; dubbo-sample-second-provider 。&lt;/p></description></item><item><title>IstioCon 2021: How to Manage Any Layer-7 Traffic in an Istio Service Mesh?</title><link>https://lopins.github.io/hugo-template/post/2021-03-02-manage-any-layer-7-traffic-in-istio/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2021-03-02-manage-any-layer-7-traffic-in-istio/</guid><description>&lt;p>备注：本文根据腾讯云赵化冰和知乎唐阳在 IstioCon 2021 中的演讲 &lt;a href="https://events.istio.io/istiocon-2021/sessions/how-to-manage-any-layer-7-traffic-in-an-istio-service-mesh/">“How to Manage Any Layer-7 Traffic in an Istio Service Mesh?”&lt;/a> 整理而成。&lt;/p>
+&lt;p>大家好，今天我们想和大家分享的主题是如何扩展 Istio 以支持任何七层协议？作为云原生领域中一个人气非常高的开源项目， Istio 目前已经基本成为了 Service Mesh 的事实标准。腾讯云上也提供了基于 Istio 进行增强，和 Istio API 完全兼容的 Service Mesh 管理服务 TCM（Tencent Cloud Mesh），以帮助我们的用户以较小的迁移成本和维护代价快速利用到 Service Mesh 提供的流量管理和服务治理能力。今天非常高兴能够有这个机会来和大家一起分享一下我们在此过程中的一些经验。&lt;/p></description></item></channel></rss>

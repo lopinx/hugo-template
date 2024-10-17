@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MetaProtocol on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/metaprotocol/</link><description>Recent content in MetaProtocol on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 16 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/metaprotocol/index.xml" rel="self" type="application/rss+xml"/><item><title>KubeCon NA - Introduce MetaProtocol Proxy: A Layer-7 Proxy Framework Powered by Envoy</title><link>https://lopins.github.io/hugo-template/post/2023-11-16-kubecon-na-metaprotocol/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-11-16-kubecon-na-metaprotocol/</guid><description>&lt;p>Even with Envoy&amp;rsquo;s powerful filter extension mechanism, writing a proxy for none-http protocols from scratch can be challenging. MetaProtocol Proxy solves this by abstracting layer-7 proxy with a concept called metadata and providing a “batteries included” framework that includes common traffic management capabilities: load balancing, circuit breaker, routing, rate limiting, fault injection, observability, etc. To write a layer-7 proxy for a new protocol, the only thing you need to do is implementing the codec interface.&lt;/p></description></item><item><title>Aeraki Mesh Community Meeting - February 23rd, 2023</title><link>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting/</guid><description>&lt;p>During this community meeting, we introduced Aeraki Mesh’s newly released Access Log and Service Metrics features. We also invited experts from Boss Zhipin and Shopline to share hands-on examples of Dubbo based on Aeraki Mesh. Furthermore, we introduced the new features of multiplexing and Gateway support for the MetaProtocol application protocol, which are being contributed by the Tencent Games project and Boss Zhipin.&lt;/p>
+&lt;p>The Access Log and Service Metrics functionalities will help users better understand their network performance, troubleshoot issues, and optimize their applications. We’re excited to see how these new features will improve our users&amp;rsquo; experiences with Aeraki Mesh.&lt;/p></description></item><item><title>Aeraki Mesh 社区例会 - 2023-02-23</title><link>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting-en/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting-en/</guid><description>&lt;p>本次社区会议介绍了 Aeraki Mesh 最新发布的 Access Log，Sevice Metrics 功能，并邀请了来自 Boss 直聘，Shopline 的专家分享基于 Aeraki Mesh 的 Dubbo 实操案例。此外，还介绍了来着腾讯游戏项目和 Boss 直聘正在贡献的多路复用和 Gateway 支持 MetaProtocol 应用协议的新特性。&lt;/p></description></item><item><title>5分钟内将 Dubbo 服务接入 Istio 服务网格</title><link>https://lopins.github.io/hugo-template/post/2022-11-18-dubbo-aeraki-mesh-in-5-minutes/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-11-18-dubbo-aeraki-mesh-in-5-minutes/</guid><description>&lt;p>&lt;a href="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/">幻灯片&lt;/a>
+&lt;a href="https://aeraki.net">Aeraki Mesh 官网&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/dubbo">Dubbo 接入教程&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/implement-a-custom-protocol">私有协议接入教程&lt;/a>
+&lt;a href="https://github.com/aeraki-mesh">Github&lt;/a>&lt;/p>
+
+&lt;link rel="stylesheet" href="https://lopins.github.io/hugo-template/css/hugo-easy-gallery.css" />
+&lt;div class="box" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img">
+ &lt;img itemprop="thumbnail" src="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/0.png" />
+ &lt;/div>
+ &lt;a href="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/" itemprop="contentUrl">&lt;/a>
+ &lt;/figure>
+&lt;/div>
+
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1fP411g7zN&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div></description></item><item><title>Service Mesh Summit 2022 Dubbo Demo</title><link>https://lopins.github.io/hugo-template/post/2022-09-26-servicemesh-summit2022-dubbo-aeraki-mesh/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-26-servicemesh-summit2022-dubbo-aeraki-mesh/</guid><description>&lt;p>&lt;a href="https://aeraki.net">Aeraki Mesh 官网&lt;/a>
+&lt;a href="https://zhaohuabing.com/zh/docs/v1.x/tutorials/dubbo">Dubbo 接入教程&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/implement-a-custom-protocol">私有协议接入教程&lt;/a>
+&lt;a href="https://github.com/aeraki-mesh">Github&lt;/a>&lt;/p>
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1oe4y167kz&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div></description></item><item><title>脑动极光 Aeraki Mesh Dubbo 架构微服务治理实践应用</title><link>https://lopins.github.io/hugo-template/post/2022-09-27-aeraki-mesh-ngjg-use-case/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-27-aeraki-mesh-ngjg-use-case/</guid><description>&lt;p>&lt;a href="https://www.66nao.com/home">脑动极光&lt;/a> 在 Aeraki Mesh 社区会议上分享的 Dubbo 微服务治理实践。
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/1.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/2.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/3.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/4.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/5.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/6.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/7.png" alt="">
+
+
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1Ee4y1b7H2&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div>
+
+&lt;/p></description></item><item><title>使用 Aeraki Mesh 实现零代码侵入的 Dubbo 服务调用跟踪</title><link>https://lopins.github.io/hugo-template/post/2022-09-06-aeraki-mesh-tracing/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-06-aeraki-mesh-tracing/</guid><description>&lt;h2 id="安装示例程序">安装示例程序&lt;/h2>
+&lt;p>如果你还没有安装示例程序，请参照 &lt;a href="https://lopins.github.io/hugo-template/zh/docs/v1.0/quickstart/">快速开始&lt;/a> 安装 Aeraki，Istio 及示例程序。&lt;/p>
+&lt;p>执行完成后，在 meta-dubbo 这个 NS 中安装了基于 MetaProtocol 实现的 Dubbo 协议的示例程序。
+我们将采用该 Dubbo 示例程序来进行测试。Dubbo Demo 程序的调用关系为：dubbo-sample-consumer &amp;ndash;&amp;gt; dubbo-sample-provider &amp;ndash;&amp;gt; dubbo-sample-second-provider 。&lt;/p></description></item><item><title>MetaProtocol Proxy 代码解读：Connection Manager</title><link>https://lopins.github.io/hugo-template/post/2022-06-30-metaprotocol-proxy-connection-manager/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-06-30-metaprotocol-proxy-connection-manager/</guid><description>&lt;p>ConnectionManager 是 MeataProtocol Proxy 的入口类。想要了解 MetaProtocol Proxy 的实现原理，可以从该类着手。&lt;/p>
+&lt;h2 id="envoy-network-filter-介绍">Envoy Network Filter 介绍&lt;/h2>
+&lt;p>MetaProtocol Proxy 框架部分实现为 Envoy 中的一个 Network Filter。Enovy 通过 Listener 接收 Downstream 的连接，然后将收取到的 TCP 数据流发送给 TCP filter chain 中的 MetaProtocol Proxy 处理。&lt;/p></description></item><item><title>Aeraki Mesh 正式成为 CNCF 沙箱项目</title><link>https://lopins.github.io/hugo-template/post/2022-06-17-aeraki-mesh-cncf-sandbox/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-06-17-aeraki-mesh-cncf-sandbox/</guid><description>&lt;p>6月15日，我创建的 &lt;a href="https://aeraki.net">Aeraki Mesh&lt;/a> 项目通过了全球顶级开源基金会云原生计算基金会（CNCF）技术监督委员会评定，正式成为CNCF 沙箱项目！这意味着 Aeraki Mesh 得到了云原生开源社区的认可，而且加入 CNCF 也保证了项目的中立和开源开放，为 Aeraki Mesh 在云原生生态系统的进一步发展迈出了坚定的一步。&lt;/p></description></item><item><title>Istiocon 2022 分享：Tencent Music’s service mesh practice with Istio and Aeraki(Istio + Aeraki 在腾讯音乐的服务网格落地)</title><link>https://lopins.github.io/hugo-template/post/2022-04-26-aeraki-tencent-music-istiocon2022/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-04-26-aeraki-tencent-music-istiocon2022/</guid><description>&lt;h2 id="istiocon-介绍">IstioCon 介绍&lt;/h2>
+&lt;p>IstioCon 是 Istio 社区一年一度举行的全球线上峰会，此次峰会包含主题演讲、技术演讲、闪电演讲、研讨会和路线图会议等多种形态，聚焦社区新特性、生产落地案例、动手实战、社区生态发展等话题。&lt;/p></description></item><item><title>腾讯云原生：Areaki Mesh 在 2022 冬奥会视频直播应用中的服务网格实践</title><link>https://lopins.github.io/hugo-template/post/2022-03-30-aeraki-mesh-winter-olympics-practice/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-03-30-aeraki-mesh-winter-olympics-practice/</guid><description>&lt;h2 id="主题简介">主题简介&lt;/h2>
+&lt;p>服务网格已经成为微服务的基础设施，但目前主流的服务网格产品只能处理 HTTP 协议，不支持其他七层协议，是服务网格落地的主要困难之一。本次直播分享主要介绍腾讯云服务网格团队开源的 Aeraki Mesh 项目如何通过扩展 Istio 来支持 Thrift，Dubbo 等开源协议以及私有协议，并分享腾讯融媒体采用 Aeraki Mesh 支撑 2022 冬奥会视频直播的实践经验&lt;/p></description></item><item><title>Aeraki 教程系列：如何开发一个自定义协议？</title><link>https://lopins.github.io/hugo-template/post/2022-01-23-aeraki-how-to-implement-a-custom-protocol/</link><pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-01-23-aeraki-how-to-implement-a-custom-protocol/</guid><description>&lt;p>MetaProtocol Proxy 提供了一个良好的协议扩展机制，使得我们可以基于 MetaProtocol Proxy 快速实现一个自定义协议的七层代理。&lt;/p>
+&lt;p>由于 MetaProtocol Proxy 已经实现了一个七层协议代理所需的大部分功能，包括七层负载均衡、RDS 动态路由、本地限流、全局限流、请求 Metrics 收集等，更多丰富的功能还在持续开发中。因此基于 MetaProtocol 进行开发极大简化了实现一个七层网络代理的工作，我们只需要实现编解码的少量代码，即可得到一个自定义协议的七层代理。一般来说，实现一个自定义协议只需要数百行代码。&lt;/p></description></item><item><title>Aeraki 教程系列：如何设置全局限流规则？</title><link>https://lopins.github.io/hugo-template/post/2022-01-13-aeraki-global-ratelimit/</link><pubDate>Thu, 13 Jan 2022 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-01-13-aeraki-global-ratelimit/</guid><description>&lt;p>Aeraki 可以帮助你在服务网格中管理任何七层协议。目前 Aeraki 已经支持了 Dubbo、Thrit、Redis 等开源协议。你还可以使用 Aeraki 的 MetaProtocol 协议扩展框架来管理私有协议的七层流量。&lt;/p></description></item><item><title>Aeraki 教程系列：如何设置本地限流规则？</title><link>https://lopins.github.io/hugo-template/post/2022-01-12-aeraki-local-ratelimit/</link><pubDate>Wed, 12 Jan 2022 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-01-12-aeraki-local-ratelimit/</guid><description>&lt;p>Aeraki 可以帮助你在服务网格中管理任何七层协议。目前 Aeraki 已经支持了 Dubbo、Thrit、Redis 等开源协议。你还可以使用 Aeraki 的 MetaProtocol 协议扩展框架来管理私有协议的七层流量。&lt;/p></description></item><item><title>Aeraki 教程系列：如何设置路由规则？</title><link>https://lopins.github.io/hugo-template/post/2022-01-11-aeraki-routing/</link><pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-01-11-aeraki-routing/</guid><description>&lt;p>Aeraki 可以帮助你在服务网格中管理任何七层协议。目前 Aeraki 已经支持了 Dubbo、Thrit、Redis 等开源协议。你还可以使用 Aeraki 的 MetaProtocol 协议扩展框架来管理私有协议的七层流量。&lt;/p></description></item><item><title>Istio Meetup China：全栈服务网格 - Aeraki 助你在 Istio 服务网格中管理任何七层流量</title><link>https://lopins.github.io/hugo-template/post/2021-07-10-full-stack-service-mesh/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2021-07-10-full-stack-service-mesh/</guid><description>&lt;h2 id="主题简介">主题简介&lt;/h2>
+&lt;p>流量管理是 Istio 服务网格的核心能力，然而 Istio 缺省只提供了 HTTP 和 gRPC 两种协议的七层管理能力。对于微服务中常用的其他协议，包括 RPC、Messaging、Cache、Database等，Istio 只支持在四层上对这些协议进行处理。这导致我们将微服务应用迁移到 Istio 服务网格时，无法充分利用服务网格提供的流量管理能力。开源项目 Aeraki 提供了一个第三方协议的扩展框架，支持在 Istio 中对任意七层流量进行管理，提供动态路由、负载均衡、熔断等流量管理能力。本次分享将介绍如何使用 Aeraki 在 Istio 服务网格中管理任何七层协议，包括 Thrift，Dubbo，Redis，以及私有 RPC 协议等，并演示一个使用 Aeraki 管理第三方 RPC 协议的示例。&lt;/p></description></item></channel></rss>

@@ -1,0 +1,150 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Huabing Blog"><meta property="og:type" content="article"><meta property="og:image" content="https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"><meta property="twitter:image" content="https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"><meta name=title content="MetaProtocol Proxy 代码解读：Connection Manager"><meta property="og:title" content="MetaProtocol Proxy 代码解读：Connection Manager"><meta property="twitter:title" content="MetaProtocol Proxy 代码解读：Connection Manager"><meta name=description content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="twitter:card" content="summary"><meta name=keyword content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"><link rel="shortcut icon" href=/hugo-template/img/favicon.ico><title>MetaProtocol Proxy 代码解读：Connection Manager | 赵化冰的博客 | Zhaohuabing Blog</title>
+<link rel=canonical href=/hugo-template/post/2022-06-30-metaprotocol-proxy-connection-manager/><link rel=stylesheet href=/hugo-template/css/bootstrap.min.css><link rel=stylesheet href=/hugo-template/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/hugo-template/css/zanshang.css><link rel=stylesheet href=/hugo-template/css/font-awesome.all.min.css><script src=/hugo-template/js/jquery.min.js></script><script src=/hugo-template/js/bootstrap.min.js></script><script src=/hugo-template/js/hux-blog.min.js></script><script src=/hugo-template/js/lazysizes.min.js></script></head><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=/>Huabing Blog</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>All Posts</a></li><li><a href=/hugo-template/categories/books/>books</a></li><li><a href=/hugo-template/categories/open-source/>open source</a></li><li><a href=/hugo-template/categories/presentations/>presentations</a></li><li><a href=/hugo-template/categories/tech/>tech</a></li><li><a href=/archive//>ARCHIVE</a></li><li><a href=/notes//>NOTES</a></li><li><a href=/about//>ABOUT</a></li><li><a href=/hugo-template/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><style type=text/css>header.intro-header{background-image:url(https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/envoy title=Envoy>Envoy
+</a><a class=tag href=/tags/aeraki title=Aeraki>Aeraki
+</a><a class=tag href=/tags/metaprotocol title=MetaProtocol>MetaProtocol</a></div><h1>MetaProtocol Proxy 代码解读：Connection Manager</h1><h2 class=subheading></h2><span class=meta>Posted by
+    "赵化冰"
+on
+Thursday, June 30, 2022</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+post-container"><p>ConnectionManager 是 MeataProtocol Proxy 的入口类。想要了解 MetaProtocol Proxy 的实现原理，可以从该类着手。</p><h2 id=envoy-network-filter-介绍>Envoy Network Filter 介绍</h2><p>MetaProtocol Proxy 框架部分实现为 Envoy 中的一个 Network Filter。Enovy 通过 Listener 接收 Downstream 的连接，然后将收取到的 TCP 数据流发送给 TCP filter chain 中的 MetaProtocol Proxy 处理。</p><p>Envoy Network Filter 机制：</p><p><img src=https://www.envoyproxy.io/docs/envoy/latest/_images/lor-network-filters.svg alt></p><p>Envoy 将从 Downstream 套接字中读取到的数据放到 buffer 中，传递给 Network Filter chain 进行处理，由 Network Filter chain 处理后，一般会由 chain 中最后一个 filter 发送给 Upstream。</p><p>注意：</p><ul><li><p>上图来自于 <a href=https://www.envoyproxy.io/docs/envoy/latest/intro/life_of_a_request>Enovy 文档</a>，图中 Network filter chain 中最后一个 Filter 是 HCM（HTTP Connection Manager）。在 Aeraki Mesh 中，该 Network filter chain 中其实只有一个 filter，就是 MetaProtocol Proxy。</p></li><li><p>Listener 还有一个 Listener filter chain，用于在 Network filter chain 前进行一些公共逻辑的处理，例如通过 tls inspector 拿到 sni 和 application protocol，http 协议嗅探等。</p></li></ul><p>在 Aeraki Mesh 中，MetaProtocol Proxy 是 Network Filter Chain 中唯一的 Filter。 MetaProtocol Proxy 在收到 Downstream 数据后，会采用其相应的应用协议的 codec 实现进行解码，然后再将解码得到的元数据（Metadata）传递给本地限流、全局限流、路由等七层 filter 进行处理。进行处理后通过 Router 将消息发送到 Upstream。</p><p><img src=https://www.aeraki.net/blog/2021/istio-aeraki/metaprotocol-proxy.png alt></p><p>Envoy 中有两种类型的 Network Filter：</p><ul><li>ReadFilter：在收到 Downstream 的数据后，Enovy 会将数据中从 Downstream 套接字中读出，并依次调用 ReadFilter 对这些数据进行处理。</li><li>WriteFilter：在向 Downstream 套接字写入数据前，Envoy 会依次调用 WriteFilter 对数据进行处理后，再写入 Downstream。</li></ul><p><img src=https://zhaohuabing.com/static/img/misc/envoy-network-filter.png alt></p><p>MetaProtocol Proxy 是一个 ReadFilter 类型的 Network Filter。（MetaProtocol Proxy 是 Network Filter Chain 中最后一个 Filter，直接接收 Upstream 的响应消息并返回给 Downstream，因此没有必要实现对 Response 数据进行处理的 WriteFilter。）</p><p>ReadFilter 接口包含下面的方法：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>ReadFilter</span> {
+</span></span><span style=display:flex><span><span style=color:#ff79c6>public</span><span style=color:#ff79c6>:</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// 将从 Downstream 连接中读取到的数据传递给 filter 进行处理
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  <span style=color:#ff79c6>virtual</span> FilterStatus onData(Buffer<span style=color:#ff79c6>::</span>Instance<span style=color:#ff79c6>&amp;</span> data, <span style=color:#8be9fd>bool</span> end_stream) PURE;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// 创建 Downstream 连接时会调用该方法
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  <span style=color:#ff79c6>virtual</span> FilterStatus <span style=color:#50fa7b>onNewConnection</span>() PURE;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// Enovy 传递一个 ReadFilterCallbacks 回调接口给 ReadFilter。ReadFilter 可以通过该
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  <span style=color:#6272a4>// 回调接口从 Envoy 框架层获取一些有用的信息。例如该 ReadFilter 关联的 Dowstream Connection。
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  <span style=color:#ff79c6>virtual</span> <span style=color:#8be9fd>void</span> <span style=color:#50fa7b>initializeReadFilterCallbacks</span>(ReadFilterCallbacks<span style=color:#ff79c6>&amp;</span> callbacks) PURE;
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><p><code>ReadFilterCallbacks</code> 继承了 <code>NetworkFilterCallbacks</code>，MetaProtocol Proxy 的 ConnectionManager 主要使用到了 <code>NetworkFilterCallbacks</code> 中的 connection 方法来获取 Downstream 连接。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>ReadFilterCallbacks</span> <span style=color:#ff79c6>:</span> <span style=color:#ff79c6>public</span> <span style=color:#ff79c6>virtual</span> NetworkFilterCallbacks {
+</span></span><span style=display:flex><span><span style=color:#ff79c6>public</span><span style=color:#ff79c6>:</span>
+</span></span><span style=display:flex><span>  不重要，略过......
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#ff79c6>class</span> <span style=color:#50fa7b>NetworkFilterCallbacks</span> {
+</span></span><span style=display:flex><span><span style=color:#ff79c6>public</span><span style=color:#ff79c6>:</span>
+</span></span><span style=display:flex><span>  
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// 通过该方法获取 Network Filter 关联的 Downstream Connection
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  <span style=color:#ff79c6>virtual</span> Connection<span style=color:#ff79c6>&amp;</span> connection() PURE;
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><h2 id=connection-manager-结构>Connection Manager 结构</h2><p>Connection Manager 实现了三个重要的接口:</p><ul><li>Network::ReadFilter 对 Downstream 连接中读取到的数据进行处理，包括解码和调用七层 filter。</li><li>MetaProtocolProxy::RequestDecoderCallbacks 为 MetaProtocol 的七层 filter 提供的回调接口。</li><li>Network::ConnectionCallbacks Downstream 连接回调接口，主要用于连接事件（连接和断开）和流控的处理。</li></ul><pre tabindex=0><code class=language-plantuml data-lang=plantuml>@startuml
+ConnectionManager &lt;|-- ReadFilter
+ConnectionManager &lt;|-- ConnectionCallbacks
+ConnectionManager &lt;|-- RequestDecoderCallbacks
+
+ReadFilter : FilterStatus onData(Buffer::Instance&amp; data)
+ReadFilter : FilterStatus onNewConnection()
+ReadFilter : initializeReadFilterCallbacks(ReadFilterCallbacks&amp; callbacks)
+
+ConnectionCallbacks : onEvent(ConnectionEvent event)
+ConnectionCallbacks : onAboveWriteBufferHighWatermark()
+ConnectionCallbacks : onBelowWriteBufferLowWatermark()
+
+RequestDecoderCallbacks : newMessageHandler()
+RequestDecoderCallbacks : onHeartbeat(MetadataSharedPtr)
+@enduml
+</code></pre><h3 id=downstream-请求处理>Downstream 请求处理</h3><p>在 Network::ReadFilter 接口的 onData 方式实现中对来自 Downstream 的数据进行处理。Envoy 会将 Downstream 连接中收到的数据放到一个 buffer 中，通过 回调 onData 方法的参数传递给 Connection Manager。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span>Network<span style=color:#ff79c6>::</span>FilterStatus ConnectionManager<span style=color:#ff79c6>::</span>onData(Buffer<span style=color:#ff79c6>::</span>Instance<span style=color:#ff79c6>&amp;</span> data, <span style=color:#8be9fd>bool</span> end_stream) {
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// 对来着 Downstream 连接中的数据进行分发处理
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  dispatch();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  不重要，略过......
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// MetaProtocolProxy 是 Network Filter Chain 中的最后一个 Filter，不再继续执行。
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  <span style=color:#ff79c6>return</span> Network<span style=color:#ff79c6>::</span>FilterStatus<span style=color:#ff79c6>::</span>StopIteration;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>MetaProtocol Proxy 在 onData 方法中调用 dispatch 方法，在 dispatch 方法中会循环调用 decoder 的 decode 方法。decoder 依次处理 buffer 中的请求，处理完的数据会被 decoder 从 buffer 中移除。如果一个请求未接收完整，或者 buffer 中的数据被全部处理完毕，decoder 会通过 underflow 标志告诉 Connection Manager 需要更多数据。 Connection Manager 会退出本次 onData 处理，envoy 收到更多数据后将再次调用 Connection manager 的 onData 方法。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#8be9fd>void</span> ConnectionManager<span style=color:#ff79c6>::</span>dispatch() {
+</span></span><span style=display:flex><span>  不重要，略过......
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>try</span> {
+</span></span><span style=display:flex><span>    <span style=color:#8be9fd>bool</span> underflow <span style=color:#ff79c6>=</span> <span style=color:#8be9fd;font-style:italic>false</span>;
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>while</span> (<span style=color:#ff79c6>!</span>underflow) {
+</span></span><span style=display:flex><span>      decoder_<span style=color:#ff79c6>-&gt;</span>onData(request_buffer_, underflow);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>return</span>;
+</span></span><span style=display:flex><span>  } 
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  不重要，略过......
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=envoy-流控机制>Envoy 流控机制</h3><p>Envoy 为 TCP filter 提供了一个<a href=https://github.com/envoyproxy/envoy/blob/main/source/docs/flow_control.md>流控机制</a>。其原理是为 TCP filter 的 buffer 设置了一个最大值（水位线），并在 buffer 中实际的数据大小超过该值，或者数据大小从该值之上回落到到该值以内时通过 <code>ConnectionCallbacks</code> 回调通知 TCP filter。</p><p>MetaProtocol Proxy 实现了 <code>ConnectionCallbacks</code> 接口，并在 <code>ReadFilter</code> 的 <code>initializeReadFilterCallbacks</code> 回调方法中向 Downstream connection 注册了该回调。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#8be9fd>void</span> ConnectionManager<span style=color:#ff79c6>::</span>initializeReadFilterCallbacks(Network<span style=color:#ff79c6>::</span>ReadFilterCallbacks<span style=color:#ff79c6>&amp;</span> callbacks) {
+</span></span><span style=display:flex><span>  read_callbacks_ <span style=color:#ff79c6>=</span> <span style=color:#ff79c6>&amp;</span>callbacks;
+</span></span><span style=display:flex><span>  <span style=color:#6272a4>// 向 Downstream connection 注册流控相关的回调方法
+</span></span></span><span style=display:flex><span><span style=color:#6272a4></span>  read_callbacks_<span style=color:#ff79c6>-&gt;</span>connection().addConnectionCallbacks(<span style=color:#ff79c6>*</span><span style=color:#ff79c6>this</span>);
+</span></span><span style=display:flex><span>  read_callbacks_<span style=color:#ff79c6>-&gt;</span>connection().enableHalfClose(<span style=color:#8be9fd;font-style:italic>true</span>);
+</span></span><span style=display:flex><span>  read_callbacks_<span style=color:#ff79c6>-&gt;</span>connection().setBufferLimits(BufferLimit);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>当 buffer 中的数据超过水位线时，Envoy 通过 <code>onAboveWriteBufferHighWatermark</code> 回调通知到 MetaProtocol Proxy。该回调说明此时 MetaProtocol Proxy 的处理速度慢于 Downstream 的数据发送速度，造成数据积压。此时 MetaProtocol Proxy 会调用 <code>connection.readDisable(true)</code> 方法，要求 Envoy 暂停从 Downstream 中读取数据，将数据保留在内核的 TCP 接收 buffer 中，最终通过 TCP 的拥塞控制对 Downstream 造成背压（Backpressure），降低 Downstream 的发送速率。</p><p>当 buffer 中的数据被 MetaProtocol Proxy 处理，低于水位线后，Envoy 通过 <code>onBelowWriteBufferLowWatermark</code> 回调通知到 MetaProtocol Proxy。此时 MetaProtocol Proxy 会调用 <code>connection.readDisable(false)</code> 方法，要求 Envoy 恢复从 Downstream 中读取数据。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-cpp data-lang=cpp><span style=display:flex><span><span style=color:#8be9fd>void</span> ConnectionManager<span style=color:#ff79c6>::</span>onAboveWriteBufferHighWatermark() {
+</span></span><span style=display:flex><span>  read_callbacks_<span style=color:#ff79c6>-&gt;</span>connection().readDisable(<span style=color:#8be9fd;font-style:italic>true</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8be9fd>void</span> ConnectionManager<span style=color:#ff79c6>::</span>onBelowWriteBufferLowWatermark() {
+</span></span><span style=display:flex><span>  read_callbacks_<span style=color:#ff79c6>-&gt;</span>connection().readDisable(<span style=color:#8be9fd;font-style:italic>false</span>);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=扩展阅读>扩展阅读</h2><ul><li><a href=https://github.com/envoyproxy/envoy/blob/main/source/docs/flow_control.md>Envoy 流控机制介绍</a></li><li><a href=https://www.envoyproxy.io/docs/envoy/latest/intro/life_of_a_request>Envo 请求生命周期介绍</a></li><li><a href=https://blog.envoyproxy.io/how-to-write-envoy-filters-like-a-ninja-part-1-d166e5abec09>How to Write Envoy Filters Like a Ninja! — Part 1</a></li><li><a href=https://blog.envoyproxy.io/taming-a-network-filter-44adcf91517>Taming a Network Filter</a></li></ul><p>我的博客即将同步至腾讯云开发者社区，邀请大家一同入驻：https://cloud.tencent.com/developer/support-plan?invite_code=3lidtv8h8qckw</p><div class="entry-shang text-center"><p>「真诚赞赏，手留余香」</p><button class="zs show-zs btn btn-bred">赞赏支持</button></div><div class=zs-modal-bg></div><div class=zs-modal-box><div class=zs-modal-head><button type=button class=close>×</button>
+<span class=author><a href=https://lopins.github.io/hugo-template/><img src=/hugo-template/img/favicon.png>Huabing Blog</a></span><p class=tip><i></i><span>真诚赞赏，手留余香</span></p></div><div class=zs-modal-body><div class=zs-modal-btns><button class="btn btn-blink" data-num=2>2元</button>
+<button class="btn btn-blink" data-num=5>5元</button>
+<button class="btn btn-blink" data-num=10>10元</button>
+<button class="btn btn-blink" data-num=50>50元</button>
+<button class="btn btn-blink" data-num=100>100元</button>
+<button class="btn btn-blink" data-num=1>任意金额</button></div><div class=zs-modal-pay><button class="btn btn-bred" id=pay-text>2元</button><p>使用<span id=pay-type>微信</span>扫描二维码完成支付</p><img src=/hugo-template/img/reward/wechat-2.png id=pay-image></div></div><div class=zs-modal-footer><label><input type=radio name=zs-type value=wechat class=zs-type checked><span><span class=zs-wechat><img src=/hugo-template/img/reward/wechat-btn.png></span></label>
+<label><input type=radio name=zs-type value=alipay class=zs-type class=zs-alipay><img src=/hugo-template/img/reward/alipay-btn.png></span></label></div></div><script type=text/javascript src=/hugo-template/js/reward.js></script><hr><ul class=pager><li class=previous><a href=/hugo-template/post/2022-06-17-aeraki-mesh-cncf-sandbox/ data-toggle=tooltip data-placement=top title="Aeraki Mesh 正式成为 CNCF 沙箱项目">&larr;
+Previous Post</a></li><li class=next><a href=/hugo-template/post/2022-09-06-aeraki-mesh-tracing/ data-toggle=tooltip data-placement=top title="使用 Aeraki Mesh 实现零代码侵入的 Dubbo 服务调用跟踪">Next
+Post &rarr;</a></li></ul><link href=https://xxx.xxx.com/dist/Artalk.css rel=stylesheet><script src=https://xxx.xxx.com/dist/Artalk.js></script><div id=Comments></div><script>Artalk.init({el:"#Comments",pageKey:"https://lopins.github.io/hugo-template/post/2022-06-30-metaprotocol-proxy-connection-manager/",pageTitle:"MetaProtocol Proxy 代码解读：Connection Manager",server:"https://xxx.xxx.com",site:"xxx blog"})</script></div><div class="col-lg-2 col-lg-offset-0
+visible-lg-block
+sidebar-container
+catalog-container"><div class=side-catalog><hr class="hidden-sm hidden-xs"><h5><a class=catalog-toggle href=#>CATALOG</a></h5><ul class=catalog-body></ul></div></div><div class="col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+sidebar-container"><section><hr class="hidden-sm hidden-xs"><h5><a href=/tags/>FEATURED TAGS</a></h5><div class=tags><a href=/tags/aeraki title=aeraki>aeraki
+</a><a href=/tags/aeraki-mesh title="aeraki mesh">aeraki mesh
+</a><a href=/tags/ambient-mesh title="ambient mesh">ambient mesh
+</a><a href=/tags/api-gateway title="api gateway">api gateway
+</a><a href=/tags/bitcoin title=bitcoin>bitcoin
+</a><a href=/tags/blockchain title=blockchain>blockchain
+</a><a href=/tags/cka title=cka>cka
+</a><a href=/tags/cncf title=cncf>cncf
+</a><a href=/tags/cryptocurrency title=cryptocurrency>cryptocurrency
+</a><a href=/tags/digital-signature title="digital signature">digital signature
+</a><a href=/tags/docker title=docker>docker
+</a><a href=/tags/dubbo title=dubbo>dubbo
+</a><a href=/tags/envoy title=envoy>envoy
+</a><a href=/tags/envoy-gateway title="envoy gateway">envoy gateway
+</a><a href=/tags/ingress title=ingress>ingress
+</a><a href=/tags/istio title=istio>istio
+</a><a href=/tags/jaeger title=jaeger>jaeger
+</a><a href=/tags/kafka title=kafka>kafka
+</a><a href=/tags/knowledge-graph title="knowledge graph">knowledge graph
+</a><a href=/tags/kubecon title=kubecon>kubecon
+</a><a href=/tags/kubernetes title=kubernetes>kubernetes
+</a><a href=/tags/linux title=linux>linux
+</a><a href=/tags/loadbalancer title=loadbalancer>loadbalancer
+</a><a href=/tags/metaprotocol title=metaprotocol>metaprotocol
+</a><a href=/tags/microservice title=microservice>microservice
+</a><a href=/tags/network title=network>network
+</a><a href=/tags/network-service-mesh title="network service mesh">network service mesh
+</a><a href=/tags/nfv title=nfv>nfv
+</a><a href=/tags/nodeport title=nodeport>nodeport
+</a><a href=/tags/onap title=onap>onap
+</a><a href=/tags/opentracing title=opentracing>opentracing
+</a><a href=/tags/pilot title=pilot>pilot
+</a><a href=/tags/proxy-protocol title="proxy protocol">proxy protocol
+</a><a href=/tags/redis title=redis>redis
+</a><a href=/tags/sdn title=sdn>sdn
+</a><a href=/tags/security title=security>security
+</a><a href=/tags/service-mesh title="service mesh">service mesh
+</a><a href=/tags/tencent title=tencent>tencent
+</a><a href=/tags/x-forwarded-for title=x-forwarded-for>x-forwarded-for</a></div></section><section><hr><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://zhaozhihan.com>Linda的博客</a></li></ul></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:youremail@gmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=/hugo-template/your%20wechat%20qr%20code%20image><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-weixin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/yourgithub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/yourlinkedinid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://stackoverflow.com/users/yourstackoverflowid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li><li><a href rel=alternate type=application/rss+xml title="Huabing Blog"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Huabing Blog 2024<br><a href=https://themes.gohugo.io/hugo-theme-cleanwhite>CleanWhite Hugo Theme</a> by <a href=https://zhaohuabing.com>Huabing</a> |
+<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=100px height=20px src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/hugo-template/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script><script src=https://cdn.jsdelivr.net/gh/jmnote/plantuml-encoder@1.2.4/dist/plantuml-encoder.min.js integrity="sha256-Qsk2KRBCN5qVZX7B+8+2IvQl1Aqc723qV1tBCQaVoqo=" crossorigin=anonymous></script><script>(function(){let e="language-plantuml";Array.prototype.forEach.call(document.querySelectorAll("[class^="+e+"]"),function(e){let t=document.createElement("IMG");t.loading="lazy",t.src="http://www.plantuml.com/plantuml/svg/~1"+plantumlEncoder.encode(e.innerText),e.parentNode.parentNode.insertBefore(t,e.parentNode),e.parentNode.style.display="none"})})()</script></body></html>

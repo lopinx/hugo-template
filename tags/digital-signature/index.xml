@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Digital Signature on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/digital-signature/</link><description>Recent content in Digital Signature on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/digital-signature/index.xml" rel="self" type="application/rss+xml"/><item><title>Bitcoin Script</title><link>https://lopins.github.io/hugo-template/2018/06/03/cryptocurrency_week3_bitcoin_script/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/2018/06/03/cryptocurrency_week3_bitcoin_script/</guid><description>&lt;blockquote>
+&lt;p>This series of articles are my notes of &amp;ldquo;Bitcoin and Cryptocurrency Technologies&amp;rdquo; online course.&lt;/p>
+&lt;/blockquote>
+&lt;p>Bitcoin Script is using to transfer coins instead of just signature and public key address, which allows more flexibilities for Bitcoin transactions.&lt;/p>
+&lt;h2 id="a-standard-transaction">A Standard Transaction&lt;/h2>
+&lt;p>Let&amp;rsquo;s say Alice wants to spend some coins she received from a previous transaction, this is how the procedure looks like.&lt;/p>
+&lt;ul>
+&lt;li>Alice receives some coins from a previous transaction. One of the outputs of that transaction specifies the public key of Alice to indicate that the coins in that output are transferred to Alice.&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>Actually, it&amp;rsquo;s the cryptographic hash of the public key in order to lower the risk that attacker might figure out the private key by the public key.&lt;/p></description></item><item><title>Distributed Consensus</title><link>https://lopins.github.io/hugo-template/2018/05/26/cryptocurrency_week2_distributed_consenus/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/2018/05/26/cryptocurrency_week2_distributed_consenus/</guid><description>&lt;blockquote>
+&lt;p>This series of articles are my notes of &amp;ldquo;Bitcoin and Cryptocurrency Technologies&amp;rdquo; online course.&lt;/p>
+&lt;/blockquote></description></item><item><title>Incentives and Proof of Work</title><link>https://lopins.github.io/hugo-template/2018/05/26/cryptocurrency_week2_incentives_and_proof_of_work/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/2018/05/26/cryptocurrency_week2_incentives_and_proof_of_work/</guid><description>&lt;blockquote>
+&lt;p>This series of articles are my notes of &amp;ldquo;Bitcoin and Cryptocurrency Technologies&amp;rdquo; online course.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="incentive">Incentive&lt;/h2>
+&lt;p>The mechanism to motivate nodes join the Bitcoin network and create blocks.&lt;/p>
+&lt;h3 id="incentive-1-block-reward">Incentive 1: Block Reward&lt;/h3>
+&lt;p>Creator of block gets to&lt;/p>
+&lt;ul>
+&lt;li>include special coin-creation transaction in the block&lt;/li>
+&lt;li>choose reciptient address of this transaction (Of course, it is the miner&amp;rsquo;s address)&lt;/li>
+&lt;/ul>
+&lt;p>Explanation: Because the coin-creation transaction is just like other transaction in that block, it will only be valid if the created block ends up in the consensus chain, it&amp;rsquo;s the incentive which encourages the nodes to be honest, otherwise they can&amp;rsquo;t get their rewards.&lt;/p></description></item><item><title>Digital Signature and Public Key as Identities</title><link>https://lopins.github.io/hugo-template/2018/05/12/cryptocurrency_week1_digital_signature/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/2018/05/12/cryptocurrency_week1_digital_signature/</guid><description>&lt;blockquote>
+&lt;p>This series of articles are my notes of &amp;ldquo;Bitcoin and Cryptocurrency Technologies&amp;rdquo; online course.&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

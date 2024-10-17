@@ -1,0 +1,128 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta property="og:site_name" content="Huabing Blog"><meta property="og:type" content="article"><meta property="og:image" content="https://gateway.envoyproxy.io/featured-background_hub722101dbe1dbe5596133cb6c8ada6d9_400690_1920x1080_fill_q75_catmullrom_top.jpg"><meta property="twitter:image" content="https://gateway.envoyproxy.io/featured-background_hub722101dbe1dbe5596133cb6c8ada6d9_400690_1920x1080_fill_q75_catmullrom_top.jpg"><meta name=title content="Envoy Gateway 安全策略介绍: HTTP Basic Authentication"><meta property="og:title" content="Envoy Gateway 安全策略介绍: HTTP Basic Authentication"><meta property="twitter:title" content="Envoy Gateway 安全策略介绍: HTTP Basic Authentication"><meta name=description content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。"><meta property="twitter:card" content="summary"><meta name=keyword content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice"><link rel="shortcut icon" href=/hugo-template/img/favicon.ico><title>Envoy Gateway 安全策略介绍: HTTP Basic Authentication | 赵化冰的博客 | Zhaohuabing Blog</title>
+<link rel=canonical href=/hugo-template/post/2023-11-29-envoy-gateway-security-policy-basic-auth/><link rel=stylesheet href=/hugo-template/css/bootstrap.min.css><link rel=stylesheet href=/hugo-template/css/hugo-theme-cleanwhite.min.css><link rel=stylesheet href=/hugo-template/css/zanshang.css><link rel=stylesheet href=/hugo-template/css/font-awesome.all.min.css><script src=/hugo-template/js/jquery.min.js></script><script src=/hugo-template/js/bootstrap.min.js></script><script src=/hugo-template/js/hux-blog.min.js></script><script src=/hugo-template/js/lazysizes.min.js></script></head><nav class="navbar navbar-default navbar-custom navbar-fixed-top"><div class=container-fluid><div class="navbar-header page-scroll"><button type=button class=navbar-toggle>
+<span class=sr-only>Toggle navigation</span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+<span class=icon-bar></span>
+</button>
+<a class=navbar-brand href=/>Huabing Blog</a></div><div id=huxblog_navbar><div class=navbar-collapse><ul class="nav navbar-nav navbar-right"><li><a href=/>All Posts</a></li><li><a href=/hugo-template/categories/books/>books</a></li><li><a href=/hugo-template/categories/open-source/>open source</a></li><li><a href=/hugo-template/categories/presentations/>presentations</a></li><li><a href=/hugo-template/categories/tech/>tech</a></li><li><a href=/archive//>ARCHIVE</a></li><li><a href=/notes//>NOTES</a></li><li><a href=/about//>ABOUT</a></li><li><a href=/hugo-template/search><i class="fa fa-search"></i></a></li></ul></div></div></div></nav><script>var $body=document.body,$toggle=document.querySelector(".navbar-toggle"),$navbar=document.querySelector("#huxblog_navbar"),$collapse=document.querySelector(".navbar-collapse");$toggle.addEventListener("click",handleMagic);function handleMagic(){$navbar.className.indexOf("in")>0?($navbar.className=" ",setTimeout(function(){$navbar.className.indexOf("in")<0&&($collapse.style.height="0px")},400)):($collapse.style.height="auto",$navbar.className+=" in")}</script><style type=text/css>header.intro-header{background-image:url(https://gateway.envoyproxy.io/featured-background_hub722101dbe1dbe5596133cb6c8ada6d9_400690_1920x1080_fill_q75_catmullrom_top.jpg)}</style><header class=intro-header><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><div class=post-heading><div class=tags><a class=tag href=/tags/envoy-gateway title="Envoy Gateway">Envoy Gateway</a></div><h1>Envoy Gateway 安全策略介绍: HTTP Basic Authentication</h1><h2 class=subheading></h2><span class=meta>Posted by
+赵化冰
+on
+Wednesday, November 29, 2023</span></div></div></div></div></header><article><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+post-container"><h2 id=什么是-envoy-gateway-安全策略>什么是 Envoy Gateway 安全策略？</h2><p>Envoy Gateway 中的<a href=https://gateway.envoyproxy.io/v0.6.0/api/extension_types/#securitypolicy>安全策略 (SecurityPolicy)</a> 是 Envoy Gateway 对 Kubernetes Gateway API 的一个扩展资源。SecurityPolicy 采用了 Gateway API 的 <a href=https://gateway-api.sigs.k8s.io/geps/gep-713/>Policy Attachment</a> 机制来对 Gateway API 进行扩展，为 Envoy Gateway 实现了 CORS，JWT，OIDC，Basic Auth 等强大的安全能力。</p><h2 id=什么是-http-basic-authentication->什么是 HTTP Basic Authentication ?</h2><p>HTTP Basic Authentication 是一种用于 Web 应用程序的简单用户身份验证协议。在客户端请求访问受保护资源时，服务器会返回 HTTP 401 Unauthorized 响应，并在 WWW-Authenticate头 中指定 Basic 身份验证。客户端接着发送包含 Base64 编码的用户名和密码的 Authorization 头。服务器解码这些凭证，与存储的用户信息进行比较。若匹配成功，服务器允许对资源的访问。一个使用 Basic Authentication 的 HTTP 请求的例子如下：</p><pre tabindex=0><code>GET /resource/ HTTP/1.1
+Host: example.com
+Authorization: Basic YWxhZGRpbjpvcGVuc2VzYW1l
+</code></pre><p>HTTP Basic Authentication 虽然简单，但是在很多场景下仍然被大量使用，也是网关中的一个常用的场景。但不知为何 Envoy 中之前一直并没有提供 HTTP Basic Authentication 的能力。Envoy Gateway 也因此无法提供 Basic Authentication 能力。为了解决该问题，我前段时间在 Envoy 中实现了 <a href=https://github.com/envoyproxy/envoy/pull/30079>HTTP Basic Auth Filter</a>，并基于该 Filter 在 Envoy Gateway 中提供了 <a href=https://github.com/envoyproxy/gateway/pull/2224>HTTP Basic Authentication</a> 的能力。</p><ul><li>Envoy HTTP Basic Auth Filter：https://github.com/envoyproxy/envoy/pull/30079</li><li>Envoy Gateway HTTP Basic Authentication：https://github.com/envoyproxy/gateway/pull/2224</li></ul><h2 id=如何在-envoy-gateway-中配置-http-basic-authentication->如何在 Envoy Gateway 中配置 HTTP Basic Authentication ?</h2><p>首先参照 <a href=https://gateway.envoyproxy.io/v0.6.0/user/quickstart/>Envoy Gateway Quickstart</a> 安装 Envoy Gateway 和例子程序。</p><p>Envoy Gateway 要求使用 .htpasswd 文件格式来存储用户名和密码。.htpasswd 文件可以通过 htpasswd 命令行工具生成。例如：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ htpasswd -cbs .htpasswd foo bar
+</span></span><span style=display:flex><span>Adding password <span style=color:#ff79c6>for</span> user foo
+</span></span></code></pre></div><p>上面的命令会在当前目录下生成一个名为 .htpasswd 的文件，内容如下：</p><pre tabindex=0><code>foo:{SHA}Ys23Ag/5IOWqZCw9QGaVDdHwH00=
+</code></pre><p>其中 foo 是用户名，{SHA}Ys23Ag/5IOWqZCw9QGaVDdHwH00= 是密码的 SHA1 哈希值。可以看到，密码是经过 SHA1 哈希的，不会将密码原文存储在 .htpasswd 文件中。因此，.htpasswd 文件不存在密码泄露的风险。</p><p>我们还可以通过 htpasswd 命令行工具来添加继续添加更多的用户名和密码。例如：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ htpasswd -bs .htpasswd foo1 bar1
+</span></span></code></pre></div><p>这样，.htpasswd 文件中就会有两个用户名和密码了：</p><pre tabindex=0><code>foo:{SHA}Ys23Ag/5IOWqZCw9QGaVDdHwH00=
+foo1:{SHA}djZ11qHY0KOijeymK7aKvYuvhvM=
+</code></pre><p>接下来，我们采用刚才生成的 .htpasswd 文件来创建一个 Kubernetes Secret，用于存储用户名和密码。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>$ kubectl create secret generic basic-auth --from-file<span style=color:#ff79c6>=</span>.htpasswd
+</span></span><span style=display:flex><span>secret
+</span></span></code></pre></div><p>查看该 Secrect 的内容如下：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span><span style=color:#ff79c6>apiVersion</span>: v1
+</span></span><span style=display:flex><span><span style=color:#ff79c6>data</span>:
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>.htpasswd</span>: Zm9vOntTSEF9WXMyM0FnLzVJT1dxWkN3OVFHYVZEZEh3SDAwPQpmb28xOntTSEF9ZGpaMTFxSFkwS09pamV5bUs3YUt2WXV2aHZNPQo=
+</span></span><span style=display:flex><span><span style=color:#ff79c6>kind</span>: Secret
+</span></span><span style=display:flex><span><span style=color:#ff79c6>metadata</span>:
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>creationTimestamp</span>: <span style=color:#f1fa8c>&#34;2023-11-28T12:24:25Z&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>name</span>: basic-auth
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>namespace</span>: default
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>resourceVersion</span>: <span style=color:#f1fa8c>&#34;2227303&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>uid</span>: 0ee724b1-68a8-41c6-bf63-85b75f1e4857
+</span></span><span style=display:flex><span><span style=color:#ff79c6>type</span>: Opaque
+</span></span></code></pre></div><p>可以看到，.htpasswd 文件中的内容已经被 Base64 编码后存在了 Secret 的 .htpasswd 这个 key 中。这样，我们就可以在 Envoy Gateway 中使用该 Secret 来配置 HTTP Basic Authentication 了。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml><span style=display:flex><span>cat &lt;&lt;EOF | kubectl apply -f -
+</span></span><span style=display:flex><span><span style=color:#ff79c6>apiVersion</span>: gateway.envoyproxy.io/v1alpha1
+</span></span><span style=display:flex><span><span style=color:#ff79c6>kind</span>: SecurityPolicy
+</span></span><span style=display:flex><span><span style=color:#ff79c6>metadata</span>:
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>name</span>: basic-auth-example
+</span></span><span style=display:flex><span><span style=color:#ff79c6>spec</span>:
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>targetRef</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>group</span>: gateway.networking.k8s.io
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>kind</span>: HTTPRoute
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>name</span>: backend
+</span></span><span style=display:flex><span>  <span style=color:#ff79c6>basicAuth</span>:
+</span></span><span style=display:flex><span>    <span style=color:#ff79c6>users</span>:
+</span></span><span style=display:flex><span>      <span style=color:#ff79c6>name</span>: <span style=color:#f1fa8c>&#34;basic-auth&#34;</span>
+</span></span><span style=display:flex><span>EOF
+</span></span></code></pre></div><p>上面的配置会将 HTTP Basic Authentication 应用到名为 backend 的 HTTPRoute 上。这样，当客户端请求访问该 HTTPRoute 时，就需要提供用户名和密码了。除了 HTTPRoute，Envoy Gateway 还支持将 SecurityPolicy 应用到 Gateway 上，只要将 targetRef 指向 Gateway 即可。</p><p>尝试不带用户名和密码访问一下该 HTTPRoute：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>curl -v -H <span style=color:#f1fa8c>&#34;Host: www.example.com&#34;</span> <span style=color:#f1fa8c>&#34;http://</span><span style=color:#f1fa8c>${</span><span style=color:#8be9fd;font-style:italic>GATEWAY_HOST</span><span style=color:#f1fa8c>}</span><span style=color:#f1fa8c>/&#34;</span>
+</span></span></code></pre></div><p>可以看到，由于没有认证信息，请求被拒绝了：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>...
+</span></span><span style=display:flex><span>&lt; HTTP/1.1 <span style=color:#bd93f9>401</span> Unauthorized
+</span></span><span style=display:flex><span>&lt; content-length: <span style=color:#bd93f9>58</span>
+</span></span><span style=display:flex><span>&lt; content-type: text/plain
+</span></span><span style=display:flex><span>&lt; date: Tue, <span style=color:#bd93f9>28</span> Nov <span style=color:#bd93f9>2023</span> 12:43:32 GMT
+</span></span><span style=display:flex><span>&lt; server: envoy
+</span></span><span style=display:flex><span>&lt;
+</span></span><span style=display:flex><span>* Connection <span style=color:#6272a4>#0 to host 127.0.0.1 left intact</span>
+</span></span><span style=display:flex><span>User authentication failed. Missing username and password.
+</span></span></code></pre></div><p>接下来，我们尝试使用正确的用户名和密码访问一下该 HTTPRoute：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>curl -v -H <span style=color:#f1fa8c>&#34;Host: www.example.com&#34;</span> -u <span style=color:#f1fa8c>&#39;foo:bar&#39;</span> <span style=color:#f1fa8c>&#34;http://</span><span style=color:#f1fa8c>${</span><span style=color:#8be9fd;font-style:italic>GATEWAY_HOST</span><span style=color:#f1fa8c>}</span><span style=color:#f1fa8c>/&#34;</span>
+</span></span></code></pre></div><p>可以看到，请求被 Envoy Gateway 认证通过，发送到了后端的服务上。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-shell data-lang=shell><span style=display:flex><span>...
+</span></span><span style=display:flex><span>&lt; HTTP/1.1 <span style=color:#bd93f9>200</span> OK
+</span></span><span style=display:flex><span>&lt; content-type: application/json
+</span></span><span style=display:flex><span>&lt; x-content-type-options: nosniff
+</span></span><span style=display:flex><span>&lt; date: Wed, <span style=color:#bd93f9>29</span> Nov <span style=color:#bd93f9>2023</span> 12:13:28 GMT
+</span></span><span style=display:flex><span>&lt; content-length: <span style=color:#bd93f9>556</span>
+</span></span><span style=display:flex><span>&lt; x-envoy-upstream-service-time: <span style=color:#bd93f9>0</span>
+</span></span><span style=display:flex><span>&lt; server: envoy
+</span></span><span style=display:flex><span>...
+</span></span></code></pre></div><h2 id=总结>总结</h2><p>本文介绍了 Envoy Gateway 中的安全策略 (SecurityPolicy) 的基本概念，以及如何使用 HTTP Basic Authentication 来保护 HTTPRoute。HTTP Basic Authentication 虽然简单，但是在很多场景下仍然被大量使用，也是网关中的一个常用的场景。支持 HTTP Basic Authentication 也让 Envoy Gateway 可以更好地满足这些场景下的应用。后续文章还会继续介绍 Envoy Gateway 安全策略的其他能力，敬请期待。</p><h2 id=参考资料>参考资料</h2><ul><li>Envoy HTTP Basic Auth Filter：https://github.com/envoyproxy/envoy/pull/30079</li><li>Envoy Gateway HTTP Basic Authentication：https://github.com/envoyproxy/gateway/pull/2224</li><li>Envoy Gateway Quickstart：https://gateway.envoyproxy.io/v0.6.0/user/quickstart/</li><li>Envoy Gateway Security Policy：https://gateway.envoyproxy.io/v0.6.0/api/extension_types/#securitypolicy</li></ul><div class="entry-shang text-center"><p>「真诚赞赏，手留余香」</p><button class="zs show-zs btn btn-bred">赞赏支持</button></div><div class=zs-modal-bg></div><div class=zs-modal-box><div class=zs-modal-head><button type=button class=close>×</button>
+<span class=author><a href=https://lopins.github.io/hugo-template/><img src=/hugo-template/img/favicon.png>Huabing Blog</a></span><p class=tip><i></i><span>真诚赞赏，手留余香</span></p></div><div class=zs-modal-body><div class=zs-modal-btns><button class="btn btn-blink" data-num=2>2元</button>
+<button class="btn btn-blink" data-num=5>5元</button>
+<button class="btn btn-blink" data-num=10>10元</button>
+<button class="btn btn-blink" data-num=50>50元</button>
+<button class="btn btn-blink" data-num=100>100元</button>
+<button class="btn btn-blink" data-num=1>任意金额</button></div><div class=zs-modal-pay><button class="btn btn-bred" id=pay-text>2元</button><p>使用<span id=pay-type>微信</span>扫描二维码完成支付</p><img src=/hugo-template/img/reward/wechat-2.png id=pay-image></div></div><div class=zs-modal-footer><label><input type=radio name=zs-type value=wechat class=zs-type checked><span><span class=zs-wechat><img src=/hugo-template/img/reward/wechat-btn.png></span></label>
+<label><input type=radio name=zs-type value=alipay class=zs-type class=zs-alipay><img src=/hugo-template/img/reward/alipay-btn.png></span></label></div></div><script type=text/javascript src=/hugo-template/js/reward.js></script><hr><ul class=pager><li class=previous><a href=/hugo-template/post/2023-11-16-kubecon-na-metaprotocol/ data-toggle=tooltip data-placement=top title="KubeCon NA - Introduce MetaProtocol Proxy: A Layer-7 Proxy Framework Powered by Envoy">&larr;
+Previous Post</a></li><li class=next><a href=/hugo-template/post/2023-12-07-envoy-gateway-security-policy-oidc/ data-toggle=tooltip data-placement=top title="Envoy Gateway：十分钟搞定单点登录（SSO）！">Next
+Post &rarr;</a></li></ul><link href=https://xxx.xxx.com/dist/Artalk.css rel=stylesheet><script src=https://xxx.xxx.com/dist/Artalk.js></script><div id=Comments></div><script>Artalk.init({el:"#Comments",pageKey:"https://lopins.github.io/hugo-template/post/2023-11-29-envoy-gateway-security-policy-basic-auth/",pageTitle:"Envoy Gateway 安全策略介绍: HTTP Basic Authentication",server:"https://xxx.xxx.com",site:"xxx blog"})</script></div><div class="col-lg-2 col-lg-offset-0
+visible-lg-block
+sidebar-container
+catalog-container"><div class=side-catalog><hr class="hidden-sm hidden-xs"><h5><a class=catalog-toggle href=#>CATALOG</a></h5><ul class=catalog-body></ul></div></div><div class="col-lg-8 col-lg-offset-2
+col-md-10 col-md-offset-1
+sidebar-container"><section><hr class="hidden-sm hidden-xs"><h5><a href=/tags/>FEATURED TAGS</a></h5><div class=tags><a href=/tags/aeraki title=aeraki>aeraki
+</a><a href=/tags/aeraki-mesh title="aeraki mesh">aeraki mesh
+</a><a href=/tags/ambient-mesh title="ambient mesh">ambient mesh
+</a><a href=/tags/api-gateway title="api gateway">api gateway
+</a><a href=/tags/bitcoin title=bitcoin>bitcoin
+</a><a href=/tags/blockchain title=blockchain>blockchain
+</a><a href=/tags/cka title=cka>cka
+</a><a href=/tags/cncf title=cncf>cncf
+</a><a href=/tags/cryptocurrency title=cryptocurrency>cryptocurrency
+</a><a href=/tags/digital-signature title="digital signature">digital signature
+</a><a href=/tags/docker title=docker>docker
+</a><a href=/tags/dubbo title=dubbo>dubbo
+</a><a href=/tags/envoy title=envoy>envoy
+</a><a href=/tags/envoy-gateway title="envoy gateway">envoy gateway
+</a><a href=/tags/ingress title=ingress>ingress
+</a><a href=/tags/istio title=istio>istio
+</a><a href=/tags/jaeger title=jaeger>jaeger
+</a><a href=/tags/kafka title=kafka>kafka
+</a><a href=/tags/knowledge-graph title="knowledge graph">knowledge graph
+</a><a href=/tags/kubecon title=kubecon>kubecon
+</a><a href=/tags/kubernetes title=kubernetes>kubernetes
+</a><a href=/tags/linux title=linux>linux
+</a><a href=/tags/loadbalancer title=loadbalancer>loadbalancer
+</a><a href=/tags/metaprotocol title=metaprotocol>metaprotocol
+</a><a href=/tags/microservice title=microservice>microservice
+</a><a href=/tags/network title=network>network
+</a><a href=/tags/network-service-mesh title="network service mesh">network service mesh
+</a><a href=/tags/nfv title=nfv>nfv
+</a><a href=/tags/nodeport title=nodeport>nodeport
+</a><a href=/tags/onap title=onap>onap
+</a><a href=/tags/opentracing title=opentracing>opentracing
+</a><a href=/tags/pilot title=pilot>pilot
+</a><a href=/tags/proxy-protocol title="proxy protocol">proxy protocol
+</a><a href=/tags/redis title=redis>redis
+</a><a href=/tags/sdn title=sdn>sdn
+</a><a href=/tags/security title=security>security
+</a><a href=/tags/service-mesh title="service mesh">service mesh
+</a><a href=/tags/tencent title=tencent>tencent
+</a><a href=/tags/x-forwarded-for title=x-forwarded-for>x-forwarded-for</a></div></section><section><hr><h5>FRIENDS</h5><ul class=list-inline><li><a target=_blank href=https://zhaozhihan.com>Linda的博客</a></li></ul></section></div></div></div></article><footer><div class=container><div class=row><div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1"><ul class="list-inline text-center"><li><a href=mailto:youremail@gmail.com><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-envelope fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=/hugo-template/your%20wechat%20qr%20code%20image><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-weixin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://github.com/yourgithub><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-github fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://www.linkedin.com/in/yourlinkedinid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li><li><a target=_blank href=https://stackoverflow.com/users/yourstackoverflowid><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i></span></a></li><li><a href rel=alternate type=application/rss+xml title="Huabing Blog"><span class="fa-stack fa-lg"><i class="fas fa-circle fa-stack-2x"></i>
+<i class="fas fa-rss fa-stack-1x fa-inverse"></i></span></a></li></ul><p class="copyright text-muted">Copyright &copy; Huabing Blog 2024<br><a href=https://themes.gohugo.io/hugo-theme-cleanwhite>CleanWhite Hugo Theme</a> by <a href=https://zhaohuabing.com>Huabing</a> |
+<iframe style=margin-left:2px;margin-bottom:-5px frameborder=0 scrolling=0 width=100px height=20px src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true"></iframe></p></div></div></div></footer><script>function loadAsync(e,t){var s=document,o="script",n=s.createElement(o),i=s.getElementsByTagName(o)[0];n.src=e,t&&n.addEventListener("load",function(e){t(null,e)},!1),i.parentNode.insertBefore(n,i)}</script><script>$("#tag_cloud").length!==0&&loadAsync("/js/jquery.tagcloud.js",function(){$.fn.tagcloud.defaults={color:{start:"#bbbbee",end:"#0085a1"}},$("#tag_cloud a").tagcloud()})</script><script>loadAsync("https://cdn.jsdelivr.net/npm/fastclick@1.0.6/lib/fastclick.min.js",function(){var e=document.querySelector("nav");e&&FastClick.attach(e)})</script><script type=text/javascript>function generateCatalog(e){_containerSelector="div.post-container";var t,n,s,o,i,a=$(_containerSelector),r=a.find("h1,h2,h3,h4,h5,h6");return $(e).html(""),r.each(function(){t=$(this).prop("tagName").toLowerCase(),o="#"+$(this).prop("id"),n=$(this).text(),i=$('<a href="'+o+'" rel="nofollow">'+n+"</a>"),s=$('<li class="'+t+'_nav"></li>').append(i),$(e).append(s)}),!0}generateCatalog(".catalog-body"),$(".catalog-toggle").click(function(e){e.preventDefault(),$(".side-catalog").toggleClass("fold")}),loadAsync("/hugo-template/js/jquery.nav.js",function(){$(".catalog-body").onePageNav({currentClass:"active",changeHash:!1,easing:"swing",filter:"",scrollSpeed:700,scrollOffset:0,scrollThreshold:.2,begin:null,end:null,scrollChange:null,padding:80})})</script></body></html>

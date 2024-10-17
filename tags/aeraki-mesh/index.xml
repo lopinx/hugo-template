@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Aeraki Mesh on Huabing Blog</title><link>https://lopins.github.io/hugo-template/tags/aeraki-mesh/</link><description>Recent content in Aeraki Mesh on Huabing Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 13 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://lopins.github.io/hugo-template/tags/aeraki-mesh/index.xml" rel="self" type="application/rss+xml"/><item><title>Aeraki Mesh 发布 1.4.0 版本（代号：Heshun）</title><link>https://lopins.github.io/hugo-template/post/2023-06-24-aeraki-1.4.0/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-06-24-aeraki-1.4.0/</guid><description>&lt;p>Aeraki Mesh 于 2023 年 8 月 13 日发布 1.4.0 版本（版本代号：Heshun），本次发布的最主要的特性是支持了 Istio 1.18.x 系列版本。&lt;/p>
+&lt;p>备注：版本代号来自于这个夏天旅行的一个云南小镇 - 和顺古镇。和顺古镇位于云南省腾冲市，其历史可追溯至明代，迄今已有 600 年历史。其地理位置位于海拔 1500 米左右，气候温和，夏季气温 20 多度，是逃避夏日热浪的一个绝佳去处。除此之处，和其他很多古镇不同的是，该古镇有三千多常驻居民，是一个“活着的古镇”，居住在古镇中可以体验当地居民的日常生活，大家有机会可以去看看。&lt;/p></description></item><item><title>Aeraki Mesh 发布 1.3.0 版本（代号：Dragonboat）</title><link>https://lopins.github.io/hugo-template/post/2023-06-24-aeraki-1.3.0/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-06-24-aeraki-1.3.0/</guid><description>&lt;p>Aeraki Mesh 于 2023 年 6 月 24 日发布 1.3.0 版本（版本代号：Dragonboat），该版本包含了对 Istio 1.16.x 系列版本的支持，以及支持多路复用，gateway 支持 MetaProtoco 等一系列重大的新增特性。&lt;/p></description></item><item><title>Database Mesh: Simplify Redis Cluster with Istio and Aeraki</title><link>https://lopins.github.io/hugo-template/post/2023-05-08-manage-redis-with-aeraki-mes-eng/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-05-08-manage-redis-with-aeraki-mes-eng/</guid><description>&lt;p>Redis is a high-performing key-value database known for its versatility in supporting a diverse range of data structures and operations, including strings, hashes, lists, sets, and sorted sets. Its robust capabilities make it an ideal choice for caching, session storage, message brokers, and other similar applications.&lt;/p>
+&lt;p>&lt;a href="https://istio.io/">Istio&lt;/a> is one of the most popular service mesh platforms that provides a unified way to connect, secure, and manage microservices. &lt;a href="https://www.aeraki.net/">Aeraki Mesh&lt;/a> is a CNCF open-source project that works with Istio and enhances Istio’s capabilities by providing advanced traffic management for non-HTTP protocols including Thrift, Dubbo, Redis, and proprietary protocols.&lt;/p></description></item><item><title>Database Mesh: 使用 Istio 和 Aeraki 对 Redis 进行流量管理</title><link>https://lopins.github.io/hugo-template/post/2023-05-08-manage-redis-with-aeraki-mesh/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-05-08-manage-redis-with-aeraki-mesh/</guid><description>&lt;p>Redis 是一种高性能的键值数据库，支持丰富的数据结构和操作，包括字符串、哈希、列表、集合、有序集合等。由于其强大的能力，Redis 被广泛应用于缓存、会话存储、消息代理等场景中。&lt;/p></description></item><item><title>Aeraki Mesh Community Meeting - February 23rd, 2023</title><link>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting/</guid><description>&lt;p>During this community meeting, we introduced Aeraki Mesh’s newly released Access Log and Service Metrics features. We also invited experts from Boss Zhipin and Shopline to share hands-on examples of Dubbo based on Aeraki Mesh. Furthermore, we introduced the new features of multiplexing and Gateway support for the MetaProtocol application protocol, which are being contributed by the Tencent Games project and Boss Zhipin.&lt;/p>
+&lt;p>The Access Log and Service Metrics functionalities will help users better understand their network performance, troubleshoot issues, and optimize their applications. We’re excited to see how these new features will improve our users&amp;rsquo; experiences with Aeraki Mesh.&lt;/p></description></item><item><title>Aeraki Mesh 社区例会 - 2023-02-23</title><link>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting-en/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2023-02-24-aeraki-mesh-community-meeting-en/</guid><description>&lt;p>本次社区会议介绍了 Aeraki Mesh 最新发布的 Access Log，Sevice Metrics 功能，并邀请了来自 Boss 直聘，Shopline 的专家分享基于 Aeraki Mesh 的 Dubbo 实操案例。此外，还介绍了来着腾讯游戏项目和 Boss 直聘正在贡献的多路复用和 Gateway 支持 MetaProtocol 应用协议的新特性。&lt;/p></description></item><item><title>5分钟内将 Dubbo 服务接入 Istio 服务网格</title><link>https://lopins.github.io/hugo-template/post/2022-11-18-dubbo-aeraki-mesh-in-5-minutes/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-11-18-dubbo-aeraki-mesh-in-5-minutes/</guid><description>&lt;p>&lt;a href="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/">幻灯片&lt;/a>
+&lt;a href="https://aeraki.net">Aeraki Mesh 官网&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/dubbo">Dubbo 接入教程&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/implement-a-custom-protocol">私有协议接入教程&lt;/a>
+&lt;a href="https://github.com/aeraki-mesh">Github&lt;/a>&lt;/p>
+
+&lt;link rel="stylesheet" href="https://lopins.github.io/hugo-template/css/hugo-easy-gallery.css" />
+&lt;div class="box" >
+ &lt;figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+ &lt;div class="img">
+ &lt;img itemprop="thumbnail" src="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/0.png" />
+ &lt;/div>
+ &lt;a href="https://zhaohuabing.com/web-slides/manage-dubbo-in-istio-in-5-minutes/" itemprop="contentUrl">&lt;/a>
+ &lt;/figure>
+&lt;/div>
+
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1fP411g7zN&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div></description></item><item><title>Service Mesh Summit 2022 Dubbo Demo</title><link>https://lopins.github.io/hugo-template/post/2022-09-26-servicemesh-summit2022-dubbo-aeraki-mesh/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-26-servicemesh-summit2022-dubbo-aeraki-mesh/</guid><description>&lt;p>&lt;a href="https://aeraki.net">Aeraki Mesh 官网&lt;/a>
+&lt;a href="https://zhaohuabing.com/zh/docs/v1.x/tutorials/dubbo">Dubbo 接入教程&lt;/a>
+&lt;a href="https://www.aeraki.net/zh/docs/v1.x/tutorials/implement-a-custom-protocol">私有协议接入教程&lt;/a>
+&lt;a href="https://github.com/aeraki-mesh">Github&lt;/a>&lt;/p>
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1oe4y167kz&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div></description></item><item><title>脑动极光 Aeraki Mesh Dubbo 架构微服务治理实践应用</title><link>https://lopins.github.io/hugo-template/post/2022-09-27-aeraki-mesh-ngjg-use-case/</link><pubDate>Mon, 07 Oct 2024 00:00:00 +0000</pubDate><guid>https://lopins.github.io/hugo-template/post/2022-09-27-aeraki-mesh-ngjg-use-case/</guid><description>&lt;p>&lt;a href="https://www.66nao.com/home">脑动极光&lt;/a> 在 Aeraki Mesh 社区会议上分享的 Dubbo 微服务治理实践。
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/1.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/2.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/3.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/4.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/5.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/6.png" alt="">
+
+
+
+ &lt;img src="https://zhaohuabing.com/static/img/2022-09-ndjg-dubbo-aeraki-mesh/7.png" alt="">
+
+
+
+
+
+&lt;style>
+ #biliplayer {
+ width: 100%;
+ height: 600px;
+ }
+ @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+ #biliplayer {
+ width: 100%;
+ height: 250px;
+ }
+ }
+&lt;/style>
+
+
+ &lt;div>
+ &lt;iframe id="biliplayer" src="//player.bilibili.com/player.html?bvid=BV1Ee4y1b7H2&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" loading="lazy" >&lt;/iframe>
+ &lt;/div>
+
+&lt;/p></description></item></channel></rss>
