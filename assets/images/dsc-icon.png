@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="applicable-device" content="pc"/>
+    
+    <title>第二树企业采购平台-二手办公家具出售-二手办公桌椅租赁回收</title>
+    <meta name="Keywords" content="二手办公家具,二手办公家具出售,二手办公家具租赁,第二树企业采购平台-二手办公家具出售-二手办公家具租赁回收二手办公家具回收,二手办公桌椅,二手办公桌,二手办公椅,二手工位,二手文件柜,二手班台,二手沙发茶几" />
+    <meta name="Description" content="第二树主营二手办公家具销售租赁回收及仓储寄存业务，涵盖了二手办公桌,二手办公椅,二手工位,二手班台,二手文件柜,二手沙发茶几等多种二手家具。" />
+    <link rel="stylesheet" href="/static/web/css/style.css?20240328">
+    <link rel="stylesheet" href="/static/web/css/swiper.css" />
+    <link rel="stylesheet" href="/static/web/css/header.css?20240328">
+    <link rel="stylesheet" href="/static/web/css/footer.css?20240328">
+    <link href="/static/web/layui/css/layui.css" rel="stylesheet">
+    
+<link rel="stylesheet" href="/static/web/css/index-md.css?202403285">
+
+<style>
+	.layui-form-item .layui-form-checkbox[lay-skin=primary]{
+		margin-top:unset
+	}
+	.layui-form-item .layui-form-checkbox{
+		margin-top:unset
+	}
+
+	.layui-layer-btn .layui-layer-btn0{
+		background: linear-gradient(to bottom, #109a30, #5dc376) !important;
+		font-size: 18px;
+		border: unset;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+    <!-- Header -->
+    <div class="header">
+        <header>
+            <div class="header-left"><a href="/" target="_blank"><img src="/static/web/images/logo3.png" alt="" style="width: 100%"></a></div>
+            <ul class="navHref">
+                <li><a class="activity" href="/" title="首页">首页 <em>HOT</em></a></li>
+                <li><a class="" href="/product.html" title="产品中心">产品中心</a></li>
+                <li><a class="" href="/case.html" title="案例中心">案例中心</a></li>
+                <li><a class="" href="/esg.html" title="ESG理念">ESG理念</a></li>
+                <li><a class="" href="/news.html" title="行业资讯">行业资讯</a></li>
+                <li><a class="" href="/about.html" title="关于我们">关于我们</a></li>
+            </ul>
+            <div class="header-right">咨询电话：400-178-1088</div>
+        </header>
+    </div>
+
+    <!--主体-->
+    
+<!-- 主体 -->
+<section id="content" class="hide" v-cloak>
+	<!-- 轮播 -->
+	<div class="part1">
+		<div class="w1280 flexR">
+			<div class="part1_left">
+				<div class="swiper-container carousel">
+					<div class="swiper-wrapper">
+												<div class="swiper-slide banner  " >
+															<a href="/news/detail/69.html" class="loaded-filter" target="_blank"><img  class="lazyload loaded-img" data-original="/Upload/20240327/9d94a02eb08d00a17fc219c958eeafc0.jpg"></a>
+													</div>
+												<div class="swiper-slide banner  " >
+															<a href="/news/detail/66.html" target="_blank"><img   src="/Upload/20231205/269b0970f8bb852576ea5451b21a5a19.jpg"></a>
+							
+						</div>
+												<div class="swiper-slide banner  " >
+															<a href="#" class="shangqiao" ><img   src="/Upload/20240418/6fc2877831d49e8bc062899aed1daa15.jpg"></a>
+							
+						</div>
+												<div class="swiper-slide banner  " >
+															<a href="/about.html" target="_blank"><img   src="/Upload/CQ/20240203/4960aa62727d47d87493fc9f36a006c6.jpg"></a>
+							
+						</div>
+												<div class="swiper-slide banner  " >
+															<a href="/product.html" target="_blank"><img   src="/Upload/20230801/b8118f11c47f2eddc399b47cc2c8e740.jpg"></a>
+							
+						</div>
+												<div class="swiper-slide banner  " >
+															<a href="/esg.html" target="_blank"><img   src="/Upload/SH/20220902/29b19bb0f04959d2589e3ec6573d0107.jpg"></a>
+							
+						</div>
+											</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next swiper-button-white swiper-hide"></div>
+					<div class="swiper-button-prev swiper-button-white swiper-hide"></div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination paginatio-banner"></div>
+				</div>
+				<div class="part1_left_bottom">
+					<a href="/esg.html" target="_blank">
+						<dl>
+							<dt style="width: 125px;">
+								<p>ESG碳减排</p>
+								<p>第二树献力循环经济</p>
+							</dt>
+							<dd class="loaded-filter"><img  class="lazyload loaded-img" data-original="/static/web/images/home/new/top-ico1.png?v0930" alt="优惠大促-桌椅柜低至299元"></dd>
+						</dl>
+					</a>
+					<dl>
+						<dt>
+							<p>品质货源</p>
+							<p>名企回收优质货源</p>
+						</dt>
+						<dd class="loaded-filter"><img  class="lazyload loaded-img" data-original="/static/web/images/home/new/top-ico2.png" alt="名企回收优质货源"></dd>
+					</dl>
+					<dl>
+						<dt>
+							<p>现货供应</p>
+							<p>最快24小时送货</p>
+						</dt>
+						<dd class="loaded-filter"><img  class="lazyload loaded-img" data-original="/static/web/images/home/new/top-ico3.png" alt="现货供应"></dd>
+					</dl>
+					<dl>
+						<dt>
+							<p>售后保障</p>
+							<p>提供1-3年售后质保</p>
+						</dt>
+						<dd class="loaded-filter"><img  class="lazyload loaded-img" data-original="/static/web/images/home/new/top-ico4.png" alt="售后保障"></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="part1_right">
+				<div class="right-banner">
+					<p><img  class=" " src="https://static.deartree.com/tree/images/ico/logo3.png" width="25"><span>Hi~欢迎来到第二树</span></p>
+					<p><a href="/product/index/isSpecial/1.html"><span>精选好货</span></a><span class="shangqiao">在线咨询</span></p>
+				</div>
+				<div class="right-form">
+					<div class="form-title">
+						<p>企业采购办公家具就来第二树</p>
+						<p>已有 <span style="color: #50972d">1351</span> 位客户提交</p>
+					</div>
+					<div class="form-submit">
+						<form class="layui-form" action="" method="post">
+							<div class="layui-input-inline" style="width: 100%;padding-bottom: 15px;">
+								<input type="text" name="userName" maxlength="10"  lay-verify="required" placeholder="请输入姓名" class="layui-input" style="height: 40px">
+							</div>
+							<div class="layui-input-inline" style="width: 100%;padding-bottom: 15px;">
+								<input type="text" name="userPhone" maxlength="13"  lay-verify="required" placeholder="请输入手机号" oninput="value=value.replace(/[^\d]/g,'')" class="layui-input" style="height: 40px">
+							</div>
+							<div class="layui-input-inline" style="width: 100%;padding-bottom: 20px;display: flex">
+								<div style="width: 50%">
+									<select id="area_province" name="" lay-verify="required" lay-filter="selctProvinceOnchange">
+										<option value="" selected>请选择省</option>
+									</select>
+								</div>
+								<div style="width: 50%">
+								<select id="area_city" lay-verify="required" lay-filter="selctCityOnchange">
+									<option value="">请选择市</option>
+								</select>
+								</div>
+							</div>
+							<div class="layui-form-item" style="width: 100%;display: flex;">
+								<input type="checkbox" id="userCheck" name="userCheck" lay-skin="primary" checked title="" style="padding: unset !important;">
+								我已阅读并且同意第二树的 <a class="user-xy" style="font-size: 13px;"><span style="color:#50972d;">用户协议</span></a>
+							</div>
+							<div style="width: 100%; margin: 0;">
+								<button type="button" class="layui-btn layui-btn-fluid" style="background-color: #34802a;font-size: 16px;" lay-submit lay-filter="*">立即提交 获取报价</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- part4 -->
+	<div class="part4">
+		<div class="w1280">
+			<div class="layout-tilte" style="padding-bottom: 10px;">
+				<p>可租-可售-可回购全生态体系</p>
+				<p>销售/租赁/回收/仓储一站式服务，让企业经营更高效</p>
+			</div>
+			<div class="ecology-box">
+				<div class="gallery-solid">
+					<div class="swiper-container gallery-thumbs">
+						<div class="swiper-wrapper ecology-nav">
+							<div class="swiper-slide " >
+								<span>家具销售</span>
+							</div>
+							<div class="swiper-slide " >
+								<span>家具租赁</span>
+							</div>
+							<div class="swiper-slide " >
+								<span>家具回收</span>
+							</div>
+							<div class="swiper-slide " >
+								<span>仓储寄存</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-container gallery-top">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide" >
+							<div class="ecology-intro">
+								<div class="intro-item">
+									<div class="item-title">国内外进口品牌二手办公家具一站式购齐</div>
+									<div class="item-box">
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/xs01.png" alt="仅需新品原价1-5折，性价比高"></dt>
+											<dd>
+												<p>节省60%采购成本</p>
+												<p>仅需新品原价1-5折，性价比高</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/xs02.png" alt="知名企业回收，一站式购齐"></dt>
+											<dd>
+												<p>1000余款现货选购</p>
+												<p>知名企业回收，一站式购齐</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/xs03.png" alt="汇集国内外知名家具品牌"></dt>
+											<dd>
+												<p>8-99新品牌货源</p>
+												<p>汇集国内外知名家具品牌</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/xs04.png" alt="满足多元需求,全国各仓调配供货"></dt>
+											<dd>
+												<p>近10万平米仓储选购</p>
+												<p>满足多元需求,全国各仓调配供货</p>
+											</dd>
+										</dl>
+									</div>
+									<div class="item-bottom">
+										<span class="shangqiao">家具采购 立即咨询 ></span>
+									</div>
+								</div>
+								<div class="intro-logo ">
+									<img  class=" " src="https://static.deartree.com/jdwy/images/pc/index-jjxs.png" alt="国内外进口品牌二手办公家具一站式购齐">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide" >
+							<div class="ecology-intro">
+								<div class="intro-item">
+									<div class="item-title">企业轻资产运营，以租代买，办公新趋势</div>
+									<div class="item-box">
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/zl01.png" alt="轻资产节省现金流"></dt>
+											<dd>
+												<p>轻资产节省现金流</p>
+												<p>企业资金合理分配，避免压资金</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/zl02.png" alt="长短租灵活选择"></dt>
+											<dd>
+												<p>长短租灵活选择</p>
+												<p>根据企业阶段需求灵活配置</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/zl03.png" alt="品牌家具一站购齐"></dt>
+											<dd>
+												<p>品牌家具一站购齐</p>
+												<p>提供品牌家具租赁，款式丰富</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/zl04.png" alt="全程保修及维护"></dt>
+											<dd>
+												<p>全程保修及维护</p>
+												<p>租期内全程服务一对一对接</p>
+											</dd>
+										</dl>
+									</div>
+									<div class="item-bottom">
+										<span class="shangqiao">家具租赁 立即咨询 ></span>
+									</div>
+								</div>
+								<div class="intro-logo ">
+									<img  class=" " src="/static/web/images/home/new/st/zl.png" alt="企业轻资产运营，以租代买，办公新趋势">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide" >
+							<div class="ecology-intro">
+								<div class="intro-item">
+									<div class="item-title">1500家名企回收经验，品质家具高价回收</div>
+									<div class="item-box">
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/hs01.png" alt="全国性家具回收"></dt>
+											<dd>
+												<p>全国性家具回收</p>
+												<p>全国9地联营，覆盖地区范围广</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/hs02.png" alt="高品质家具高价回收"></dt>
+											<dd>
+												<p>高品质家具高价回收</p>
+												<p>品质办公家具可达行业最高价</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/hs03.png" alt="行业权威诚信回收"></dt>
+											<dd>
+												<p>行业权威诚信回收</p>
+												<p>规范高效，行业机构权威认证</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/hs04.png" alt="专业家具回收"></dt>
+											<dd>
+												<p>15年专业家具回收</p>
+												<p>专人上门服务，专业回收团队</p>
+											</dd>
+										</dl>
+									</div>
+									<div class="item-bottom">
+										<span class="shangqiao">家具回收 立即咨询 ></span>
+									</div>
+								</div>
+								<div class="intro-logo ">
+									<img  class=" " src="https://static.deartree.com/jdwy/images/pc/kzks-hs.png" alt="1500家名企回收经验，品质家具高价回收">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide" >
+							<div class="ecology-intro">
+								<div class="intro-item">
+									<div class="item-title">企业临时搬迁，家具物资仓储寄存</div>
+									<div class="item-box">
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/cc01.png" alt="拆装搬运经验"></dt>
+											<dd>
+												<p>15年拆装搬运经验</p>
+												<p>配备家具拆装及配送一条龙服务</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/cc02.png" alt="专业家具仓储管理"></dt>
+											<dd>
+												<p>专业家具仓储管理</p>
+												<p>拥有专业化仓储管理团队</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/cc03.png" alt="拥有非常安全的仓储条件"></dt>
+											<dd>
+												<p>近10万平米仓储面积</p>
+												<p>拥有非常安全的仓储条件</p>
+											</dd>
+										</dl>
+										<dl>
+											<dt class=""><img  class=" " src="/static/web/images/home/new/st/cc04.png" alt="众多知名企业合作"></dt>
+											<dd>
+												<p>众多知名企业合作</p>
+												<p>为世楷、滴滴等名企提供服务</p>
+											</dd>
+										</dl>
+									</div>
+									<div class="item-bottom">
+										<span class="shangqiao">仓储寄存 立即咨询 ></span>
+									</div>
+								</div>
+								<div class="intro-logo ">
+									<img  class=" " src="https://static.deartree.com/jdwy/images/pc/ccjc-bg-3.png" alt="企业临时搬迁，家具物资仓储寄存">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- part2
+	<div class="part2" style="display: none">
+		<div class="w1280" >
+			<div class="layout-tilte">
+				<p>第二树循环家具能给企业带来什么</p>
+				<p>基于13年发展史，全流程专业服务，帮助企业打造舒适办公环境</p>
+			</div>
+			<div class="advantage" >
+				<dl >
+					<dd><img data-original="/static/web/images/home/new/ys01.png" class="lazyload"  alt=""></dd>
+					<dt>
+						<p>降低采购成本</p>
+						<p>可为企业节省<span style="color: #50972c">60%以上</span>的成本，采购价仅需新品原价的<span style="color: #50972c">1-3折，</span>性价比高</p>
+					</dt>
+				</dl>
+				<dl >
+					<dd><img data-original="/static/web/images/home/new/ys02.png" class="lazyload"  alt=""></dd>
+					<dt>
+						<p>绿色环保安全</p>
+						<p>二手家具因有一定的使用时间，可有效<span style="color: #50972c">杜绝苯、甲醛等有害气体危害</span></p>
+					</dt>
+				</dl>
+				<dl >
+					<dd><img data-original="/static/web/images/home/new/ys03.png" class="lazyload"  alt=""></dd>
+					<dt>
+						<p>一站式购齐</p>
+						<p><span style="color: #50972c">76500平</span>展厅面积，千余款品牌办公家具库存，方便企业一站式购齐所需家具</p>
+					</dt>
+				</dl>
+				<dl >
+					<dd><img data-original="/static/web/images/home/new/ys04.png" class="lazyload"  alt=""></dd>
+					<dt>
+						<p>名企回收货源</p>
+						<p>微软/谷歌等众多<span style="color: #50972c">世界500强企业</span>建立回收合作关系，货源稳定，品质有保障</p>
+					</dt>
+				</dl>
+				<dl >
+					<dd><img data-original="/static/web/images/home/new/ys05.png" class="lazyload"  alt=""></dd>
+					<dt>
+						<p>批量现货供应</p>
+						<p>产品经过清洗消毒打包后即可<span style="color: #50972c">快速交货</span>送达，速度快效率高，让您省心、省时</p>
+					</dt>
+				</dl>
+				<dl >
+					<dd><img data-original="/static/web/images/home/new/ys06.png" class="lazyload"  alt=""></dd>
+					<dt>
+						<p>贴心售后服务</p>
+						<p>新/99新品牌家具同官方质保时间，二手进口/国产品牌家具<span style="color: #50972c">质保1-3年</span></p>
+					</dt>
+				</dl>
+			</div>
+		</div>
+	</div>
+ -->
+	<!-- part3 -->
+	<div class="part3">
+		<div class="w1280" >
+			<div class="layout-tilte" >
+				<p>全场景一体化办公家具解决方案</p>
+				<p>千余款办公家具现货供应，满足不同阶段企业发展需求</p>
+			</div>
+			<!-- 产品 -->
+			<div class="scheme_box" >
+				<div class="scheme_left">
+					<ul>
+						<li :class="{'faClass':faIdx == 1}" @mouseover="clickFa(1)">精选推荐</li>
+						<li :class="{'faClass':faIdx == 3}" @mouseover="clickFa(3)">工位/职员桌</li>
+						<li :class="{'faClass':faIdx == 4}" @mouseover="clickFa(4)">班台/经理桌</li>
+						<li :class="{'faClass':faIdx == 2}" @mouseover="clickFa(2)">办公椅/电脑椅</li>
+						<li :class="{'faClass':faIdx == 6}" @mouseover="clickFa(6)">文件柜/小推柜</li>
+						<li :class="{'faClass':faIdx == 5}" @mouseover="clickFa(5)">会议桌/洽谈桌</li>
+						<li :class="{'faClass':faIdx == 7}" @mouseover="clickFa(7)">沙发/茶几</li>
+					</ul>
+					<div class="consult-more">
+						<p><a href="/product.html">查看更多优质好货 ></a></p>
+						<p class="shangqiao">立即咨询客服</p>
+					</div>
+				</div>
+				<div class="scheme_right">
+					<ul v-show="faIdx == 1">
+												<li>
+							<a href="/product/detail/411.html" target="_blank" title="高屏风二手职员桌办公桌员工工位电脑桌屏风卡座">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/WH/20240929/74159db76f5762b07ed5122a1b1d72e9.jpg" class="lazyload loaded-img" alt="高屏风二手职员桌办公桌员工工位电脑桌屏风卡座"></p>
+									<p class="over1">高屏风二手职员桌办公桌员工工位电脑桌屏风卡座</p>
+									<p class="over1">多色屏风 1.2米尺寸 经济实惠</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>240</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/388.html" target="_blank" title="带固定柜员工办公桌电脑桌职员桌屏风工位卡位">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/HZ/20240611/3f58e22a7bf68a4ed92d765673684cee.jpeg" class="lazyload loaded-img" alt="带固定柜员工办公桌电脑桌职员桌屏风工位卡位"></p>
+									<p class="over1">带固定柜员工办公桌电脑桌职员桌屏风工位卡位</p>
+									<p class="over1">1.2米常规尺寸 简约百搭 带固定柜</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/386.html" target="_blank" title="品牌二手升降桌电脑桌站坐交替家用二手书桌办公桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/BJ/20240522/19636f84a9d9ff325537c245369dbac4.jpeg" class="lazyload loaded-img" alt="品牌二手升降桌电脑桌站坐交替家用二手书桌办公桌"></p>
+									<p class="over1">品牌二手升降桌电脑桌站坐交替家用二手书桌办公桌</p>
+									<p class="over1">1.2米尺寸 双电机 多挡设立</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1600</em></p>
+									<p style="display: none"><del>新品参考价¥3500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/365.html" target="_blank" title="Novah/诺梵二手办公桌开放式屏风工位员工二手桌椅电脑桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/GZ/20240308/fca115c27f721ac5be6e4faba1ff35e1.jpeg" class="lazyload loaded-img" alt="Novah/诺梵二手办公桌开放式屏风工位员工二手桌椅电脑桌"></p>
+									<p class="over1">Novah/诺梵二手办公桌开放式屏风工位员工二手桌椅电脑桌</p>
+									<p class="over1">1.2米常规尺寸 大企业回收</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>320</em></p>
+									<p style="display: none"><del>新品参考价¥1200</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/342.html" target="_blank" title="品牌二手直板屏风工位员工办公桌电脑桌职员桌子卡座">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/HZ/20231120/81428394829c702cdd62d9d2f91a4ba7.jpeg" class="lazyload loaded-img" alt="品牌二手直板屏风工位员工办公桌电脑桌职员桌子卡座"></p>
+									<p class="over1">品牌二手直板屏风工位员工办公桌电脑桌职员桌子卡座</p>
+									<p class="over1">1.4米尺寸 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>320</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/76.html" target="_blank" title="95成新诺伟二手办公桌员工屏风工位电脑桌职员桌长条桌子 2/4/6人位">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/WH/20220919/6cf085b8bd39f4aa74b9ce1acca66863.jpg" class="lazyload loaded-img" alt="95成新诺伟二手办公桌员工屏风工位电脑桌职员桌长条桌子 2/4/6人位"></p>
+									<p class="over1">95成新诺伟二手办公桌员工屏风工位电脑桌职员桌长条桌子 2/4/6人位</p>
+									<p class="over1">从某知名在线教育集团回收</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥1200</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/373.html" target="_blank" title="Haworth海沃氏二手文件柜钢制柜双开门柜子储物中柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/SZ/20240329/3dbcb7e44b63838438bbeeaa2e50704e.jpeg" class="lazyload loaded-img" alt="Haworth海沃氏二手文件柜钢制柜双开门柜子储物中柜"></p>
+									<p class="over1">Haworth海沃氏二手文件柜钢制柜双开门柜子储物中柜</p>
+									<p class="over1">三层储物 全钢材质</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>600</em></p>
+									<p style="display: none"><del>新品参考价¥2000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/331.html" target="_blank" title="9成新黑色二手办公椅电脑椅职员座椅简约靠背椅子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231016/f67afb3884534bcd3f5ba99682e52f56.jpeg" class="lazyload loaded-img" alt="9成新黑色二手办公椅电脑椅职员座椅简约靠背椅子"></p>
+									<p class="over1">9成新黑色二手办公椅电脑椅职员座椅简约靠背椅子</p>
+									<p class="over1">简约百搭，坐感舒适，详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>260</em></p>
+									<p style="display: none"><del>新品参考价¥500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/363.html" target="_blank" title="世楷SteelcaseLet's B系列二手人体工学椅办公椅电脑椅职员座椅转椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240130/67d775ceb6f36bbebbb0bdb2a4eb53b4.jpeg" class="lazyload loaded-img" alt="世楷SteelcaseLet's B系列二手人体工学椅办公椅电脑椅职员座椅转椅"></p>
+									<p class="over1">世楷SteelcaseLet's B系列二手人体工学椅办公椅电脑椅职员座椅转椅</p>
+									<p class="over1">特价包邮 高支撑性 入门级人体工学椅</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>520</em></p>
+									<p style="display: none"><del>新品参考价¥2500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/353.html" target="_blank" title="全新网布办公椅电脑椅员工座椅转椅职员椅子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231218/c4e95d604cfc45297943ef7ffd8fe197.jpeg" class="lazyload loaded-img" alt="全新网布办公椅电脑椅员工座椅转椅职员椅子"></p>
+									<p class="over1">全新网布办公椅电脑椅员工座椅转椅职员椅子</p>
+									<p class="over1">经济实用 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>260</em></p>
+									<p style="display: none"><del>新品参考价¥400</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+					<ul v-show="faIdx == 3">
+												<li>
+							<a href="/product/detail/400.html" target="_blank" title="欧林二手办公桌电脑桌职员桌屏风工位2/4/6人位办公桌椅组合">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/CD/20240814/c4cadf24da0bad3795480391a9807388.jpeg" class="lazyload loaded-img" alt="欧林二手办公桌电脑桌职员桌屏风工位2/4/6人位办公桌椅组合"></p>
+									<p class="over1">欧林二手办公桌电脑桌职员桌屏风工位2/4/6人位办公桌椅组合</p>
+									<p class="over1">1.3米尺寸，带固定柜</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>380</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/398.html" target="_blank" title="9成新二手开放式工位员工办公桌电脑桌职员桌直条桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240808/c42666694a9007bc994f63b956e36f9c.jpeg" class="lazyload loaded-img" alt="9成新二手开放式工位员工办公桌电脑桌职员桌直条桌"></p>
+									<p class="over1">9成新二手开放式工位员工办公桌电脑桌职员桌直条桌</p>
+									<p class="over1">1.2米常规尺寸 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>240</em></p>
+									<p style="display: none"><del>新品参考价¥900</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/392.html" target="_blank" title="国产二手开放式工位员工办公桌电脑桌职员桌椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240703/36b423d5a424e62e7dd405bda8e67bac.jpeg" class="lazyload loaded-img" alt="国产二手开放式工位员工办公桌电脑桌职员桌椅"></p>
+									<p class="over1">国产二手开放式工位员工办公桌电脑桌职员桌椅</p>
+									<p class="over1">1.2米尺寸 简约百搭 高性价比</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>240</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/388.html" target="_blank" title="带固定柜员工办公桌电脑桌职员桌屏风工位卡位">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/HZ/20240611/3f58e22a7bf68a4ed92d765673684cee.jpeg" class="lazyload loaded-img" alt="带固定柜员工办公桌电脑桌职员桌屏风工位卡位"></p>
+									<p class="over1">带固定柜员工办公桌电脑桌职员桌屏风工位卡位</p>
+									<p class="over1">1.2米常规尺寸 简约百搭 带固定柜</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/375.html" target="_blank" title="开放式二手办公桌电脑桌直条屏风工位职员桌子卡位">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240408/1ecc49d0544c86677717ca69653fa16c.jpeg" class="lazyload loaded-img" alt="开放式二手办公桌电脑桌直条屏风工位职员桌子卡位"></p>
+									<p class="over1">开放式二手办公桌电脑桌直条屏风工位职员桌子卡位</p>
+									<p class="over1">1.2米常规尺寸 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>380</em></p>
+									<p style="display: none"><del>新品参考价¥1600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/369.html" target="_blank" title="赫曼米勒Hermanmiller二手直板屏风工位员工办公桌电脑桌1.6米尺寸">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240321/54d073b8a29e95dadee8e502be48ce9f.jpeg" class="lazyload loaded-img" alt="赫曼米勒Hermanmiller二手直板屏风工位员工办公桌电脑桌1.6米尺寸"></p>
+									<p class="over1">赫曼米勒Hermanmiller二手直板屏风工位员工办公桌电脑桌1.6米尺寸</p>
+									<p class="over1">大尺寸工位，国际大品牌，详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>650</em></p>
+									<p style="display: none"><del>新品参考价¥2500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/355.html" target="_blank" title="9成新品牌二手直条屏风工位员工办公桌开放式电脑桌职员桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231227/beb16eacea39aa0832321e1141dd9418.jpeg" class="lazyload loaded-img" alt="9成新品牌二手直条屏风工位员工办公桌开放式电脑桌职员桌子"></p>
+									<p class="over1">9成新品牌二手直条屏风工位员工办公桌开放式电脑桌职员桌子</p>
+									<p class="over1">1.4米尺寸，带线槽，简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>400</em></p>
+									<p style="display: none"><del>新品参考价¥1600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/336.html" target="_blank" title="诺梵二手办公桌开放式工位员工电脑桌职员桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231025/6f12b58b6e06e8f9f1cc6205f5cd3a77.jpeg" class="lazyload loaded-img" alt="诺梵二手办公桌开放式工位员工电脑桌职员桌"></p>
+									<p class="over1">诺梵二手办公桌开放式工位员工电脑桌职员桌</p>
+									<p class="over1">1.2米尺寸 开放式设计 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>300</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/330.html" target="_blank" title="国产二手办公桌电脑桌职员桌开放式屏风工位带屏风">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231011/35988605b43eadf682916c1fd5a74f39.jpeg" class="lazyload loaded-img" alt="国产二手办公桌电脑桌职员桌开放式屏风工位带屏风"></p>
+									<p class="over1">国产二手办公桌电脑桌职员桌开放式屏风工位带屏风</p>
+									<p class="over1">1.4米尺寸，简约设计，数量很多</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>380</em></p>
+									<p style="display: none"><del>新品参考价¥1400</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/328.html" target="_blank" title="9成新欧林二手开放式屏风工位员工办公桌电脑桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20230926/1a269eec07718a186cf42d1764d9fc69.jpeg" class="lazyload loaded-img" alt="9成新欧林二手开放式屏风工位员工办公桌电脑桌"></p>
+									<p class="over1">9成新欧林二手开放式屏风工位员工办公桌电脑桌</p>
+									<p class="over1">1.4米尺寸，简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>400</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+					<ul v-show="faIdx == 4">
+												<li>
+							<a href="/product/detail/408.html" target="_blank" title="9成新美时Lamex二手班台老板桌经理桌L型办公桌电脑桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240919/42dc2fabc8cb0e2ceafc78b074e04435.jpeg" class="lazyload loaded-img" alt="9成新美时Lamex二手班台老板桌经理桌L型办公桌电脑桌"></p>
+									<p class="over1">9成新美时Lamex二手班台老板桌经理桌L型办公桌电脑桌</p>
+									<p class="over1">1.8米尺寸 枫木色设计</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1400</em></p>
+									<p style="display: none"><del>新品参考价¥4000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/403.html" target="_blank" title="9成新科誉POSH二手班台老板桌经理桌主管办公桌电脑桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240829/dacccde7be8a1098228fc80819c88be7.jpeg" class="lazyload loaded-img" alt="9成新科誉POSH二手班台老板桌经理桌主管办公桌电脑桌"></p>
+									<p class="over1">9成新科誉POSH二手班台老板桌经理桌主管办公桌电脑桌</p>
+									<p class="over1">1.8米尺寸 带副柜</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>2200</em></p>
+									<p style="display: none"><del>新品参考价¥5000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/382.html" target="_blank" title="国林二手班台老板桌经理桌主管办公桌L型桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/BJ/20240509/a29cae9652ca71464bedd25cc005d63b.jpeg" class="lazyload loaded-img" alt="国林二手班台老板桌经理桌主管办公桌L型桌子"></p>
+									<p class="over1">国林二手班台老板桌经理桌主管办公桌L型桌子</p>
+									<p class="over1">2.2米尺寸 环保板材</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>2000</em></p>
+									<p style="display: none"><del>新品参考价¥4500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/377.html" target="_blank" title="品牌二手老板桌班台主管经理桌子办公桌电脑">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240415/ce48e915912e725d9cc0bdb58fb801ed.jpeg" class="lazyload loaded-img" alt="品牌二手老板桌班台主管经理桌子办公桌电脑"></p>
+									<p class="over1">品牌二手老板桌班台主管经理桌子办公桌电脑</p>
+									<p class="over1">可配同款背柜 详细咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1500</em></p>
+									<p style="display: none"><del>新品参考价¥3500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/359.html" target="_blank" title="枫木色经理桌老板桌主管行政办公桌电脑桌子L型班台">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/HZ/20240110/389ea2227b07e6dcd4da26586045eb20.jpeg" class="lazyload loaded-img" alt="枫木色经理桌老板桌主管行政办公桌电脑桌子L型班台"></p>
+									<p class="over1">枫木色经理桌老板桌主管行政办公桌电脑桌子L型班台</p>
+									<p class="over1">2米尺寸 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1800</em></p>
+									<p style="display: none"><del>新品参考价¥2200</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/335.html" target="_blank" title="全新枫木色经理桌老板桌行政主管办公桌电脑桌子 带副柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231023/f4a824ebe6be570c85eb00ce2f901942.jpeg" class="lazyload loaded-img" alt="全新枫木色经理桌老板桌行政主管办公桌电脑桌子 带副柜"></p>
+									<p class="over1">全新枫木色经理桌老板桌行政主管办公桌电脑桌子 带副柜</p>
+									<p class="over1">1.8米尺寸 简约美观 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1280</em></p>
+									<p style="display: none"><del>新品参考价¥1600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/311.html" target="_blank" title="9成新科誉POSH二手经理桌老板桌枫木色班台 带副柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/SH/20230728/5cc70b6645f67e16183f5cd12af3f8bc.jpg" class="lazyload loaded-img" alt="9成新科誉POSH二手经理桌老板桌枫木色班台 带副柜"></p>
+									<p class="over1">9成新科誉POSH二手经理桌老板桌枫木色班台 带副柜</p>
+									<p class="over1">L型设计 带副柜 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1800</em></p>
+									<p style="display: none"><del>新品参考价¥5000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/299.html" target="_blank" title="85成新励致品牌二手班台经理桌老板桌L型主管办公桌电脑桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20230519/13300309ade192554bf9c2b0a376b858.jpg" class="lazyload loaded-img" alt="85成新励致品牌二手班台经理桌老板桌L型主管办公桌电脑桌子"></p>
+									<p class="over1">85成新励致品牌二手班台经理桌老板桌L型主管办公桌电脑桌子</p>
+									<p class="over1">特价优惠 买老板桌送老板椅 数量有限</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>980</em></p>
+									<p style="display: none"><del>新品参考价¥3500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/282.html" target="_blank" title="9成新二手班台老板桌L型经理桌办公桌电脑桌 带副柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20230322/4a5223f2b95e14f3117800bbb7f503db.jpg" class="lazyload loaded-img" alt="9成新二手班台老板桌L型经理桌办公桌电脑桌 带副柜"></p>
+									<p class="over1">9成新二手班台老板桌L型经理桌办公桌电脑桌 带副柜</p>
+									<p class="over1">带副柜，高实用性，枫木色，简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1500</em></p>
+									<p style="display: none"><del>新品参考价¥4000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/240.html" target="_blank" title="9成新震旦AURORA 二手经理桌老板桌行政主管桌L型办公桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20221213/570b09b6c00430420be807f9698ae915.jpg" class="lazyload loaded-img" alt="9成新震旦AURORA 二手经理桌老板桌行政主管桌L型办公桌"></p>
+									<p class="over1">9成新震旦AURORA 二手经理桌老板桌行政主管桌L型办公桌</p>
+									<p class="over1">1.8米尺寸 质量好 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1480</em></p>
+									<p style="display: none"><del>新品参考价¥4800</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+					<ul v-show="faIdx == 2">
+												<li>
+							<a href="/product/detail/414.html" target="_blank" title="9成新世楷Steelcase二手apt系列二手人体工学椅办公椅电脑椅职员椅子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20241014/93ae41f0f28f8f3ecfb528af6b053d9d.jpeg" class="lazyload loaded-img" alt="9成新世楷Steelcase二手apt系列二手人体工学椅办公椅电脑椅职员椅子"></p>
+									<p class="over1">9成新世楷Steelcase二手apt系列二手人体工学椅办公椅电脑椅职员椅子</p>
+									<p class="over1">美国品牌 坐感舒适</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>450</em></p>
+									<p style="display: none"><del>新品参考价¥2000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/410.html" target="_blank" title="黑色网布二手办公椅电脑椅职员椅转椅会议椅座椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/TJ/20240927/d952a5c698e82143459cfa389c282f99.jpeg" class="lazyload loaded-img" alt="黑色网布二手办公椅电脑椅职员椅转椅会议椅座椅"></p>
+									<p class="over1">黑色网布二手办公椅电脑椅职员椅转椅会议椅座椅</p>
+									<p class="over1">钢制脚架 坐感舒适</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/399.html" target="_blank" title="85成新玛拉蒂二手办公椅电脑椅职员椅子转椅网布座椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240813/7fd89b86ba40f9756d25e25b2eb84a9a.jpeg" class="lazyload loaded-img" alt="85成新玛拉蒂二手办公椅电脑椅职员椅子转椅网布座椅"></p>
+									<p class="over1">85成新玛拉蒂二手办公椅电脑椅职员椅子转椅网布座椅</p>
+									<p class="over1">价格经济实惠 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>130</em></p>
+									<p style="display: none"><del>新品参考价¥450</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/394.html" target="_blank" title="Wework办公椅电脑椅职员椅网布转椅简约椅子职员桌椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240711/f7ad4e5f07838a70f31af158d2bf03a8.jpeg" class="lazyload loaded-img" alt="Wework办公椅电脑椅职员椅网布转椅简约椅子职员桌椅"></p>
+									<p class="over1">Wework办公椅电脑椅职员椅网布转椅简约椅子职员桌椅</p>
+									<p class="over1">全新带包装 数量很多</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>380</em></p>
+									<p style="display: none"><del>新品参考价¥500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/391.html" target="_blank" title="优比二手办公椅电脑椅职员椅子转椅黑色座椅 带头枕">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/HZ/20240628/1413b25e091f59cc6b84376dea5e5579.jpeg" class="lazyload loaded-img" alt="优比二手办公椅电脑椅职员椅子转椅黑色座椅 带头枕"></p>
+									<p class="over1">优比二手办公椅电脑椅职员椅子转椅黑色座椅 带头枕</p>
+									<p class="over1">带腰托 带头枕 数量很多 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>260</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/378.html" target="_blank" title="Mastu玛祖铭立二手网布办公椅电脑椅职员椅子转椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240416/b7442a0d42bfaf37d5cff0310325c385.jpeg" class="lazyload loaded-img" alt="Mastu玛祖铭立二手网布办公椅电脑椅职员椅子转椅"></p>
+									<p class="over1">Mastu玛祖铭立二手网布办公椅电脑椅职员椅子转椅</p>
+									<p class="over1">带腰托 坐感舒适</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>450</em></p>
+									<p style="display: none"><del>新品参考价¥1200</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/366.html" target="_blank" title="Ultra/欧美二手网布办公椅电脑椅职员椅子二手转椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/SH/20240318/f66609b7f831197c36eb478c7c38d8bc.jpeg" class="lazyload loaded-img" alt="Ultra/欧美二手网布办公椅电脑椅职员椅子二手转椅"></p>
+									<p class="over1">Ultra/欧美二手网布办公椅电脑椅职员椅子二手转椅</p>
+									<p class="over1">简约款式 百搭各种场景</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>200</em></p>
+									<p style="display: none"><del>新品参考价¥500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/351.html" target="_blank" title="9成新保友金卓二手人体工学椅办公椅电脑椅职员椅子转椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231213/1860c5ad730883559a5c1f36a632052f.jpeg" class="lazyload loaded-img" alt="9成新保友金卓二手人体工学椅办公椅电脑椅职员椅子转椅"></p>
+									<p class="over1">9成新保友金卓二手人体工学椅办公椅电脑椅职员椅子转椅</p>
+									<p class="over1">海绵坐垫 不带头枕</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥1800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/345.html" target="_blank" title="简约二手网布转椅办公椅电脑椅职员椅子会议椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231130/4b73e9359d15b4b47024dd7158e0c7e8.jpeg" class="lazyload loaded-img" alt="简约二手网布转椅办公椅电脑椅职员椅子会议椅"></p>
+									<p class="over1">简约二手网布转椅办公椅电脑椅职员椅子会议椅</p>
+									<p class="over1">高性价比 价格实惠 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>160</em></p>
+									<p style="display: none"><del>新品参考价¥400</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/338.html" target="_blank" title="开林二手办公椅电脑椅职员椅子升降网布转椅">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20231025/0a1ba086f50d286b7d7b189861c8a603.jpeg" class="lazyload loaded-img" alt="开林二手办公椅电脑椅职员椅子升降网布转椅"></p>
+									<p class="over1">开林二手办公椅电脑椅职员椅子升降网布转椅</p>
+									<p class="over1">带头枕，美观高颜值，详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>220</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+					<ul v-show="faIdx == 6">
+												<li>
+							<a href="/product/detail/412.html" target="_blank" title="9成新白色二手钢制柜小推柜活动柜可移动三抽柜储物柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/BJ/20240930/14047efefcac3c139ecd32e48106ae7d.jpeg" class="lazyload loaded-img" alt="9成新白色二手钢制柜小推柜活动柜可移动三抽柜储物柜"></p>
+									<p class="over1">9成新白色二手钢制柜小推柜活动柜可移动三抽柜储物柜</p>
+									<p class="over1">全钢材质 三抽设计</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>200</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/409.html" target="_blank" title="9成新海沃氏Haworth二手文件柜钢制柜中柜储物柜铁皮柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240923/a5f5daa0c5c735a847aa84acc4de29f2.jpeg" class="lazyload loaded-img" alt="9成新海沃氏Haworth二手文件柜钢制柜中柜储物柜铁皮柜"></p>
+									<p class="over1">9成新海沃氏Haworth二手文件柜钢制柜中柜储物柜铁皮柜</p>
+									<p class="over1">进口品牌 全钢材质</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>600</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/393.html" target="_blank" title="二手木质小推柜桌下活动柜文件柜储物柜两抽柜子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240709/9c8925411681d17fc73f912b802da3fb.jpeg" class="lazyload loaded-img" alt="二手木质小推柜桌下活动柜文件柜储物柜两抽柜子"></p>
+									<p class="over1">二手木质小推柜桌下活动柜文件柜储物柜两抽柜子</p>
+									<p class="over1">两抽设计 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>60</em></p>
+									<p style="display: none"><del>新品参考价¥280</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/389.html" target="_blank" title="品牌二手活动柜钢制小推柜三抽可移动柜子桌下储物柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240614/b392a8089f48b57f287451b5684caec3.jpeg" class="lazyload loaded-img" alt="品牌二手活动柜钢制小推柜三抽可移动柜子桌下储物柜"></p>
+									<p class="over1">品牌二手活动柜钢制小推柜三抽可移动柜子桌下储物柜</p>
+									<p class="over1">三抽设计 可移动 密码锁</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>200</em></p>
+									<p style="display: none"><del>新品参考价¥580</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/387.html" target="_blank" title="钢制二手活动柜小推柜桌下三抽柜储物柜子抽屉柜矮柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240530/abe345273caa2826f61cbc3ba2edbb00.jpeg" class="lazyload loaded-img" alt="钢制二手活动柜小推柜桌下三抽柜储物柜子抽屉柜矮柜"></p>
+									<p class="over1">钢制二手活动柜小推柜桌下三抽柜储物柜子抽屉柜矮柜</p>
+									<p class="over1">全钢材质 稳固结实 可移动 数量很多 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>220</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/385.html" target="_blank" title="二手钢制小推柜文件柜可移动活动柜储物柜子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240513/d8603a5e785b9de87b768598441e9f1f.jpeg" class="lazyload loaded-img" alt="二手钢制小推柜文件柜可移动活动柜储物柜子"></p>
+									<p class="over1">二手钢制小推柜文件柜可移动活动柜储物柜子</p>
+									<p class="over1"></p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>160</em></p>
+									<p style="display: none"><del>新品参考价¥500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/376.html" target="_blank" title="白色二手活动柜小推柜桌下三抽柜储物柜子钢制柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240409/47ca4ae55464e0b36e3b665ece6c235f.jpeg" class="lazyload loaded-img" alt="白色二手活动柜小推柜桌下三抽柜储物柜子钢制柜"></p>
+									<p class="over1">白色二手活动柜小推柜桌下三抽柜储物柜子钢制柜</p>
+									<p class="over1">三层储物 全钢材质 稳固结实</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>240</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/368.html" target="_blank" title="品牌二手活动柜钢制小推柜三抽可移动柜子桌下柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240320/aa3b2a0f83cd21468ed78cfeb533dbff.jpeg" class="lazyload loaded-img" alt="品牌二手活动柜钢制小推柜三抽可移动柜子桌下柜"></p>
+									<p class="over1">品牌二手活动柜钢制小推柜三抽可移动柜子桌下柜</p>
+									<p class="over1">三抽设计 可移动 密码锁</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>220</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/362.html" target="_blank" title="9成新海沃氏二手矮柜文件柜办公柜钢制柜子储物柜">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240129/e59884b809244ba1808ed083e21ca403.jpeg" class="lazyload loaded-img" alt="9成新海沃氏二手矮柜文件柜办公柜钢制柜子储物柜"></p>
+									<p class="over1">9成新海沃氏二手矮柜文件柜办公柜钢制柜子储物柜</p>
+									<p class="over1">多层分格，储物方便</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>300</em></p>
+									<p style="display: none"><del>新品参考价¥900</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/352.html" target="_blank" title="Posh/科誉二手钢制矮柜文件柜储物柜多开门柜子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240611/8adddab80f89def629c24f3016575984.jpeg" class="lazyload loaded-img" alt="Posh/科誉二手钢制矮柜文件柜储物柜多开门柜子"></p>
+									<p class="over1">Posh/科誉二手钢制矮柜文件柜储物柜多开门柜子</p>
+									<p class="over1">分格储物 储物方便 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥1000</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+					<ul v-show="faIdx == 5">
+												<li>
+							<a href="/product/detail/406.html" target="_blank" title="9成新二手洽谈桌小方桌可折叠接待桌子会议桌方形桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240909/ce61dd24ef10f5e84ad42e99db37e796.jpeg" class="lazyload loaded-img" alt="9成新二手洽谈桌小方桌可折叠接待桌子会议桌方形桌"></p>
+									<p class="over1">9成新二手洽谈桌小方桌可折叠接待桌子会议桌方形桌</p>
+									<p class="over1">1米方形桌 可折叠</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>280</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/380.html" target="_blank" title="胡桃木色会议桌长桌简约现代办公桌商务接待洽谈大小型长条桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/BJ/20240424/4d886a678ae820960b9931268f982e2c.jpeg" class="lazyload loaded-img" alt="胡桃木色会议桌长桌简约现代办公桌商务接待洽谈大小型长条桌"></p>
+									<p class="over1">胡桃木色会议桌长桌简约现代办公桌商务接待洽谈大小型长条桌</p>
+									<p class="over1">3.2米尺寸，其他尺寸可咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1900</em></p>
+									<p style="display: none"><del>新品参考价¥2500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/361.html" target="_blank" title="9成新枫木色二手独立桌可移动办公桌电脑桌会议桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20240129/ed4b8bccfd6ce2b03818643dfab1a476.jpeg" class="lazyload loaded-img" alt="9成新枫木色二手独立桌可移动办公桌电脑桌会议桌子"></p>
+									<p class="over1">9成新枫木色二手独立桌可移动办公桌电脑桌会议桌子</p>
+									<p class="over1">数量很多，详细可咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>180</em></p>
+									<p style="display: none"><del>新品参考价¥600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/316.html" target="_blank" title="9成新国产二手会议桌板式直条长条桌子会议室办公桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20230814/ea9bc461f4cb46a1e16dc89017acd86d.jpeg" class="lazyload loaded-img" alt="9成新国产二手会议桌板式直条长条桌子会议室办公桌"></p>
+									<p class="over1">9成新国产二手会议桌板式直条长条桌子会议室办公桌</p>
+									<p class="over1">2.1米尺寸 适合中小型会议 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>930</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/315.html" target="_blank" title="9成新国产二手会议桌椭圆形洽谈桌开会桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20230814/a42b2bc2606d9a6c1bbe9c48bf45ff7b.jpeg" class="lazyload loaded-img" alt="9成新国产二手会议桌椭圆形洽谈桌开会桌子"></p>
+									<p class="over1">9成新国产二手会议桌椭圆形洽谈桌开会桌子</p>
+									<p class="over1">1.6米长度 枫木色 简约百搭</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>400</em></p>
+									<p style="display: none"><del>新品参考价¥1200</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/272.html" target="_blank" title="9成新欧林二手会议桌大尺寸会议室开会桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20230302/6611bebac4ef97203725ca55140e3023.jpg" class="lazyload loaded-img" alt="9成新欧林二手会议桌大尺寸会议室开会桌子"></p>
+									<p class="over1">9成新欧林二手会议桌大尺寸会议室开会桌子</p>
+									<p class="over1">3.6米大尺寸 满足更多需求</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1800</em></p>
+									<p style="display: none"><del>新品参考价¥4000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/154.html" target="_blank" title="9成新方形二手洽谈桌会议桌小尺寸桌子 0.6米尺寸">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20221007/c35ab237287a8074dcfb2e78406b2092.jpg" class="lazyload loaded-img" alt="9成新方形二手洽谈桌会议桌小尺寸桌子 0.6米尺寸"></p>
+									<p class="over1">9成新方形二手洽谈桌会议桌小尺寸桌子 0.6米尺寸</p>
+									<p class="over1">环保板材 健康安全 0.6米尺寸 详情可咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/153.html" target="_blank" title="9成新世楷Steelcase 异型二手办公桌可移动会议桌培训桌洽谈桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20221007/246a14f6a392cdf1158a64e6641b23a0.jpg" class="lazyload loaded-img" alt="9成新世楷Steelcase 异型二手办公桌可移动会议桌培训桌洽谈桌"></p>
+									<p class="over1">9成新世楷Steelcase 异型二手办公桌可移动会议桌培训桌洽谈桌</p>
+									<p class="over1">可移动 可组合 优质板材 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>480</em></p>
+									<p style="display: none"><del>新品参考价¥1500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/120.html" target="_blank" title="9成新诺伟品牌二手折叠桌办公桌会议桌培训桌电脑桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220926/86278db3d045ac9053f7efd18f30c1b8.jpg" class="lazyload loaded-img" alt="9成新诺伟品牌二手折叠桌办公桌会议桌培训桌电脑桌"></p>
+									<p class="over1">9成新诺伟品牌二手折叠桌办公桌会议桌培训桌电脑桌</p>
+									<p class="over1">可移动可折叠 自由组合</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>380</em></p>
+									<p style="display: none"><del>新品参考价¥1000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/117.html" target="_blank" title="9成新诺梵二手会议桌圆形洽谈桌小型圆桌接待会客桌子">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220926/5c13308044cbe48b66c0775938eadb9b.jpg" class="lazyload loaded-img" alt="9成新诺梵二手会议桌圆形洽谈桌小型圆桌接待会客桌子"></p>
+									<p class="over1">9成新诺梵二手会议桌圆形洽谈桌小型圆桌接待会客桌子</p>
+									<p class="over1">圆形桌子 环保板材 详情咨询在线客服</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>350</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+					<ul v-show="faIdx == 7">
+												<li>
+							<a href="/product/detail/283.html" target="_blank" title="全新尚客思皮质商务沙发黑色经典沙发组合 ">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/PD/20230323/b0c18963a6ed631b707b3f9eeaf98611.jpg" class="lazyload loaded-img" alt="全新尚客思皮质商务沙发黑色经典沙发组合 "></p>
+									<p class="over1">全新尚客思皮质商务沙发黑色经典沙发组合 </p>
+									<p class="over1">3人位*1+单人位*2 优质皮革</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>2680</em></p>
+									<p style="display: none"><del>新品参考价¥3500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/131.html" target="_blank" title="全新方形木质茶几小茶几沙发配套小桌子 矮方桌">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220920/f6a447c32cc9efe16529ce4d0dfc86c0.jpg" class="lazyload loaded-img" alt="全新方形木质茶几小茶几沙发配套小桌子 矮方桌"></p>
+									<p class="over1">全新方形木质茶几小茶几沙发配套小桌子 矮方桌</p>
+									<p class="over1">钢制支架 简约风格</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>320</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/129.html" target="_blank" title="9成新黎明二手真皮单人沙发办公室接待室洽谈商务沙发">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220920/ad4c04817ca19e7418871480fd9087c1.jpg" class="lazyload loaded-img" alt="9成新黎明二手真皮单人沙发办公室接待室洽谈商务沙发"></p>
+									<p class="over1">9成新黎明二手真皮单人沙发办公室接待室洽谈商务沙发</p>
+									<p class="over1">商务洽谈沙发 可组合</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>550</em></p>
+									<p style="display: none"><del>新品参考价¥2500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/128.html" target="_blank" title="9成新布艺二手双人沙发休闲沙发椅客厅三人位沙发商务洽谈沙发">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220920/d303c1cf2f8113d0d6b7533eaa6a2605.jpg" class="lazyload loaded-img" alt="9成新布艺二手双人沙发休闲沙发椅客厅三人位沙发商务洽谈沙发"></p>
+									<p class="over1">9成新布艺二手双人沙发休闲沙发椅客厅三人位沙发商务洽谈沙发</p>
+									<p class="over1">时尚简约 多色可选</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>750</em></p>
+									<p style="display: none"><del>新品参考价¥1600</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/127.html" target="_blank" title="9成新欧林ONLEAD二手沙发皮质三人位沙发 黑色商务沙发">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220920/a7bdb4a45e017385d31685646032f433.jpg" class="lazyload loaded-img" alt="9成新欧林ONLEAD二手沙发皮质三人位沙发 黑色商务沙发"></p>
+									<p class="over1">9成新欧林ONLEAD二手沙发皮质三人位沙发 黑色商务沙发</p>
+									<p class="over1">优质西皮 成色新</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>1500</em></p>
+									<p style="display: none"><del>新品参考价¥3000</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/126.html" target="_blank" title="全新国产直条长茶几二手茶几现代简约小边几 沙发茶几">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/CD/20220920/f5e6f6eb5fe391bfca603aa27a96984c.jpg" class="lazyload loaded-img" alt="全新国产直条长茶几二手茶几现代简约小边几 沙发茶几"></p>
+									<p class="over1">全新国产直条长茶几二手茶几现代简约小边几 沙发茶几</p>
+									<p class="over1">1.2米长度 钢制支架 时尚简约</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>420</em></p>
+									<p style="display: none"><del>新品参考价¥800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/125.html" target="_blank" title="9成新欧林ONLEAD二手沙发 洽谈椅双人独立休闲沙发">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/CD/20220920/3b57b70c9cf520262ee7a07cd03d2aa2.jpg" class="lazyload loaded-img" alt="9成新欧林ONLEAD二手沙发 洽谈椅双人独立休闲沙发"></p>
+									<p class="over1">9成新欧林ONLEAD二手沙发 洽谈椅双人独立休闲沙发</p>
+									<p class="over1">多色可选 自由搭配</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>750</em></p>
+									<p style="display: none"><del>新品参考价¥2500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/124.html" target="_blank" title="全新精一 组合沙发北欧现代简约单双人沙发 家用办公室 可配茶几">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220926/45120e3e7c095e674436e7169ef4d254.jpg" class="lazyload loaded-img" alt="全新精一 组合沙发北欧现代简约单双人沙发 家用办公室 可配茶几"></p>
+									<p class="over1">全新精一 组合沙发北欧现代简约单双人沙发 家用办公室 可配茶几</p>
+									<p class="over1">2小1大 优质柔软西皮</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>2800</em></p>
+									<p style="display: none"><del>新品参考价¥3500</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/123.html" target="_blank" title="全新尚客思办公沙发商务接待会客洽谈简约现代沙发单人三人办公室沙发">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220926/f412fb3618c20ec22bcb3454cac10fab.jpg" class="lazyload loaded-img" alt="全新尚客思办公沙发商务接待会客洽谈简约现代沙发单人三人办公室沙发"></p>
+									<p class="over1">全新尚客思办公沙发商务接待会客洽谈简约现代沙发单人三人办公室沙发</p>
+									<p class="over1">优质西皮，商务皮质沙发</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>3280</em></p>
+									<p style="display: none"><del>新品参考价¥3800</del></p>
+								</div>
+							</a>
+						</li>
+												<li>
+							<a href="/product/detail/130.html" target="_blank" title="全新精一皮质沙发黑色组合沙发三人位单人沙发茶几">
+								<div class="scheme_li">
+									<p class="loaded-filter"><img data-original="/Upload/20220920/ed89651de47da1cc02511ab5883c9251.jpg" class="lazyload loaded-img" alt="全新精一皮质沙发黑色组合沙发三人位单人沙发茶几"></p>
+									<p class="over1">全新精一皮质沙发黑色组合沙发三人位单人沙发茶几</p>
+									<p class="over1">简约百搭 2小+1大</p>
+									<p style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;" class="shangqiao">立即咨询</p>
+									<p style="display: none">企业价 ¥<em>3600</em></p>
+									<p style="display: none"><del>新品参考价¥4000</del></p>
+								</div>
+							</a>
+						</li>
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="part5">
+		<div class="w1280">
+			<div class="layout-tilte" >
+				<p>第二树办公家具“管家”服务</p>
+				<p>提供办公家具全生命周期服务，定制企业办公家具解决方案</p>
+			</div>
+			<div class="service-box">
+				<dl>
+					<dt><img  class="lazyload" data-original="https://static.deartree.com/jdwy/images/pc/service-1.jpg" alt="全流程专业服务"></dt>
+					<dd>
+						<p>全流程专业服务</p>
+						<p>全程一对一服务，根据企业需求量身定制办公家具解决方案</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img  class="lazyload" data-original="/static/web/images/home/new/service02.png" alt="全流程家具服务体系"></dt>
+					<dd>
+						<p>全流程家具服务体系</p>
+						<p>提供办公家具清洗/维修/改造/拆装/回收/仓储/资产管理等一条龙服务</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img  class="lazyload" data-original="/static/web/images/home/new/service03.png" alt="服务覆盖全国范围"></dt>
+					<dd>
+						<p>服务覆盖全国范围</p>
+						<p>全国13大展厅+仓储点，为全国企业提供办公家具解决方案</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img  class="lazyload" data-original="/static/web/images/home/new/service04.png" alt="绿色低碳供应链"></dt>
+					<dd>
+						<p>绿色低碳供应链</p>
+						<p>为客户颁发碳减排证书，帮助企业减少家具采购过程中的碳排放</p>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<div class="part2">
+		<div class="w1280">
+			<div class="layout-tilte" style="padding-top: unset">
+				<p>一站式专业服务 省心省时省力</p>
+				<p>自建自营服务体系 专业服务团队 快速响应全国覆盖</p>
+			</div>
+			<div class="flow-box">
+				<div class="flow-box-item">
+					<div class="item-content glideover-hover">
+						<dl >
+							<dt><img src="/static/web/images/home/new/flow01.png" alt=""></dt>
+							<dd>
+								<p>售前咨询接待</p>
+								<p>1对1专人接待，沟通收集企业所需业务需求</p>
+							</dd>
+						</dl>
+						<div class="item-content-bottom shangqiao">立即咨询 > </div>
+					</div>
+					<div class="item-ico">
+						<img src="/static/web/images/home/new/right-next.png" class="lazyload" alt="">
+					</div>
+				</div>
+				<div class="flow-box-item">
+					<div class="item-content glideover-hover">
+						<dl>
+							<dt><img src="/static/web/images/home/new/flow02.png" class="lazyload" alt=""></dt>
+							<dd>
+								<p>方案沟通评价</p>
+								<p>根据企业需求，制作定制化办公家具解决方案</p>
+							</dd>
+						</dl>
+						<div class="item-content-bottom shangqiao">立即咨询 > </div>
+					</div>
+					<div class="item-ico">
+						<img src="/static/web/images/home/new/right-next.png" class="lazyload" alt="">
+					</div>
+				</div>
+				<div class="flow-box-item">
+					<div class="item-content glideover-hover">
+						<dl>
+							<dt><img src="/static/web/images/home/new/flow03.png" class="lazyload" alt=""></dt>
+							<dd>
+								<p>项目/服务执行</p>
+								<p>专业团队实施推进，协调相关业务执行</p>
+							</dd>
+						</dl>
+						<div class="item-content-bottom shangqiao">立即咨询 > </div>
+					</div>
+					<div class="item-ico">
+						<img src="/static/web/images/home/new/right-next.png" class="lazyload" alt="">
+					</div>
+				</div>
+				<div class="flow-box-item">
+					<div class="item-content glideover-hover">
+						<dl>
+							<dt><img src="/static/web/images/home/new/flow04.png" class="lazyload" alt=""></dt>
+							<dd>
+								<p>售后回访/服务</p>
+								<p>项目/服务双方验收，完结后售后回访追踪</p>
+							</dd>
+						</dl>
+						<div class="item-content-bottom shangqiao">立即咨询 > </div>
+					</div>
+				</div>
+			</div>
+			<div class="flow-bottom"><p>办公家具购买/租赁、搬迁及仓储等具体业务实施流程，将根据您企业实际需求及合作进行沟通确认</p></div>
+		</div>
+	</div>
+
+	<div class="part6">
+		<div class="w1280">
+			<div class="layout-tilte"  >
+				<p style="color: #ffffff !important;">150000余家企业的共同选择</p>
+				<p style="color: #ffffff !important;">提供办公家具全生命周期服务，定制企业办公家具解决方案</p>
+			</div>
+			<div class="case-box">
+				<div class="gallery-solid case-nav">
+					<div class="swiper-container case-tab">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" @click="clickCase('5_0')">
+								<span>政企单位</span>
+							</div>
+							<div class="swiper-slide " @click="clickCase('1_0')">
+								<span>互联网</span>
+							</div>
+							<div class="swiper-slide " @click="clickCase('2_0')">
+								<span>高新科技</span>
+							</div>
+							<div class="swiper-slide "  @click="clickCase('3_0')">
+								<span>医疗与教育</span>
+							</div>
+							<div class="swiper-slide" @click="clickCase('4_0')">
+								<span>设计与建筑</span>
+							</div>
+
+							<a href="/cases.html" target="_blank">
+							<div class="swiper-slide">
+								<span>查看更多案例 ></span>
+							</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-container case-content">
+					<div class="">
+						<div class=" " >
+														<div class="case-intro" v-show="case_item_idx == '1_0'">
+								<div class="intro-logo ">
+									<img src="/Upload/SZ/20220831/2b71e63353cac1397ce3b70bb779f287.jpg" class="" alt="某国内知名旅游平台成都安装项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>某国内知名旅游平台成都安装项目<em></em></dt>
+										<dd>服务城市：成都</dd>
+										<dd>服务时间：2022年1月</dd>
+										<dd>
+											某国内知名旅游平台，是国内数一数二的旅游搜索引擎，此次在第二树一共采购了1300件办公家具产品。员工办公桌，来自国内知名的家具品牌欧林，此款办公桌是从某大型企业回收过来，基本未使用，成色非常新。  从选品到清场，再到送货安装，历时45天，安装完成后，整体简约美观，契合整体风格。											<a href="/news/detail/45.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '1_0'}" @click="clickCase('1_0')">去哪儿网</p>
+																						<p :class="{'active':case_item_idx ==  '1_1'}" @click="clickCase('1_1')">知名电子商务</p>
+																						<p :class="{'active':case_item_idx ==  '1_2'}" @click="clickCase('1_2')">知名出行</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '1_1'">
+								<div class="intro-logo ">
+									<img src="/Upload/SZ/20220831/ca59f37ff020b784ee848264855c12ad.jpg" class="" alt="某国内知名电子商务集团公司北京项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>某国内知名电子商务集团公司北京项目<em></em></dt>
+										<dd>服务城市：北京</dd>
+										<dd>服务时间：2021年11月</dd>
+										<dd>
+											该电子商务集团与我们第二树一直保持长期的合作关系，此次合作的项目一共几层楼，共计采购办公桌、办公椅、文件柜等办公家具产品1800多套，第二树北京安装师傅历时1个星期，完成了所有家具的运输安装等相关配套服务。											<a href="/news/detail/46.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '1_0'}" @click="clickCase('1_0')">去哪儿网</p>
+																						<p :class="{'active':case_item_idx ==  '1_1'}" @click="clickCase('1_1')">知名电子商务</p>
+																						<p :class="{'active':case_item_idx ==  '1_2'}" @click="clickCase('1_2')">知名出行</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '1_2'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/cd74da372bf7bd23f9850aaf4c2a991a.jpg" class="" alt="北京某知名出行有限公司租赁项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>北京某知名出行有限公司租赁项目<em></em></dt>
+										<dd>服务城市：北京</dd>
+										<dd>服务时间：2020年9月</dd>
+										<dd>
+											该公司一直与我司保持着良好合作关系，从回收到采购和租赁等，都多次选择了我司，此次新增办公地点，需要快速投入使用，我司专业人员经实地测量，结合具体需求，提供了最优办公家具解决方案，一共租赁500余套办公家具，租期1年。											<a href="/news/detail/47.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '1_0'}" @click="clickCase('1_0')">去哪儿网</p>
+																						<p :class="{'active':case_item_idx ==  '1_1'}" @click="clickCase('1_1')">知名电子商务</p>
+																						<p :class="{'active':case_item_idx ==  '1_2'}" @click="clickCase('1_2')">知名出行</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+													</div>
+						<div class=" " >
+														<div class="case-intro" v-show="case_item_idx == '2_0'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/d56033675b58c1c4442a92031da2c3f7.jpg" class="" alt="北京绿盟科技有限公司南京安装项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>北京绿盟科技有限公司南京安装项目<em></em></dt>
+										<dd>服务城市：南京</dd>
+										<dd>服务时间：2022年7月</dd>
+										<dd>
+											北京绿盟科技公司是一家上市企业，成立于2000年，总部位于北京，为多个行业的企业提供全线网络安全产品、全方位安全解决方案。作为第二树的长期合作伙伴，从2019年至今，已有过十几次合作，总计采购办公家具的金额已达百万。今年在南京成立分部，依然选择和我们第二树合作，此次采购二手办公家具约1500多件。											<a href="/news/detail/48.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '2_0'}" @click="clickCase('2_0')">北京绿盟科技</p>
+																						<p :class="{'active':case_item_idx ==  '2_1'}" @click="clickCase('2_1')">中国电子系统</p>
+																						<p :class="{'active':case_item_idx ==  '2_2'}" @click="clickCase('2_2')">智能电动汽车</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '2_1'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/e944bf41201046e9c4496eaca0e9a3e6.jpg" class="" alt="中国电子系统技术公司武汉安装项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>中国电子系统技术公司武汉安装项目<em></em></dt>
+										<dd>服务城市：武汉</dd>
+										<dd>服务时间：2022年6月</dd>
+										<dd>
+											中国电子系统技术有限公司是中国电子网信产业核心企业 、现代数字城市业务牵头单位。通过内部渠道推荐，了解到我们第二树，最后一共采购了880余件二手办公家具产品，从国内某在线教育集团回收，产品成色新、质量好，完全符合该公司的需求。											<a href="/news/detail/49.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '2_0'}" @click="clickCase('2_0')">北京绿盟科技</p>
+																						<p :class="{'active':case_item_idx ==  '2_1'}" @click="clickCase('2_1')">中国电子系统</p>
+																						<p :class="{'active':case_item_idx ==  '2_2'}" @click="clickCase('2_2')">智能电动汽车</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '2_2'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/35b168f595c77ef46aba0280a1831397.jpg" class="" alt="北京某全球化智能电动汽车公司项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>北京某全球化智能电动汽车公司项目<em></em></dt>
+										<dd>服务城市：北京</dd>
+										<dd>服务时间：2021年5月</dd>
+										<dd>
+											为了尽快投入使用，确保员工办公空间的健康安全，此智能电动汽车公司整套家具都选用国际大牌世楷Steelcase旗下的二手办公家具，共计300余件，送货安装历时1个星期。											<a href="/news/detail/50.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '2_0'}" @click="clickCase('2_0')">北京绿盟科技</p>
+																						<p :class="{'active':case_item_idx ==  '2_1'}" @click="clickCase('2_1')">中国电子系统</p>
+																						<p :class="{'active':case_item_idx ==  '2_2'}" @click="clickCase('2_2')">智能电动汽车</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+													</div>
+						<div class=" " >
+														<div class="case-intro" v-show="case_item_idx == '3_0'">
+								<div class="intro-logo ">
+									<img src="/Upload/GZ/20240830/730915ec8fb208d3119e574449f24f55.jpg" class="" alt="国内某教育培训公司二手办公家具采购案例">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>国内某教育培训公司二手办公家具采购案例<em></em></dt>
+										<dd>服务城市：北京/西安</dd>
+										<dd>服务时间：2024年5-8月</dd>
+										<dd>
+											北京某知名教育培训公司是是一家以内容能力与科技能力为基础,以科教、科创、科普为战略方向，助力人的终身成长，并持续探索创新的综合性教育品牌。继5月底成功完成北京办公室近万件办公家具的送货与安装，以及6月中旬西安办公室的办公家具送货安装后，北京办公室第二期项目再次采购了近3000套二手办公家具，其中包括员工办公桌椅柜、会议桌椅、洽谈桌椅、文件柜等。											<a href="/news/detail/88.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '3_0'}" @click="clickCase('3_0')">学而思</p>
+																						<p :class="{'active':case_item_idx ==  '3_1'}" @click="clickCase('3_1')">君润众乐</p>
+																						<p :class="{'active':case_item_idx ==  '3_2'}" @click="clickCase('3_2')">丁香园</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '3_1'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/ad614fa133133c8fc6c7edf77c56964e.jpg" class="" alt="君润众乐企业管理咨询有限公司">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>君润众乐企业管理咨询有限公司<em></em></dt>
+										<dd>服务城市：武汉</dd>
+										<dd>服务时间：2022年7月</dd>
+										<dd>
+											该企业管理咨询公司专注于为服务行业提供一站式人力资源服务，成立于2020年，总部位于深圳，最近在武汉成立了分部，需要采购一批办公家具产品。在我们第二树一共采购了近400多件二手办公家具产品，包含了职员桌椅柜，主管桌椅、会议桌椅等，一站式购齐。											<a href="/news/detail/51.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '3_0'}" @click="clickCase('3_0')">学而思</p>
+																						<p :class="{'active':case_item_idx ==  '3_1'}" @click="clickCase('3_1')">君润众乐</p>
+																						<p :class="{'active':case_item_idx ==  '3_2'}" @click="clickCase('3_2')">丁香园</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '3_2'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/2399efeebfc4e73a1ba446996fe473f3.jpg" class="" alt="杭州某数字医疗健康科技安装项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>杭州某数字医疗健康科技安装项目<em></em></dt>
+										<dd>服务城市：杭州</dd>
+										<dd>服务时间：2022年2月</dd>
+										<dd>
+											该公司是一家国内领先的医疗数字科技企业，总部在杭州，由于业务的增长，需要更换更符合现代办公需求以及人员需求的办公家具，根据已经规划好的办公室家具布置设计，选择了欧林旗下一款很具有现代化的高屏风工位，自带显示器屏幕支架，2月18日，我们杭州安装师傅将84张员工屏风工位全部送货安装完毕，后续还会补充其他家具。											<a href="/news/detail/52.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '3_0'}" @click="clickCase('3_0')">学而思</p>
+																						<p :class="{'active':case_item_idx ==  '3_1'}" @click="clickCase('3_1')">君润众乐</p>
+																						<p :class="{'active':case_item_idx ==  '3_2'}" @click="clickCase('3_2')">丁香园</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+													</div>
+						<div class=" " >
+														<div class="case-intro" v-show="case_item_idx == '4_0'">
+								<div class="intro-logo ">
+									<img src="/Upload/20220901/682bf8a1c9397e65f34c0a8a46e645d2.jpg" class="" alt="中建八局第四建设有限公司成都安装项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>中建八局第四建设有限公司成都安装项目<em></em></dt>
+										<dd>服务城市：成都</dd>
+										<dd>服务时间：2020年6月</dd>
+										<dd>
+											为了更好的服务西南地区的客户，该公司决定在成都建立分部。购置产品包含员工桌椅、会议桌椅、沙发茶几、老板桌椅等共计100余件，从选购到送货安装历时15天左右。											<a href="/news/detail/54.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '4_0'}" @click="clickCase('4_0')">中建八局</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+													</div>
+						<div class=" " >
+														<div class="case-intro" v-show="case_item_idx == '5_0'">
+								<div class="intro-logo ">
+									<img src="/Upload/20240320/27d967d4a14d80dd950924b3c83bc3d5.jpg" class="" alt="中国建筑集团溧阳市政府办公家具采购案例">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>中国建筑集团溧阳市政府办公家具采购案例<em></em></dt>
+										<dd>服务城市：江苏</dd>
+										<dd>服务时间：2024.03.17</dd>
+										<dd>
+											中国建筑集团有限公司，其前身为原国家建工总局，是中国专业化经营历史最久的建筑房地产企业集团之一。此项目位于江苏常驻溧阳市，第二树为溧阳市政府提供了经济环保且符合标准的办公家具解决方案，一共提供了800多件二手办公家具，助力政府机构实现成本控制与资源循环利用的目标。											<a href="/news/detail/74.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '5_0'}" @click="clickCase('5_0')">中国建筑集团</p>
+																						<p :class="{'active':case_item_idx ==  '5_1'}" @click="clickCase('5_1')">成都大运会</p>
+																						<p :class="{'active':case_item_idx ==  '5_2'}" @click="clickCase('5_2')">电力工程公司</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '5_1'">
+								<div class="intro-logo ">
+									<img src="/Upload/SZ/20240301/b1c1e6bc4c3aaa83c3ee4d215a4d1601.jpg" class="" alt="成都大运会办公家具租赁项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>成都大运会办公家具租赁项目<em></em></dt>
+										<dd>服务城市：成都</dd>
+										<dd>服务时间：2023年7月</dd>
+										<dd>
+											7月28日至8月8日，第31届世界大学生夏季运动会在成都举行，作为中国西部第一次举办世界性综合运动会，本届大运会在筹办方面围绕“绿色、智慧、活力、共享”的办赛理念，优先采购使用绿色产品。第二树作为本届大运会组委会指定的办公家具租赁服务商，提供低碳环保、便捷高效的循环家具租赁以及安装服务，便于组委会策划开闭幕式的活动细节，以及大运会期间管理各类事项。											<a href="/news/detail/70.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '5_0'}" @click="clickCase('5_0')">中国建筑集团</p>
+																						<p :class="{'active':case_item_idx ==  '5_1'}" @click="clickCase('5_1')">成都大运会</p>
+																						<p :class="{'active':case_item_idx ==  '5_2'}" @click="clickCase('5_2')">电力工程公司</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+														<div class="case-intro" v-show="case_item_idx == '5_2'">
+								<div class="intro-logo ">
+									<img src="/Upload/SZ/20231208/a062b3ad43495ec6220cad01024bc24c.jpg" class="" alt="重庆某电力工程公司办公家具安装项目">
+								</div>
+								<div class="intro-item">
+									<dl>
+										<dt>重庆某电力工程公司办公家具安装项目<em></em></dt>
+										<dd>服务城市：重庆</dd>
+										<dd>服务时间：2023年9月</dd>
+										<dd>
+											重庆某电力工程公司是一家央企全资控股的公司，主营业务涉及能源电力、建筑工程、市政道路、新能源电力服务等领域，该公司的负责人通过网络平台了解到我们第二树，秉持着为企业节约成本，为社会节约资源的想法，选择了我们第二树的二手办公家具。此项目一共采购了近700多件二手办公家具，主要是员工区的办公桌椅柜。											<a href="/news/detail/67.html" target="_blank"><span style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+																					</dd>
+										<dd>
+																						<p :class="{'active':case_item_idx ==  '5_0'}" @click="clickCase('5_0')">中国建筑集团</p>
+																						<p :class="{'active':case_item_idx ==  '5_1'}" @click="clickCase('5_1')">成都大运会</p>
+																						<p :class="{'active':case_item_idx ==  '5_2'}" @click="clickCase('5_2')">电力工程公司</p>
+																					</dd>
+									</dl>
+								</div>
+							</div>
+													</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="part7">
+		<div class="w1280">
+			<div class="layout-tilte" >
+				<p>深耕办公服务圈 助力企业ESG碳减排</p>
+				<p>为企业提供注重经济与环境双重效应的循环办公家具解决方案</p>
+			</div>
+			<div class="charity-box">
+				<div class="charity-left">
+					<dl>
+						<dd>第二树助力ESG碳减排</dd>
+						<dd>第二树从2009年创立至今，始终秉持着“为客户降低成本、为社会节约资源、为环境减少排放”的理念。将回收产品的质量成色及安全性分类鉴定，筛选出可循环使用产品，为企业提供注重经济和环境双重效益的循环办公家具解决方案。</dd>
+						<dd>
+							<div class="dd-item"><div><span>90816</span><em>家</em></div><div style="color: #999;">合作客户数</div></div>
+							<div class="dd-item"><div><span>1150334</span><em>件</em></div><div style="color: #999;">循环家具数</div></div>
+							<div class="dd-item"><div><span>27468720</span><em>kg</em></div><div style="color: #999;">合计减碳值</div></div>
+						</dd>
+						<dd>（数据统计周期：2021年1月1日0时至今）</dd>
+						<dd><a href="/esg.html">更多ESG信息 查看详情 ></a></dd>
+					</dl>
+				</div>
+				<div class="charity-right">
+					<dl>
+						<dt>
+							<img src="/static/web/images/home/new/charity01.png"  alt="">
+							<img src="/static/web/images/home/new/charity02.png"  alt="">
+							<img src="/static/web/images/home/new/charity03.png"  alt="">
+						</dt>
+						<dd>
+							根据中环联合颁布的碳减排证书核算逻辑，符合相关条件可为企业提供碳减
+							排评价证书，帮助企业实现碳中和。
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="news">
+		<div class="w1280">
+			<div class="layout-tilte" >
+				<p>二手办公家具行业资讯</p>
+				<p>更快掌握第二树最新动态和行业动态 <a href="/news.html" target="_blank"><sapn>查看全部资讯></sapn></a></p>
+			</div>
+			<div class="news-box">
+				<div class="news-box-left">
+										<a href="/news/detail/90.html" target="_blank">
+					<dl>
+						<dt style="background-image:  url('/Upload/CD/20240925/d4640bc5afe67fca8fabd6a468df8795.jpg')"></dt>
+						<dd>
+							<p class="over2">二手办公家具因其环保效和成本效益，正日益受到企业的青睐</p>
+							<p>
+								<span>
+
+									市场资讯
+									
+								</span>
+								<span>2024年09月</span>
+							</p>
+						</dd>
+					</dl>
+					</a>
+									</div>
+				<div class="news-box-right">
+                    					<a href="/news/detail/87.html" target="_blank">
+					<dl>
+						<dt class="over2">企业采购二手办公家具是选择品牌还是普通产品呢？</dt>
+						<dd>
+                            <span>
+								家具知识
+								                            </span>
+                            <span>2024年08月</span>
+                        </dd>
+					</dl>
+					</a>
+                    					<a href="/news/detail/85.html" target="_blank">
+					<dl>
+						<dt class="over2">二手办公家具是否值得企业购买？</dt>
+						<dd>
+                            <span>
+								家具知识
+								                            </span>
+                            <span>2024年07月</span>
+                        </dd>
+					</dl>
+					</a>
+                    					<a href="/news/detail/84.html" target="_blank">
+					<dl>
+						<dt class="over2">1800件大企回收的二手办公家具已入库，价格美丽</dt>
+						<dd>
+                            <span>
+								企业动态
+								                            </span>
+                            <span>2024年06月</span>
+                        </dd>
+					</dl>
+					</a>
+                    					<a href="/news/detail/78.html" target="_blank">
+					<dl>
+						<dt class="over2">第二树服务案例分享：北京某文化传媒公司二手办公家具采购案例</dt>
+						<dd>
+                            <span>
+								企业动态
+								                            </span>
+                            <span>2024年04月</span>
+                        </dd>
+					</dl>
+					</a>
+                    					<a href="/news/detail/69.html" target="_blank">
+					<dl>
+						<dt class="over2">引领规范旧货市场，国内首个《二手 （旧）办公家具流通技术要求》正式上线！</dt>
+						<dd>
+                            <span>
+								企业动态
+								                            </span>
+                            <span>2024年01月</span>
+                        </dd>
+					</dl>
+					</a>
+                    					<a href="/news/detail/66.html" target="_blank">
+					<dl>
+						<dt class="over2">推动办公领域可持续商业实践，第二树循环家具荣获“2023向光奖”！</dt>
+						<dd>
+                            <span>
+								企业动态
+								                            </span>
+                            <span>2023年12月</span>
+                        </dd>
+					</dl>
+					</a>
+                    				</div>
+			</div>
+		</div>
+	</div>
+		<!-- part8 -->
+	<div class="part8  banner">
+		<p>第二树致力于 “绿色节能” 的办公方式让每一位客户成为全球绿色节能和降低碳排放的贡献者</p>
+		<p class="shangqiao">查看详情>></p>
+	</div>
+
+</section>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <footer>
+            <div class="footer-guarantee">
+                <div class="w1280 flexRC" style="border-bottom: 1px solid #bfbfbf;">
+                    <dl>
+                        <dt><img src="/static/web/images/footer-bz1.png" alt="全国连锁" ></dt>
+                        <dd>
+                            <p>全国连锁</p>
+                            <p>全国13家分公司</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="/static/web/images/footer-bz2.png" alt="专业服务"></dt>
+                        <dd>
+                            <p>专业服务</p>
+                            <p>15年成熟服务经验</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="/static/web/images/footer-bz3.png" alt="现货仓储"></dt>
+                        <dd>
+                            <p>现货仓储</p>
+                            <p>全国近10万平仓储面积</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img src="/static/web/images/footer-bz4.png" alt="国内外名企回收货源"></dt>
+                        <dd style="width: 160px;">
+                            <p>品质货源</p>
+                            <p>国内外名企回收货源</p>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="footer-mode flexRC">
+                <div class="w1280 flexR" style="padding-top: 45px;">
+                    <!--<div class="logo flexCC"><a href="https://www.jdwy.cn" target="_blank"><img src="/static/web/images/logo3.png"></a></div>-->
+                    <ul class="nav ">
+                        <li><b>认识我们</b></li>
+                        <li><a href="/help/5.html" title="关于我们" target="_blank">关于我们</a></li>
+                        <li><a href="/help/6.html" title="发展历程" target="_blank">发展历程</a></li>
+                        <li><a href="/help/7.html" title="展厅地址" target="_blank">展厅地址</a></li>
+                        <li><a href="/help/8.html" title="爱心公益" target="_blank">爱心公益</a></li>
+                        <li><a href="/case.html" title="服务案例" target="_blank">服务案例</a></li>
+                        <li><a href="/esg.html" title="第二树ESG" target="_blank">第二树ESG</a></li>
+                    </ul>
+                    <ul class="nav ">
+                        <li><b>产品种类</b></li>
+                        <li><a href="/product/index/type/2.html" title="工位/职员桌" target="_blank">工位/职员桌</a></li>
+                        <li><a href="/product/index/type/3.html" title="班台/经理桌" target="_blank">班台/经理桌</a></li>
+                        <li><a href="/product/index/type/1.html" title="办公椅/电脑椅" target="_blank">办公椅/电脑椅</a></li>
+                        <li><a href="/product/index/type/5.html" title="件柜/小推柜" target="_blank">文件柜/小推柜</a></li>
+                        <li><a href="/product/index/type/4.html" target="_blank">会议桌/洽谈桌</a></li>
+                        <li><a href="/product/index/type/6.html" title="件柜/小推柜" target="_blank">沙发/茶几</a></li>
+                    </ul>
+                    <ul class="nav ">
+                        <li><b>服务支持</b></li>
+                        <li><a href="/help/1.html" title="租赁业务" target="_blank">租赁业务</a></li>
+                        <li><a href="/help/2.html" title="回收业务" target="_blank">回收业务</a></li>
+                        <li><a href="/help/3.html" title="售后保障" target="_blank">售后保障</a></li>
+                        <li><a href="/help/4.html" title="配送说明" target="_blank">配送说明</a></li>
+                    </ul>
+                    <ul class="nav ">
+                        <li><b>资讯动态</b></li>
+                        <li><a href="/news/list/type/3.html" title="企业动态" target="_blank">企业动态</a></li>
+                        <li><a href="/news/list/type/4.html" title="市场资讯" target="_blank">市场资讯</a></li>
+                        <li><a href="/news/list/type/5.html" title="优惠活动" target="_blank">优惠活动</a></li>
+                        <li><a href="/news/list/type/6.html" title="好货推荐" target="_blank">好货推荐</a></li>
+                        <li><a href="/news/list/type/7.html" title="家具知识" target="_blank">家具知识</a></li>
+                    </ul>
+                    <div class="mode-link"><div class="link-center"></div></div>
+                    <div class="contact ">
+                        <p><a href="https://www.jdwy.cn" target="_blank"><img src="/static/web/images/logo3.png" style="width: 180px;"></a></p>
+                        <p>全国统一服务热线</p>
+                        <p>400-178-1088</p>
+                        <p>（周一至周日 08:00-22:00）</p>
+                        <p>关注第二树</p>
+                        <ul>
+                            <li onmousemove="qrcodeShow(1)" onmouseout="qrcodeHide()">
+                                <img class="qrcode-no" src="/static/web/images/ico-wx-no.png" style="width:32px;height:32px;cursor: pointer;padding-right: 30px">
+                                <img class="qrcode-yes" src="/static/web/images/ico-wx-yes.png" style="width:32px;height:32px;cursor: pointer;display:none;padding-right: 30px">
+                                <div class="qrcode-img pop-img01">
+                                    <img src="/static/web/images/qrcode-wx.png">
+                                </div>
+                            </li>
+                            <li onmousemove="qrcodeShow(2)" onmouseout="qrcodeHide()">
+                                <img class="qrcode-no" src="/static/web/images/ico-wb-no.png" style="width:32px;height:32px;cursor: pointer;padding-right: 30px">
+                                <img class="qrcode-yes" src="/static/web/images/ico-wb-yes.png" style="width:32px;height:32px;cursor: pointer;display:none;padding-right: 30px">
+                                <div class="qrcode-img pop-img02">
+                                    <img src="/static/web/images/qrcode-wb.png">
+                                </div>
+                            </li>
+                            <li onmousemove="qrcodeShow(3)" onmouseout="qrcodeHide()">
+                                <img class="qrcode-no" src="/static/web/images/ico-dy-no.png" style="width:32px;height:32px;cursor: pointer;">
+                                <img class="qrcode-yes" src="/static/web/images/ico-dy-yes.png" style="width:32px;height:32px;cursor: pointer;display:none;">
+                                <div class="qrcode-img pop-img03">
+                                    <img src="/static/web/images/qrcode-dy.png">
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--<div class="attention"><img src="/static/web/images/wx.png" >关注公众号</div>-->
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <div class="w1280 links-box">
+                    <div class="links-left">
+                        友情链接：
+                    </div>
+                    <div class="links-right">
+                        <ul>
+                            <li><a href="https://bj.jdwy.cn/" target="_blank">北京二手办公家具</a></li>
+                            <li><a href="https://sh.jdwy.cn/" target="_blank">上海二手办公家具</a></li>
+                            <li><a href="https://gz.jdwy.cn/" target="_blank">广州二手办公家具</a></li>
+                            <li><a href="https://sz.jdwy.cn/" target="_blank">深圳二手办公家具</a></li>
+                            <li><a href="https://tj.jdwy.cn/" target="_blank">天津二手办公家具</a></li>
+                            <li><a href="https://wh.jdwy.cn/" target="_blank">武汉二手办公家具</a></li>
+                            <li><a href="https://hz.jdwy.cn/" target="_blank">杭州二手办公家具</a></li>
+                            <li><a href="https://cd.jdwy.cn/" target="_blank">成都二手办公家具</a></li>
+                            <li><a href="https://cq.jdwy.cn/" target="_blank">重庆二手办公家具</a></li>
+                            <li><a href="https://hs.jdwy.cn/" target="_blank">二手办公家具回收</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <div class="w1280 flexRC">
+                    <p>北京京东文仪家具有限公司（第二树循环家具）</p>
+                    <p>&nbsp;|&nbsp;&nbsp; Copyright HuNan Deartree All rights reserved.&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                    <p><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备12000316号</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--右侧导航-->
+    <ul class="rightMenu">
+        <li onmousemove="rightMenuShow(1)" onmouseout="rightMenuHide()">
+            <a href="javascript:void (0)" title="">
+				<span class="maximg">
+					<img class="img1" alt="" src="/static/web/images/home/new/rightNav-01.png" style="height: 100%;"/>
+					<img class="img2" alt="" src="/static/web/images/home/new/rightNav-on-01.png" style="height: 100%;"/>
+				</span>
+                <p>咨询热线</p>
+            </a>
+            <div class="rightMenu-show pop-menu01">
+                <p>400-178-1088</p>
+                <p>周一至周日  8:00-22:00</p>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:void (0)" title="" class="shangqiao">
+				<span class="maximg">
+					<img class="img1" alt="" src="/static/web/images/home/new/rightNav-03.png" />
+					<img class="img2" alt="" src="/static/web/images/home/new/rightNav-on-03.png" />
+				</span>
+                <p>联系客服</p>
+            </a>
+        </li>
+        <!--<li style="display: none">-->
+            <!--<a >-->
+			<!--<span class="maximg">-->
+				<!--<img class="img1" alt="" src="/static/web/images/home/new/rightNav-04.png" />-->
+				<!--<img class="img2" alt="" src="/static/web/images/home/new/rightNav-on-04.png" />-->
+			<!--</span>-->
+                <!--<p>批量采购</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <li class="zhiding" id="zhiding">
+            <a href="javascript:void(0)" title="">
+			<span class="maximg">
+				<img class="img1" alt="" src="/static/web/images/home/new/rightNav-05.png" />
+				<img class="img2" alt="" src="/static/web/images/home/new/rightNav-on-05.png" />
+			</span>
+                <p>回到顶部</p>
+            </a>
+        </li>
+    </ul>
+
+    <!--底部悬浮表单-->
+    <div class="footerForm" >
+        <div id="colseFrom" class="colse check-open" onclick="showFooterForm()"></div>
+        <div style="background: rgba(0, 0, 0, 0.7);">
+            <div class="w1280 footerForm-in">
+                <span>一站式办公家具服务　<strong>省钱买 放心用</strong></span>
+                <input placeholder="请输入姓名" maxlength="8"  type="text" id="userNameFrom"/>
+                <input placeholder="请输入手机号" maxlength="11" type="text" id="userPhoneFrom"/>
+                <button type="button" onclick="saveConsult()" style="cursor: pointer">提交申请</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--JS引用-->
+<script src="/static/web/layui/layui.js"></script>
+<script>
+    var layer = layui.layer,
+        element = layui.element,
+        form = layui.form;
+</script>
+<script src="/static/web/js/jquery-3.4.1.min.js"></script>
+<script src="/static/web/js/swiper.js"></script>
+<script src="/static/web/js/jquery.lazyload.js"></script>
+<script src="/static/web/js/common.js"></script>
+<script src="/static/web/js/scrollReveal.js"></script>
+
+<!--页面JS脚本-->
+
+
+<script src="/static/web/js/vue.js"></script>
+<script src="/static/web/js/axios.min.js"></script>
+<script src="/static/web/js/index.js?20240328"></script>
+<script src="/static/web/js/area.js"></script>
+
+<script>
+	(function(){
+		getProvince();
+	})();
+
+	function rightMenuShow(type) {
+		$('.rightMenu-show').hide();
+		$('.pop-menu0'+type).show();
+	}
+	
+	function rightMenuHide() {
+		$('.rightMenu-show').hide();
+	}
+
+	//返回顶部效果
+	function goTopEx(num) {
+		var obj = document.getElementById("zhiding");
+		function getScrollTop() {
+			return $(window).scrollTop();
+		}
+		function setScrollTop(value) {
+			$(window).scrollTop(value);
+		}
+		//body往上滚动至600的距离 出现指定按钮
+		window.onscroll = function () { getScrollTop() > 600 ? obj.style.display = "block" : obj.style.display = "none"; }
+		obj.onclick = function () {
+			var goTop = setInterval(scrollMove, num);//滚动速度
+			function scrollMove() {
+				setScrollTop(getScrollTop() / 1.1);
+				if (getScrollTop() < 1) clearInterval(goTop);
+			}
+		}
+	}
+
+	//获取省份
+	function getProvince(){
+		var provinceSelect = $('#area_province');
+		for(var key in province){
+			provinceSelect.append('<option value="'+ key +'">'+ province[key] +'</option>');
+		}
+	}
+	form.on('select(selctProvinceOnchange)', function(data){
+		var selectId = data.value;
+		var citySelect = $('#area_city');
+		citySelect.empty();
+		var cityList = city[selectId];
+		for(var key in cityList){
+			citySelect.append('<option value="'+ key +'">'+ cityList[key] +'</option>');
+		}
+		form.render('select');
+	});
+
+	form.on('submit(*)', function (data) {
+		var provinceName =  $('#area_province').find("option:selected").text();
+		var cityName = $('#area_city').find("option:selected").text();
+		if(document.getElementById("userCheck").checked==false){
+			layer.msg('请您同意勾选第二树《用户协议》');
+			return false;
+		}
+		layer.load();
+		$.ajax({
+			url: 'https://www.jdwy.cn/api/home/consultSubmit',
+			type: data.form.method,
+			data: $(data.form).serialize()+"&provinceName="+provinceName+"&cityName="+cityName+"&sourceTxt=JDWY站点",
+			success: function (info) {
+				if (info.code === 1) {
+					layer.msg(info.msg);
+					setTimeout(function () {
+						window.location.reload()
+					}, 1000);
+				} else {
+					layer.msg(info.msg);
+					layer.closeAll('loading');
+				}
+			}
+		});
+		return false;
+	});
+
+	//用户注册协议
+	$('.user-xy').on('click', function () {
+		var content = '<div style="padding: 20px;font-size: 14px">' +
+				'<div style="font-size: 16px;font-weight:700;text-align: center">第二树用户注册协议和隐私政策</div>' +
+				'<br>' +
+				'《个人信息保护政策》<br>' +
+				' <br>' +
+				'湖南第二树循环家具有限公司（以下称“我公司）深知认为个人信息对您的重要性，并会尽全力保护您的个人信息安全可靠。我公司致力于维持您对我公司的信任，在利用我公司第二树网站（以下称”本网站”）时，您所提供的个人信息，我公司将慎重处理，极力保护您的个人信息。为切实保护您的个人信息，我公司根据现行法律法规，制定了本《个人信息保护政策》。本《个人信息保护政策》将说明本网站在收集、使用、保护、公开披露、删除用户个人信息等方面的措施。<br>' +
+				'本《个人信息保护政策》适用于我公司向您提供的所有服务，无论您是通过计算机设备、移动终端或其他设备获得的服务。<br>' +
+				'本《个人信息保护政策》是您使用本网站服务及各项功能的基础，请您在使用本网站提供服务前，仔细阅读并明确您已经充分理解、接受本政策的内容，您可以根据自己的需求做出接受与否的选择。具体内容如下：<br>' +
+				' <br>' +
+				'【关于个人信息的收集】<br>' +
+				'您已知悉且同意，在您注册本网站帐号或使用本网站提供服务时，本网站将记录您提供的相关个人信息，如：邮箱、手机号码等，上述个人信息是您获得本网站提供服务的基础。<br>' +
+				'另，在您利用本网站时，需要输入个人信息时，本网站必定将收集的目的和方法明确表示，未经您的许可，不会收集您的个人信息。但是如果您不同意提供相关个人信息，您将可能无法使用本网站的全部或部分功能和服务。<br>' +
+				' <br>' +
+				'【关于个人信息的使用】<br>' +
+				'为了向您提供优质服务，我公司会在下述情形使用您的个人信息：<br>' +
+				'1）根据相关法律法规的要求；<br>' +
+				'2）根据您的授权；<br>' +
+				'3）根据本网站相关服务条款等的约定。<br>' +
+				'此外，您已知悉并同意：我公司将不定期向您提供广告和促销资料或向您推荐本网站的服务信息。若您拒绝我公司不定期向您提供相关推广服务，您可以根据提示退订相关服务。<br>' +
+				'未经您本人允许，我公司不会向任何第三方披露您的个人信息，但下列情形除外：<br>' +
+				'1）本网站已经取得您明确的同意；<br>' +
+				'2）司法机关或行政机关基于法律程序要求本网站披露的；<br>' +
+				'3）本网站在为维护自身合法权益而向用户提起诉讼或仲裁时；<br>' +
+				'4）根据您与本网站相关服务条款的约定；<br>' +
+				'5）法律法规规定的其他情形。<br>' +
+				' <br>' +
+				'【关于个人信息的保护】<br>' +
+				'我公司将努力保护其获得的用户个人信息，为防止您的个人信息在意外的、未经授权的情况下被非法访问、复制、修改、传送、遗失、破坏、处理或使用，我公司采取以下措施保护您的个人信息：<br>' +
+				'<br>' +
+				'采取合适的安全措施和技术手段存储及保护你的个人信息，以适当的方式对用户的个人信息进行加密处理，且存储在中国境内服务器上；<br>' +
+				'<br>' +
+				'在适当的位置使用密码对用户个人信息进行保护；<br>' +
+				'<br>' +
+				'限制对用户个人信息的访问，仅允许有必要知晓这些信息的人员访问个人信息，并要求他们履行相应的保密义务；<br>' +
+				'<br>' +
+				'其他的合理措施。<br>' +
+				'<br>' +
+				'若发生个人信息引发的安全事件，我公司按法律法规的要求，及时向您告知情况及措施。并将第一事件向相应主管机关报备，并即时进行问题排查，开展应急措施或行动。<br>' +
+				'尽管已经采取了上述合理有效措施，但我公司仍然无法保证您的个人信息通过不安全途径进行交流时的安全性。因此，您也应采取积极措施保证个人信息的安全，如：定期修改账号密码，不将自己的账号密码等个人信息透露给其他人。<br>' +
+				' <br>' +
+				'【未成年人个人信息的特别保护】<br>' +
+				'本网站的服务主要面向成人。如果没有父母或监护人的同意，未成年人不应创建自己的个人信息主体账户。<br>' +
+				'若您是14周岁以下的未成年人，在使用本网站的服务前，应确保事先取得监护人的同意，如果您是已满14不满18岁的未成年人，在使用本网站的服务前，应确保事先取得未成年人本人或监护人的同意。如您本人在本网站上申请注册账号，本网站将默认为您已明示同意。<br>' +
+				'对于经14周岁以上的未成年人本人或监护人同意而收集的未成年人个人信息的情况，本网站只会在受到法律允许或监护人明确同意或者保护未成年人所必要的情况下使用或公开披露此信息。<br>' +
+				' <br>' +
+				'【个人信息主体的权利】<br>' +
+				'<br>' +
+				'当您完成本网站的帐号注册后，您可以查阅、更正、删除您提交给本网站的个人信息。一般情况下，您可随时浏览、更正、删除自己提交的相关个人信息，但您可能无法修改注册时提供的某些初始注册信息及验证信息。<br>' +
+				'<br>' +
+				'你可以自主注销本网站的账户，注销后本网站将停止为您提供服务，并根据您的要求，删除您的个人信息，不再收集你的个人信息。<br>' +
+				'<br>' +
+				' <br>' +
+				'【个人信息保护政策的更新】<br>' +
+				'我公司将根据法律法规不定期更新本《个人信息保护政策》，更新后将直接在本网站上进行公布，当您继续使用本网站服务的，即视为您同意更新后的《个人信息保护政策的》内容。如果您不同意本网站对本《个人信息保护政策》相关条款所做的修改，您有权要求停止使用本网站的服务。<br>' +
+				' <br>' +
+				'如果您对本《个人信息保护政策》有任何疑问、意见或建议，请通过以下方式与我公司联系。<br>' +
+				'电 话：400-178-1088<br>' +
+				'<br>' +
+				'电子邮件：haohua@deartree.com ' +
+				'</div>';
+		layer.open({
+			type: 1 //Page 层类型
+			,area: ['1200px', '600px']
+			,title: '用户协议'
+			,shade: 0.6 //遮罩透明度
+			,maxmin: true //允许全屏最小化
+			,anim: 0 //0-6的动画形式，-1不开启
+			,content: content,
+			btn: '同意并继续',btnAlign: 'c' //按钮居中
+			,yes: function(){
+				$("#userCheck").prop("checked",true);
+				form.render('checkbox');
+				layer.closeAll();
+			}
+		});
+	});
+</script>
+
+<script>
+    (function(){
+        $("img.lazyload").lazyload();
+        $('.zhiding').hide();//默认隐藏指定按钮
+        goTopEx(20);//返回顶部 参数为滚动速度
+    })();
+
+    // 右侧导航
+    function rightMenuShow(type) {
+        $('.rightMenu-show').hide();
+        $('.pop-menu0'+type).show();
+    }
+
+    function rightMenuHide() {
+        $('.rightMenu-show').hide();
+    }
+
+    //底部二维码
+    function qrcodeShow(type) {
+        $('.qrcode-img').hide();
+        $('.pop-img0'+type).show();
+    }
+
+    function qrcodeHide() {
+        $('.qrcode-img').hide();
+    }
+
+    //返回顶部效果
+    function goTopEx(num) {
+        var obj = document.getElementById("zhiding");
+        function getScrollTop() {
+            return $(window).scrollTop();
+        }
+        function setScrollTop(value) {
+            $(window).scrollTop(value);
+        }
+        //body往上滚动至600的距离 出现指定按钮
+        window.onscroll = function () { getScrollTop() > 600 ? obj.style.display = "block" : obj.style.display = "none"; }
+        obj.onclick = function () {
+            var goTop = setInterval(scrollMove, num);//滚动速度
+            function scrollMove() {
+                setScrollTop(getScrollTop() / 1.1);
+                if (getScrollTop() < 1) clearInterval(goTop);
+            }
+        }
+    }
+
+    //底部浮层
+    function showFooterForm(){
+        if($('#colseFrom').hasClass('check-close')){
+            $('#colseFrom').removeClass('check-close');
+            $('#colseFrom').addClass('check-open');
+            $(".footerForm").animate({bottom:'-80px'},500);
+
+        }else{
+            $('#colseFrom').removeClass('check-open');
+            $('#colseFrom').addClass('check-close');
+            $(".footerForm").animate({bottom:'0'},500);
+
+        }
+    }
+
+    function saveConsult() {
+        var userName =  $('#userNameFrom').val();
+        var userPhone =  $('#userPhoneFrom').val();
+
+        if(userName == '' )
+        {
+            layer.msg('请输入姓名');
+            return false;
+        }
+        if(!/^1[2|3|4|5|6|7|8|9][0-9]\d{8}$/.test(userPhone)){
+            layer.msg('手机号填写错误!');
+            return false;
+        }
+
+        $.ajax({
+            url: 'https://www.jdwy.cn/api/home/consultSubmit',
+            type: 'post',
+            data: {
+                sourceTxt:'Jdwy浮层',
+                userName:userName,
+                userPhone:userPhone,
+            },
+            success: function (info) {
+                if (info.code === 1) {
+                    layer.msg('提交成功，专业客服会尽快与您联系');
+                    setTimeout(function () {
+                        window.location.reload()
+                    }, 1000);
+                } else {
+                    layer.msg(info.msg);
+                }
+            }
+        });
+        return false;
+    }
+</script>
+</body>
+
+</html>

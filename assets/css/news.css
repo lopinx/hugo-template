@@ -1,0 +1,298 @@
+/*头部轮播推荐*/
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    width: 140px;
+    right: 0;
+    left: unset;
+    bottom: 20px;
+}
+.swiper-news .swiper-pagination-bullet{
+    background: #ffffff;
+    opacity: unset;
+    width: 12px;
+    height: 12px;
+}
+.swiper-news .swiper-pagination-bullet-active {
+    background-color: #469914;
+}
+.swiper-news{
+    height: 415px;
+}
+.swiper-news .swiper-slide{
+    background-color: rgb(247, 248, 249);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.swiper-news .swiper-slide span{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    width: 490px;
+    z-index: 1;
+}
+.news-top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.top-swiper{
+    width: 640px;
+    height: 415px;
+}
+.top-item{
+    display: flex;
+    flex-flow: wrap;
+    width: 625px;
+    height: 415px;
+    justify-content: space-between;
+}
+.top-item dl{
+    width: 305px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+.top-item dl dd{
+    font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    width: 285px;
+    margin: 0 10px;
+    z-index: 1;
+}
+
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg,rgba(0,0,0,.05) 5%,rgba(0,0,0,.65));
+    transition: .5s;
+}
+
+/*内容*/
+.news-box{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.box-left{
+    margin-top: 15px;
+}
+.box-list{
+    width: 960px;
+}
+.box-left .box-tab{
+    margin-bottom: 15px;
+}
+.box-left .box-tab ul{
+    background-color: #ffffff;
+    display: flex;
+    position: relative;
+}
+.box-left .box-tab ul li{
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin: 0 15px;
+    
+}
+.box-left .box-tab .active{
+    border-bottom: 3px solid #50972c;
+}
+.box-left .box-tab .active-1{
+    color: #50972c;
+    font-weight: 700;
+}
+.box-left .box-tab ul li em{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    height: 21px;
+    width: 2px;
+    background: #999;
+}
+.box-content{
+    min-height: 500px;
+}
+.box-content a:hover{
+    color: unset;
+}
+.box-list dl{
+    display: flex;
+    flex-flow: wrap;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+.box-list dl:hover{
+    box-shadow: 0 0 5px 3px #e8e8e8;
+}
+.box-list dt{
+    width: 260px;
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin: 15px;
+}
+.box-list dd{
+    width: 630px;
+    margin: 15px 10px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-right: 20px;
+}
+.box-list dd p:nth-child(1){
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.box-list dd p:nth-child(2){
+    font-size: 14px;
+    height: 54px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    letter-spacing: 1px;
+    color: #777;
+}
+.box-list dl .item-bottom{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+}
+
+.box-list dl .item-bottom span{
+    background-color: #f3f2f2;
+    /* padding: 7px 12px; */
+    margin-right: 10px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+}
+.box-list dl .item-bottom span:hover{
+    color: #50972c;
+}
+
+/**********************内容右侧Start**********************/
+/*头部*/
+.box-right{
+    width: 305px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.layui-form-item .layui-form-checkbox[lay-skin=primary]{
+    margin-top:unset
+}
+.layui-form-item .layui-form-checkbox{
+    margin-top:unset
+}
+.layui-layer-btn .layui-layer-btn0{
+    background: #34802a !important;
+    font-size: 18px;
+    border: unset;
+}
+.layui-form-item .layui-form-checkbox[lay-skin=primary]{
+    padding: unset !important;margin: 0 !important;
+}
+.layui-form-select .layui-input{
+    background-color: #f3f2f2;
+}
+.right-form{
+    padding: 0 20px 20px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+.form-title{
+    text-align: center;
+    padding: 20px 0;
+}
+.form-title p:nth-child(1){
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.form-title p:nth-child(2){
+    font-size: 14px;
+}
+
+/*推荐文章*/
+.right-news-list{
+
+}
+.right-news-list .right-tab{
+    padding-bottom: 15px;
+    background-color: #ffffff;
+}
+.right-news-list .right-tab ul{
+    margin: 0 20px;
+    border-bottom: 3px solid #f3f2f2;
+}
+.right-news-list .right-tab ul li{
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+.right-news-list .right-tab ul li em{
+    height: 3px;
+    width: 80px;
+    background-color: #50972c;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+}
+.right-news-list .right-list{
+    margin-bottom: 15px;
+}
+.right-news-list dl{
+    display: flex;
+    flex-flow: wrap;
+    background-color: #ffffff;
+    padding: 0 20px 15px;
+}
+.right-news-list dt{
+    width: 95px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+.right-news-list dd{
+    padding-left: 10px;
+}
+.right-news-list dd p:nth-child(1){
+    width: 160px;
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+/*banner*/
+.right-banner{
+    width: 305px;
+    height: 461px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/**********************内容右侧End**********************/
