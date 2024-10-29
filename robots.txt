@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index
+
+Sitemap: https://www.wooooden.com/sitemap.xml
