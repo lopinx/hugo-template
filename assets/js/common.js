@@ -11,7 +11,7 @@ $(function() {
 document.addEventListener('DOMContentLoaded', function() {
     const excludePrefixes = [
         'javascript:', 'mailto:', '#', 'tel:', 'sms:', 'callto:', 'data:', 'intent:', 'geo:',
-		'.', '/index.html', '/product/', '/case/', '/kefu/', '/help/', '/news/', '/posts/', '/esg/', '/about/', '/contact/',
+		'.', '/index.html', '/product/', '/case/', '/kefu/', '/help/', '/news/', '/posts/', '/esg/', '/about/', '/contact/', '/tags/', '/page/',
         'https://www.wooooden.com', 'https://www.issem.cn', 'https://beian.miit.gov.cn', 'https://www.dosprings.com', 'https://www.lopins.cn'
     ];
     const links = document.querySelectorAll('a');
