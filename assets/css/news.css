@@ -142,7 +142,7 @@
     height: 180px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     margin: 15px;
 }

@@ -1009,7 +1009,7 @@
 	height: 274px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	position: relative;
 }
 
