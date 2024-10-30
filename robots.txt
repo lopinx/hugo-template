@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /index
+Disallow: /*/page/1/
 
-Sitemap: https://www.wooooden.com/sitemap.xml
+Sitemap: https://example.org/sitemap.xml

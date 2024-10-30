@@ -461,6 +461,7 @@ section {
 	background-image: url(../images/close-02.png);
 }.header {
 	width: 100%;
+	margin: 0 auto;
 	height: 70px;
 	background-color: #FFFFFF;
 	position: fixed;
@@ -471,10 +472,9 @@ section {
 }
 
 .header header {
-	width: 100%;
-	max-width: 1280px;
-	height: 70px;
+	width: 1280px;
 	margin: 0 auto;
+	height: 70px;
 	display: flex;
 	align-items: center;
 }

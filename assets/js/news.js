@@ -31,18 +31,18 @@ function saveGive(id) {
 // 列表分页
 var keyWord = "";
 layui.use(['laypage', 'layer'], function () {
-	var laypage = layui.laypage
-		, layer = layui.layer;
+	var laypage = layui.laypage , layer = layui.layer;
 
 	//分页
+	/*
 	laypage.render({
-		elem: 'goods-page'
-		, curr: getUrlParam('page')    // 从网址获取当前
-		, count: "75"
-		, limit: 15
-		, theme: '#50972c'
-		, layout: ['count', 'prev', 'page', 'next', 'skip']
-		, jump: function (obj, first) {
+		elem: 'goods-page', 
+		curr: getUrlParam('page') || 1 ,  // 从网址获取当前
+		count: "75",
+		limit: 15, 
+		theme: '#50972c', 
+		layout: ['count', 'prev', 'page', 'next', 'skip'], 
+		jump: function (obj, first) {
 			if (!first) {
 				var load_url = "/news/list.html?page=" + obj.curr;
 				if (keyWord) load_url += '&keyWord=' + keyWord;
@@ -50,7 +50,58 @@ layui.use(['laypage', 'layer'], function () {
 			}
 		}
 	});
+	*/
+	// 获取分页相关的数据属性
+	var goodsPage = document.getElementById('goods-page');
+	var total = parseInt(goodsPage.dataset.total);
+	var limit = parseInt(goodsPage.dataset.limit);
+	var currentPage = parseInt(goodsPage.dataset.currentPage);
+
+	// 初始化分页
+	laypage.render({
+		elem: 'goods-page',
+		curr: currentPage, // 从数据属性获取当前页码
+		count: total, // 总条目数
+		limit: limit, // 每页显示条目数
+		theme: '#50972c',
+		layout: ['count', 'prev', 'page', 'next', 'skip'],
+		jump: function (obj, first) {
+			if (!first) {
+				loadPosts(obj.curr);
+			}
+		}
+	});
 })
+
+function loadPosts(page) {
+    var load_url = "/api/posts?page=" + page;
+    if (keyWord) load_url += '&keyWord=' + keyWord;
+
+    fetch(load_url)
+      .then(response => response.json())
+      .then(data => {
+		document.querySelector('.box-content').innerHTML = data.html;
+        goodsPage.dataset.currentPage = page; // 更新当前页码
+        laypage.render({ // 重新渲染分页
+          elem: 'goods-page',
+          curr: page,
+          count: total,
+          limit: limit,
+          theme: '#50972c',
+          layout: ['count', 'prev', 'page', 'next', 'skip'],
+          jump: function (obj, first) {
+            if (!first) {
+              loadPosts(obj.curr);
+            }
+          }
+        });
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+}
+
+// URL参数
 function getUrlParam(name) {
 	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
 	var r = window.location.search.substr(1).match(reg);
