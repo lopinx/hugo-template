@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /index
 Disallow: /*/page/1/
 
-Sitemap: https://lopins.gitee.io/hugo-template/sitemap.xml
+Sitemap: https://lopins.github.io/hugo-template/sitemap.xml
