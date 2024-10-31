@@ -3,7 +3,7 @@ $(function() {
 	//点击按钮时判断 百度商桥代码中的“我要咨询”按钮的元素是否存在，存在的话就执行一次点击事件
 	$(".shangqiao").click(function(event) {
 		// 跳转到kefu页面
-		window.location.href = "/kefu/";
+		window.location.href = "/kefu.html";
 	});
 });
 
@@ -11,7 +11,7 @@ $(function() {
 document.addEventListener('DOMContentLoaded', function() {
     const excludePrefixes = [
         'javascript:', 'mailto:', '#', 'tel:', 'sms:', 'callto:', 'data:', 'intent:', 'geo:',
-		'.', '/index.html', '/product/', '/case/', '/kefu/', '/help/', '/news/', '/posts/', '/esg/', '/about/', '/contact/', '/tags/', '/page/',
+		'.', '/index.html', '/product.html', '/case.html', '/kefu.html', '/news.html', '/esg.html', '/about.html', '/contact.html', '/tags.html', '/categories.html', '/posts/', '/help/', '/page/', '/tags/', '/tag/', '/categorys/', '/category/', '/archives/', '/article/',
         'https://www.wooooden.com', 'https://www.issem.cn', 'https://beian.miit.gov.cn', 'https://www.dosprings.com', 'https://www.lopins.cn'
     ];
     const links = document.querySelectorAll('a');
@@ -21,8 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const url = new URL(href, window.location.href);
             const path = url.pathname;
             if (path && path != '/' && !excludePrefixes.some(prefix => href.startsWith(prefix))) {
-                link.setAttribute('href', '/kefu/');
-                console.log(path + '跳转到' + '/kefu/');
+                link.setAttribute('href', '/kefu.html');
             }
         }
     });
