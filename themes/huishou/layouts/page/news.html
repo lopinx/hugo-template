@@ -1,0 +1,224 @@
+{{ define "meta" }}
+<title>二手办公家具行业资讯_二手办公家具市场动态-装配狮</title>
+<meta name="keywords" content="二手办公家具行业资讯,二手办公家具市场动态,二手办公家具市场哪里有,二手办公家具行业值得加入吗,二手办公家具市场前景" />
+<meta name="description" content="二手办公家具市场前景如何？二手办公家具值得买吗？装配狮为您带来最新的二手办公家具行业资讯、最详细的二手办公家具市场动态。" />
+{{ end }}
+
+{{ define "headscript" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/css/news.css">
+<style>
+    .layui-form-select .layui-edge {
+        border-top-color: #50972d !important;
+    }
+
+    .layui-form-checkbox[lay-skin=primary] i {
+        border: 1px solid #50972d !important;
+    }
+
+    .footer-mode {
+        background-color: #efefef !important;
+    }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<section id="content" style="background-color: #f8f8f8">
+    <div class="news-top w1280">
+        <div class="top-swiper">
+            <div class="swiper-container swiper-news">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide "
+                        style="background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/f6ab4d9b58bb17cdc10fff2d87c515df.jpg')">
+                        <a href="#/news/detail/87.html" target="_blank" title="企业采购二手办公家具是选择品牌还是普通产品呢？">
+                            <span class="over1">企业采购二手办公家具是选择品牌还是普通产品呢？</span>
+                            <i class="mask"></i>
+                        </a>
+                    </div>
+                    <div class="swiper-slide "
+                        style="background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/01ab4c9956c92def5a3c5ab8143d6675.jpg')">
+                        <a href="#/news/detail/69.html" target="_blank"
+                            title="引领规范旧货市场，国内首个《二手 （旧）办公家具流通技术要求》正式上线！">
+                            <span class="over1">引领规范旧货市场，国内首个《二手 （旧）办公家具流通技术要求》正式上线！</span>
+                            <i class="mask"></i>
+                        </a>
+                    </div>
+                    <div class="swiper-slide "
+                        style="background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/7ad9a34e605ce54a2ab77574d7fd9623.jpg')">
+                        <a href="#/news/detail/66.html" target="_blank"
+                            title="推动办公领域可持续商业实践，装配狮循环家具荣获“2023向光奖”！">
+                            <span class="over1">推动办公领域可持续商业实践，装配狮循环家具荣获“2023向光奖”！</span>
+                            <i class="mask"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="top-item">
+            <a href="#/news/detail/90.html" target="_blank" title="二手办公家具因其环保效和成本效益，正日益受到企业的青睐">
+                <dl
+                    style="margin-bottom: 15px;background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/d4640bc5afe67fca8fabd6a468df8795.jpg')">
+                    <dd class="over2">二手办公家具因其环保效和成本效益，正日益受到企业的青睐</dd>
+                    <i class="mask"></i>
+                </dl>
+            </a>
+            <a href="#/news/detail/85.html" target="_blank" title="二手办公家具是否值得企业购买？">
+                <dl
+                    style="margin-bottom: 15px;background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/342bea5f65edcbacd41ccc712f57be1b.jpg')">
+                    <dd class="over2">二手办公家具是否值得企业购买？</dd>
+                    <i class="mask"></i>
+                </dl>
+            </a>
+            <a href="#/news/detail/84.html" target="_blank" title="1800件大企回收的二手办公家具已入库，价格美丽">
+                <dl style=";background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/015e3551c8085ad13b65230e9d6b8082.jpg')">
+                    <dd class="over2">1800件大企回收的二手办公家具已入库，价格美丽</dd>
+                    <i class="mask"></i>
+                </dl>
+            </a>
+            <a href="#/news/detail/78.html" target="_blank" title="装配狮服务案例分享：北京某文化传媒公司二手办公家具采购案例">
+                <dl style=";background-image:  url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/45bcd9ea1940a253cb228ea3e2bd3595.jpg')">
+                    <dd class="over2">装配狮服务案例分享：北京某文化传媒公司二手办公家具采购案例</dd>
+                    <i class="mask"></i>
+                </dl>
+            </a>
+        </div>
+    </div>
+    <div class="news-box w1280">
+        <div class="box-left">
+            <div class="box-list">
+                <div class="box-tab">
+                    <ul>
+                        <li class="active">最新推荐</li>
+                        <li style="position: absolute;right: 0;bottom: 0;font-size: 16px;"><a href="/news.html" target="_blank">更多>></a></li>
+                    </ul>
+                </div>
+                <div class="box-content">
+                    {{ range first 10 ((where .Site.RegularPages "Params.hidden" "!=" true)) }}
+                        {{ $content := .Content }}
+                        {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+                        {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}
+                        {{ if $matches }}
+                            {{ $firstMatch := index $matches 0 }}
+                            {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
+                            {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+                        {{ end }}
+                        <a href="{{ .Permalink }}" target="_blank" title="{{ .LinkTitle }}">
+                            <dl>
+                                <dt style="background-image: url('{{ $imageUrl }}')">
+                                </dt>
+                                <dd>
+                                    <p class="over1">{{ .LinkTitle }}</p>
+                                    <p class="">{{ .Summary | plainify }}</p>
+                                    <div class="item-bottom">
+                                        <object>
+                                            <a href="/news.html" style="display:inline-block;"><span>企业动态</span></a>
+                                        </object>
+                                        {{ .Date.Format "2006-01-02" }}
+                                    </div>
+                                </dd>
+                            </dl>
+                        </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="box-right">
+            <div class="right-form">
+                <div class="form-title">
+                    <p>企业采购办公家具就来装配狮</p>
+                    <p>已有 <span style="color: #50972d">1351</span> 位客户提交</p>
+                </div>
+                <div class="form-submit">
+                    <form class="layui-form" action="" method="post">
+                        <div class="layui-input-inline" style="width: 100%;padding-bottom: 15px;">
+                            <input type="text" name="userName" maxlength="10" lay-verify="required"
+                                placeholder="请输入姓名" class="layui-input"
+                                style="height: 40px;background-color: #f3f2f2;">
+                        </div>
+                        <div class="layui-input-inline" style="width: 100%;padding-bottom: 15px;">
+                            <input type="number" name="userPhone" maxlength="13" lay-verify="required"
+                                placeholder="请输入手机号" class="layui-input"
+                                style="height: 40px;background-color: #f3f2f2;">
+                        </div>
+                        <div class="layui-input-inline" style="width: 100%;padding-bottom: 20px;display: flex">
+                            <div style="width: 50%">
+                                <select id="area_province" name="" lay-verify="required"
+                                    lay-filter="selctProvinceOnchange">
+                                    <option value="" selected>请选择省</option>
+                                </select>
+                            </div>
+                            <div style="width: 50%">
+                                <select id="area_city" lay-verify="required" lay-filter="selctCityOnchange">
+                                    <option value="">请选择市</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item" style="">
+                            <input type="checkbox" id="userCheck" name="userCheck" lay-skin="primary" title=""
+                                style="" checked>
+                            我已阅读并且同意装配狮的 <a class="user-xy" style=""><span
+                                    style="color:#50972d;">用户协议</span></a>
+                        </div>
+                        <div style="width: 100%; margin: 0;">
+                            <button type="button" class="layui-btn layui-btn-fluid"
+                                style="background-color: #34802a;font-size: 16px;" lay-submit
+                                lay-filter="*">立即提交 获取报价</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-news-list">
+                <div class="right-tab">
+                    <ul>
+                        <li>热门推荐<em></em></li>
+                    </ul>
+                </div>
+                <div class="right-list">
+                    {{ $pages := where .Site.RegularPages "Params.hidden" "!=" true }}
+                    {{ $count := len $pages }}
+                    {{ $numArticles := 5 }} <!-- 你可以根据需要调整显示的文章数量 -->
+    
+                    {{ $indices := seq 0 (sub $count 1) }}
+                    {{ $randomIndices := shuffle $indices }}
+    
+                    {{ if gt $count $numArticles }}
+                    {{ $randomIndices = $randomIndices | first $numArticles }}
+                    {{ end }}
+    
+                    {{ range $index := $randomIndices }}
+                        {{ $page := index $pages $index }}
+                        {{ $content := $page.Content }}
+                        {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+                        {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}                        
+                        {{ if $matches }}
+                            {{ $firstMatch := index $matches 0 }}
+                            {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
+                            {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+                        {{ end }}
+                        <a href="{{ $page.Permalink }}" target="_blank" title="{{ $page.Title }}">
+                            <dl>
+                                <dt
+                                    style="background-image: url('{{ $imageUrl }}')">
+                                </dt>
+                                <dd>
+                                    <p class="over2">{{ $page.Title }}</p>
+                                    <p>{{ $page.Date.Format "2006-01-02" }}</p>
+                                </dd>
+                            </dl>
+                        </a>
+                    {{ end }}
+                </div>
+                <div class="right-banner" style="background-image: url('https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/banner-right.jpg')"></div>
+            </div>
+        </div>
+        <div class="box-banner" style="padding-top: 30px">
+            <a href="news/detail/29.html" target="_blank"><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/banner-bottom.jpg"
+                    class="lazyload"></a>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ define "footscript" }}
+<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/news.js"></script>
+{{ end }}

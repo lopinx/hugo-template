@@ -1,0 +1,145 @@
+baseURL = 'https://lopins.gitee.io/hugo-template/'
+title = '装配师'
+theme = 'huishou'
+
+# 常规设置
+enableRobotsTXT = true                          
+enableEmoji = true
+languageCode = 'zh-cn'                          # en / zh-cn 
+defaultContentLanguage = "zh-cn"                # en / zh-cn
+hasCJKLanguage = true                           # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
+uglyURLs = true                                 # Use the .html suffix
+# 忽略一些构建错误
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+# 跳过渲染 ["page", "home", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
+disableKinds = ["section", "RSS"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = [ "HTML", "JSON" ]                             # 首页
+  page = [ "HTML" ]                             # 单个页面（通常是静态页面，如关于页面、联系页面等，可以理解为文章详情页和一些指定页面）
+  section = [ "HTML" ]                          # 部分（section），例如博客部分、文档部分等（可以理解为一类文章的归档的页面）。
+  taxonomy = [ "HTML" ]                         # 分类和标签的列表页面（可以理解为分类、标签的归档页，就是列出所有分类、标签的聚合页面）
+  term = [ "HTML" ]                             # 具体的分类或标签页面（分类、标签等文章列表页，列出属于某个分类、标签下文章列表的页面）
+
+# 作者信息 profile：简介信息
+[author]
+  name = "lopins"
+  link = "https://www.lopins.cn"
+  email = "lopins@qq.com"
+  profile = ""
+
+[permalinks]
+  [permalinks.page]
+    post = '/posts/:slug/'
+    page = '/:slug/'
+  [permalinks.section]
+    post = '/archive'
+#  [permalinks.taxonomy]
+#    tags = '/tag/:slug/'
+#    categories = '/category/:slug/'
+  [permalinks.term]
+    tags = '/tag/:slug/'
+    categories = '/category/:slug/'
+
+# Markdown渲染
+[markup]
+    defaultMarkdownHandler = "goldmark"
+    [markup.goldmark]
+        [markup.goldmark.extensions]
+            definitionList = true
+            footnote = true
+            linkify = true
+            strikethrough = true
+            table = true
+            taskList = true
+            typographer = false
+        [markup.goldmark.parser]
+            attribute = true
+            autoHeadingID = true
+            autoHeadingIDType = "github"
+        [markup.goldmark.renderer]
+            hardWraps = false
+            unsafe = true
+            xHTML = false
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = false
+        lineNos = false
+        lineNumbersInTable = false
+        noClasses = false
+    [markup.tableOfContents]
+        startLevel = 2
+        endLevel = 6
+        ordered = true
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "product"
+    name = "产品中心"
+    url = "/product.html"
+    weight = 2
+  [[menu.main]]
+    identifier = "case"
+    name = "案例展示"
+    url = "/case.html"
+    weight = 3
+  [[menu.main]]
+    identifier = "esg"
+    name = "ESG理念"
+    url = "/esg.html"
+    weight = 4
+  [[menu.main]]
+    identifier = "news"
+    name = "行业资讯"
+    url = "/news.html"
+    weight = 5
+  [[menu.main]]
+    identifier = "about"
+    name = "关于我们"
+    url = "/about.html"
+    weight = 6
+  [[menu.main]]
+    identifier = "kefu"
+    name = "联系我们"
+    url = "/kefu.html"
+    weight = 7
+
+# ####################### 自定义变量 ####################### # 
+
+# 自定义变量
+# {{ .Site.Params.xxxx.xxxx }}
+[params]
+  # excludeTypes = ["case", "esg", "kefu", "news", "help", "about", "contact"]
+  # contentTypeName = "post"
+  fastSearch = true                             # 是否开启本地搜索
+  PagerSize = 10                                # 分页设置
+
+  # 公司信息
+  # {{ .Site.Params.company.Tel }}
+  [params.company]
+    Tel = '185-1668-7118'
+    Name = '佳匠实业'
+    Description = ''
+    Slogan = ''
+    Address = '上海市松江区石湖荡镇石湖新路95号'
+    Start = '2018'
+    Icp = '沪ICP备2021004498号'
+    Weixin = 'https://u.wechat.com/EKP6dBfMFC_Cv38uRfdXgGQ?s=2'
+    Weibo = 'https://u.wechat.com/EKP6dBfMFC_Cv38uRfdXgGQ?s=2'
+    Douyin = 'https://u.wechat.com/EKP6dBfMFC_Cv38uRfdXgGQ?s=2'           
+
+  # 友情链接
+  # {{ range .Site.Params.friendLinks }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a><span>{{ .description }}</span>{{ end }}
+  [params.friendlinks]
+    hugo = { name = "Hugo 官方文档", url = "https://gohugo.io/", description = "Hugo 的官方文档" }
+    github = { name = "GitHub", url = "https://github.com/", description = "代码托管平台" }
+    stackoverflow = { name = "Stack Overflow", url = "https://stackoverflow.com/", description = "编程问答社区" }

@@ -1,0 +1,1667 @@
+{{ define "meta" }}
+<title>二手办公家具采购回收案例-装配狮</title>
+<meta name="keywords" content="二手办公家具采购,二手办公家具回收,二手办公桌椅,二手办公家具解决方案,装配狮" />
+<meta name="description" content="装配狮提供一站式二手办公家具解决方案，二手办公家具采购回收一条龙服务，装配狮现已成功服务众多国内大型及知名企业。" />
+{{ end }}
+
+{{ define "headscript" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/css/case.css">
+{{ end }}
+
+{{ define "main" }}
+<section id="content" v-cloak>
+    <!--banner-->
+    <div class="banner">
+        <!-- <video x5-playsinline="" playsinline="" webkit-playsinline="" preload="auto" autoplay="autoplay"
+            muted="muted" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/banner.mp4" poster="" loop="">
+        </video> -->
+        <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/banner.jpg"  alt="案例中心">
+        <div class="banner-box">
+            <div class="title" data-scroll-reveal="wait 0.2s, then enter bottom and move 50px over 1s">
+                <p>服务案例故事</p>
+                <p></p>
+            </div>
+            <div class="box-number">
+                <dl data-scroll-reveal="wait 0.2s, then enter bottom and move 50px over 2s">
+                    <dt>150000+</dt>
+                    <dd>客户的选择</dd>
+                </dl>
+                <dl data-scroll-reveal="wait 0.2s, then enter bottom and move 50px over 2s">
+                    <dt>1500+</dt>
+                    <dd>合作伙伴</dd>
+                </dl>
+                <dl data-scroll-reveal="wait 0.2s, then enter bottom and move 50px over 2s">
+                    <dt>300万+</dt>
+                    <dd>循环家具数</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="video-div"></div>
+    </div>
+
+    <!--案例Item-->
+    <div class="case">
+        <div class="w1280">
+            <div class="layout-tilte">
+                <p>150000余家企业的共同选择</p>
+                <p>提供办公家具全生命周期服务，定制企业办公家具解决方案</p>
+            </div>
+            <div class="case-box">
+                <div class="gallery-solid case-nav">
+                    <div class="swiper-container case-tab">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" @click="clickCase('5_0')">
+                                <span>政企单位</span>
+                            </div>
+                            <div class="swiper-slide " @click="clickCase('1_0')">
+                                <span>互联网</span>
+                            </div>
+                            <div class="swiper-slide " @click="clickCase('2_0')">
+                                <span>高新科技</span>
+                            </div>
+                            <div class="swiper-slide " @click="clickCase('3_0')">
+                                <span>医疗与教育</span>
+                            </div>
+                            <div class="swiper-slide" @click="clickCase('4_0')">
+                                <span>设计与建筑</span>
+                            </div>
+                            <a href="/case.html" target="_blank">
+                                <div class="swiper-slide">
+                                    <span>查看更多案例 ></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container case-content">
+                    <div class="">
+                        <div class=" ">
+                            <div class="case-intro" v-show="case_item_idx == '1_0'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2b71e63353cac1397ce3b70bb779f287.jpg" class=""
+                                        alt="某国内知名旅游平台成都安装项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>某国内知名旅游平台成都安装项目<em></em></dt>
+                                        <dd>服务城市：成都</dd>
+                                        <dd>服务时间：2022年1月</dd>
+                                        <dd>
+                                            某国内知名旅游平台，是国内数一数二的旅游搜索引擎，此次一共采购了1300件办公家具产品。员工办公桌，来自国内知名的家具品牌欧林，此款办公桌是从某大型企业回收过来，基本未使用，成色非常新。
+                                            从选品到清场，再到送货安装，历时45天，安装完成后，整体简约美观，契合整体风格。 <a
+                                                href="#/news/detail/45.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '1_0'}"
+                                                @click="clickCase('1_0')">去哪儿网</p>
+                                            <p :class="{'active':case_item_idx ==  '1_1'}"
+                                                @click="clickCase('1_1')">知名电子商务</p>
+                                            <p :class="{'active':case_item_idx ==  '1_2'}"
+                                                @click="clickCase('1_2')">知名出行</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '1_1'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ca59f37ff020b784ee848264855c12ad.jpg" class=""
+                                        alt="某国内知名电子商务集团公司北京项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>某国内知名电子商务集团公司北京项目<em></em></dt>
+                                        <dd>服务城市：北京</dd>
+                                        <dd>服务时间：2021年11月</dd>
+                                        <dd>
+                                            该电子商务集团与我们一直保持长期的合作关系，此次合作的项目一共几层楼，共计采购办公桌、办公椅、文件柜等办公家具产品1800多套，北京分公司安装师傅历时1个星期，完成了所有家具的运输安装等相关配套服务。
+                                            <a href="#/news/detail/46.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '1_0'}"
+                                                @click="clickCase('1_0')">去哪儿网</p>
+                                            <p :class="{'active':case_item_idx ==  '1_1'}"
+                                                @click="clickCase('1_1')">知名电子商务</p>
+                                            <p :class="{'active':case_item_idx ==  '1_2'}"
+                                                @click="clickCase('1_2')">知名出行</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '1_2'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cd74da372bf7bd23f9850aaf4c2a991a.jpg" class=""
+                                        alt="北京某知名出行有限公司租赁项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>北京某知名出行有限公司租赁项目<em></em></dt>
+                                        <dd>服务城市：北京</dd>
+                                        <dd>服务时间：2020年9月</dd>
+                                        <dd>
+                                            该公司一直与我司保持着良好合作关系，从回收到采购和租赁等，都多次选择了我司，此次新增办公地点，需要快速投入使用，我司专业人员经实地测量，结合具体需求，提供了最优办公家具解决方案，一共租赁500余套办公家具，租期1年。
+                                            <a href="#/news/detail/47.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '1_0'}"
+                                                @click="clickCase('1_0')">去哪儿网</p>
+                                            <p :class="{'active':case_item_idx ==  '1_1'}"
+                                                @click="clickCase('1_1')">知名电子商务</p>
+                                            <p :class="{'active':case_item_idx ==  '1_2'}"
+                                                @click="clickCase('1_2')">知名出行</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="case-intro" v-show="case_item_idx == '2_0'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/d56033675b58c1c4442a92031da2c3f7.jpg" class=""
+                                        alt="北京绿盟科技有限公司南京安装项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>北京绿盟科技有限公司南京安装项目<em></em></dt>
+                                        <dd>服务城市：南京</dd>
+                                        <dd>服务时间：2022年7月</dd>
+                                        <dd>
+                                            北京绿盟科技公司是一家上市企业，成立于2000年，总部位于北京，为多个行业的企业提供全线网络安全产品、全方位安全解决方案。作为长期合作伙伴，从2019年至今，已有过十几次合作，总计采购办公家具的金额已达百万。今年在南京成立分部，依然选择和我们合作，此次采购二手办公家具约1500多件。
+                                            <a href="#/news/detail/48.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '2_0'}"
+                                                @click="clickCase('2_0')">北京绿盟科技</p>
+                                            <p :class="{'active':case_item_idx ==  '2_1'}"
+                                                @click="clickCase('2_1')">中国电子系统</p>
+                                            <p :class="{'active':case_item_idx ==  '2_2'}"
+                                                @click="clickCase('2_2')">智能电动汽车</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '2_1'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e944bf41201046e9c4496eaca0e9a3e6.jpg" class=""
+                                        alt="中国电子系统技术公司武汉安装项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>中国电子系统技术公司武汉安装项目<em></em></dt>
+                                        <dd>服务城市：武汉</dd>
+                                        <dd>服务时间：2022年6月</dd>
+                                        <dd>
+                                            中国电子系统技术有限公司是中国电子网信产业核心企业
+                                            、现代数字城市业务牵头单位。通过内部渠道推荐，了解到我们，最后一共采购了880余件二手办公家具产品，从国内某在线教育集团回收，产品成色新、质量好，完全符合该公司的需求。
+                                            <a href="#/news/detail/49.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '2_0'}"
+                                                @click="clickCase('2_0')">北京绿盟科技</p>
+                                            <p :class="{'active':case_item_idx ==  '2_1'}"
+                                                @click="clickCase('2_1')">中国电子系统</p>
+                                            <p :class="{'active':case_item_idx ==  '2_2'}"
+                                                @click="clickCase('2_2')">智能电动汽车</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '2_2'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/35b168f595c77ef46aba0280a1831397.jpg" class=""
+                                        alt="北京某全球化智能电动汽车公司项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>北京某全球化智能电动汽车公司项目<em></em></dt>
+                                        <dd>服务城市：北京</dd>
+                                        <dd>服务时间：2021年5月</dd>
+                                        <dd>
+                                            为了尽快投入使用，确保员工办公空间的健康安全，此智能电动汽车公司整套家具都选用国际大牌世楷Steelcase旗下的二手办公家具，共计300余件，送货安装历时1个星期。
+                                            <a href="#/news/detail/50.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '2_0'}"
+                                                @click="clickCase('2_0')">北京绿盟科技</p>
+                                            <p :class="{'active':case_item_idx ==  '2_1'}"
+                                                @click="clickCase('2_1')">中国电子系统</p>
+                                            <p :class="{'active':case_item_idx ==  '2_2'}"
+                                                @click="clickCase('2_2')">智能电动汽车</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="case-intro" v-show="case_item_idx == '3_0'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/730915ec8fb208d3119e574449f24f55.jpg" class=""
+                                        alt="国内某教育培训公司二手办公家具采购案例">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>国内某教育培训公司二手办公家具采购案例<em></em></dt>
+                                        <dd>服务城市：北京/西安</dd>
+                                        <dd>服务时间：2024年5-8月</dd>
+                                        <dd>
+                                            北京某知名教育培训公司是是一家以内容能力与科技能力为基础,以科教、科创、科普为战略方向，助力人的终身成长，并持续探索创新的综合性教育品牌。继5月底成功完成北京办公室近万件办公家具的送货与安装，以及6月中旬西安办公室的办公家具送货安装后，北京办公室第二期项目再次采购了近3000套二手办公家具，其中包括员工办公桌椅柜、会议桌椅、洽谈桌椅、文件柜等。
+                                            <a href="#/news/detail/88.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '3_0'}"
+                                                @click="clickCase('3_0')">学而思</p>
+                                            <p :class="{'active':case_item_idx ==  '3_1'}"
+                                                @click="clickCase('3_1')">君润众乐</p>
+                                            <p :class="{'active':case_item_idx ==  '3_2'}"
+                                                @click="clickCase('3_2')">丁香园</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '3_1'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ad614fa133133c8fc6c7edf77c56964e.jpg" class=""
+                                        alt="君润众乐企业管理咨询有限公司">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>君润众乐企业管理咨询有限公司<em></em></dt>
+                                        <dd>服务城市：武汉</dd>
+                                        <dd>服务时间：2022年7月</dd>
+                                        <dd>
+                                            该企业管理咨询公司专注于为服务行业提供一站式人力资源服务，成立于2020年，总部位于深圳，最近在武汉成立了分部，需要采购一批办公家具产品。一共采购了近400多件二手办公家具产品，包含了职员桌椅柜，主管桌椅、会议桌椅等，一站式购齐。
+                                            <a href="#/news/detail/51.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '3_0'}"
+                                                @click="clickCase('3_0')">学而思</p>
+                                            <p :class="{'active':case_item_idx ==  '3_1'}"
+                                                @click="clickCase('3_1')">君润众乐</p>
+                                            <p :class="{'active':case_item_idx ==  '3_2'}"
+                                                @click="clickCase('3_2')">丁香园</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '3_2'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2399efeebfc4e73a1ba446996fe473f3.jpg" class=""
+                                        alt="杭州某数字医疗健康科技安装项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>杭州某数字医疗健康科技安装项目<em></em></dt>
+                                        <dd>服务城市：杭州</dd>
+                                        <dd>服务时间：2022年2月</dd>
+                                        <dd>
+                                            该公司是一家国内领先的医疗数字科技企业，总部在杭州，由于业务的增长，需要更换更符合现代办公需求以及人员需求的办公家具，根据已经规划好的办公室家具布置设计，选择了欧林旗下一款很具有现代化的高屏风工位，自带显示器屏幕支架，2月18日，我们杭州安装师傅将84张员工屏风工位全部送货安装完毕，后续还会补充其他家具。
+                                            <a href="#/news/detail/52.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '3_0'}"
+                                                @click="clickCase('3_0')">学而思</p>
+                                            <p :class="{'active':case_item_idx ==  '3_1'}"
+                                                @click="clickCase('3_1')">君润众乐</p>
+                                            <p :class="{'active':case_item_idx ==  '3_2'}"
+                                                @click="clickCase('3_2')">丁香园</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="case-intro" v-show="case_item_idx == '4_0'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/682bf8a1c9397e65f34c0a8a46e645d2.jpg" class=""
+                                        alt="中建八局第四建设有限公司成都安装项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>中建八局第四建设有限公司成都安装项目<em></em></dt>
+                                        <dd>服务城市：成都</dd>
+                                        <dd>服务时间：2020年6月</dd>
+                                        <dd>
+                                            为了更好的服务西南地区的客户，该公司决定在成都建立分部。购置产品包含员工桌椅、会议桌椅、沙发茶几、老板桌椅等共计100余件，从选购到送货安装历时15天左右。
+                                            <a href="#/news/detail/54.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '4_0'}"
+                                                @click="clickCase('4_0')">中建八局</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ">
+                            <div class="case-intro" v-show="case_item_idx == '5_0'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/27d967d4a14d80dd950924b3c83bc3d5.jpg" class=""
+                                        alt="中国建筑集团溧阳市政府办公家具采购案例">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>中国建筑集团溧阳市政府办公家具采购案例<em></em></dt>
+                                        <dd>服务城市：江苏</dd>
+                                        <dd>服务时间：2024.03.17</dd>
+                                        <dd>
+                                            中国建筑集团有限公司，其前身为原国家建工总局，是中国专业化经营历史最久的建筑房地产企业集团之一。此项目位于江苏常驻溧阳市，为溧阳市政府提供了经济环保且符合标准的办公家具解决方案，一共提供了800多件二手办公家具，助力政府机构实现成本控制与资源循环利用的目标。
+                                            <a href="#/news/detail/74.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '5_0'}"
+                                                @click="clickCase('5_0')">中国建筑集团</p>
+                                            <p :class="{'active':case_item_idx ==  '5_1'}"
+                                                @click="clickCase('5_1')">成都大运会</p>
+                                            <p :class="{'active':case_item_idx ==  '5_2'}"
+                                                @click="clickCase('5_2')">电力工程公司</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '5_1'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b1c1e6bc4c3aaa83c3ee4d215a4d1601.jpg" class=""
+                                        alt="成都大运会办公家具租赁项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>成都大运会办公家具租赁项目<em></em></dt>
+                                        <dd>服务城市：成都</dd>
+                                        <dd>服务时间：2023年7月</dd>
+                                        <dd>
+                                            7月28日至8月8日，第31届世界大学生夏季运动会在成都举行，作为中国西部第一次举办世界性综合运动会，本届大运会在筹办方面围绕“绿色、智慧、活力、共享”的办赛理念，优先采购使用绿色产品。作为本届大运会组委会指定的办公家具租赁服务商，提供低碳环保、便捷高效的循环家具租赁以及安装服务，便于组委会策划开闭幕式的活动细节，以及大运会期间管理各类事项。
+                                            <a href="#/news/detail/70.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '5_0'}"
+                                                @click="clickCase('5_0')">中国建筑集团</p>
+                                            <p :class="{'active':case_item_idx ==  '5_1'}"
+                                                @click="clickCase('5_1')">成都大运会</p>
+                                            <p :class="{'active':case_item_idx ==  '5_2'}"
+                                                @click="clickCase('5_2')">电力工程公司</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="case-intro" v-show="case_item_idx == '5_2'">
+                                <div class="intro-logo ">
+                                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a062b3ad43495ec6220cad01024bc24c.jpg" class=""
+                                        alt="重庆某电力工程公司办公家具安装项目">
+                                </div>
+                                <div class="intro-item">
+                                    <dl>
+                                        <dt>重庆某电力工程公司办公家具安装项目<em></em></dt>
+                                        <dd>服务城市：重庆</dd>
+                                        <dd>服务时间：2023年9月</dd>
+                                        <dd>
+                                            重庆某电力工程公司是一家央企全资控股的公司，主营业务涉及能源电力、建筑工程、市政道路、新能源电力服务等领域，该公司的负责人通过网络平台了解到我们，秉持着为企业节约成本，为社会节约资源的想法，选择了我们的二手办公家具。此项目一共采购了近700多件二手办公家具，主要是员工区的办公桌椅柜。
+                                            <a href="#/news/detail/67.html" target="_blank"><span
+                                                    style="color: rgb(31, 128, 49);margin-left: 20px;padding: 0 5px 2px 5px;font-weight: 700;border-bottom: 1px solid;">查看详情</span></a>
+                                        </dd>
+                                        <dd>
+                                            <p :class="{'active':case_item_idx ==  '5_0'}"
+                                                @click="clickCase('5_0')">中国建筑集团</p>
+                                            <p :class="{'active':case_item_idx ==  '5_1'}"
+                                                @click="clickCase('5_1')">成都大运会</p>
+                                            <p :class="{'active':case_item_idx ==  '5_2'}"
+                                                @click="clickCase('5_2')">电力工程公司</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--案例List-->
+    <div class="case-trim">
+        <div class="w1280">
+            <div class="layout-tilte">
+                <p>更多行业安装项目</p>
+                <p>众多知名企业选择我们</p>
+            </div>
+            <div class="case-list">
+                <div class="list-title">
+                    按行业选择：
+                    <ul>
+                        <li :class="{'active':case_new ==  '0'}" @click="clickCaseNew(0)">全部</li>
+                        <li :class="{'active':case_new ==  '1'}" @click="clickCaseNew(1)">互联网</li>
+                        <li :class="{'active':case_new ==  '2'}" @click="clickCaseNew(2)">医疗/教培</li>
+                        <li :class="{'active':case_new ==  '3'}" @click="clickCaseNew(3)">设计/建筑</li>
+                        <li :class="{'active':case_new ==  '6'}" @click="clickCaseNew(6)">科技</li>
+                        <li :class="{'active':case_new ==  '7'}" @click="clickCaseNew(7)">政府单位</li>
+                        <li :class="{'active':case_new ==  '8'}" @click="clickCaseNew(8)">金融/保险</li>
+                        <li :class="{'active':case_new ==  '9'}" @click="clickCaseNew(9)">制造</li>
+                        <li :class="{'active':case_new ==  '10'}" @click="clickCaseNew(10)">服务</li>
+                    </ul>
+                </div>
+                <div class="list-box" v-show="case_new == 0">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/51e83147af98407a1c3d376d9a77e965.jpg"
+                                alt="北京某电气科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某电气科技公司办公家具采购案例</p>
+                            <p>北京<span>2024.10.11</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b80c8cc7ab7308769b873ab657d34cb0.jpg"
+                                alt="广州某设计工程公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某设计工程公司办公家具采购案例</p>
+                            <p>广州<span>2024.10.10</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cbeff4383bcf0921a3e43e510c61a89d.jpg"
+                                alt="深圳某知名口腔护理公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某知名口腔护理公司办公家具采购案例</p>
+                            <p>深圳<span>2024.10.09</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/0b044e656d287a208beeea3263d2a9cb.jpg"
+                                alt="苏州某能源科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某能源科技公司办公家具采购案例</p>
+                            <p>上海<span>2024.10.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c2145ada03b4879adbca8acfcf4e8d44.jpg"
+                                alt="广州某技术科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某技术科技公司办公家具采购案例</p>
+                            <p>广州<span>2024.10.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e70fda44d2031cf58830ac8036d14cc8.jpg"
+                                alt="上海某医疗科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某医疗科技公司办公家具采购案例</p>
+                            <p>上海<span>2024.10.04</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c3ff8998d5d858f772f4f7f57047e935.jpg"
+                                alt="深圳某智能清洁科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某智能清洁科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/aac8d09e628b4bff47672a4f5e6d788f.jpg"
+                                alt="天津某复合材料公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某复合材料公司办公家具采购案例</p>
+                            <p>天津<span>2024.09.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a38e437c36e57177110ed76e7e8f0f91.jpg"
+                                alt="上海某自动化技术公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某自动化技术公司办公家具采购案例</p>
+                            <p>上海<span>2024.09.27</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c555ee8e20486108a1c9a194fd4de963.jpg"
+                                alt="深圳某电子科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某电子科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.26</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/40320e8c1ac53c512a7641a0471ac219.jpg"
+                                alt="广州某体育文化发展公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某体育文化发展公司办公家具采购案例</p>
+                            <p>广州<span>2024.09.23</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/d48fbb42471acc81e11a6e75ddb46d2f.jpg"
+                                alt="苏州某设备研发公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某设备研发公司办公家具采购案例</p>
+                            <p>苏州<span>2024.09.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/3867baa0b97c253b0139e25d78c4335e.jpg"
+                                alt="深圳某电子科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某电子科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c6e5f3c197f8536d2fe00b581886b94b.jpg"
+                                alt="成都某科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都某科技公司办公家具采购案例</p>
+                            <p>成都<span>2024.09.20</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/0da28eb169f383ceb20f0832c3ba201d.jpg"
+                                alt="上海某国际贸易公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某国际贸易公司办公家具采购案例</p>
+                            <p>上海<span>2024.09.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/fb8decde74b2e6c54744fff4d9d23bdc.jpg"
+                                alt="杭州某科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某科技公司办公家具采购案例</p>
+                            <p>杭州<span>2024.09.18</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 1">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/3867baa0b97c253b0139e25d78c4335e.jpg"
+                                alt="深圳某电子科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某电子科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/0da28eb169f383ceb20f0832c3ba201d.jpg"
+                                alt="上海某国际贸易公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某国际贸易公司办公家具采购案例</p>
+                            <p>上海<span>2024.09.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/1b7685c9fc4ccaefe71ebcb79649a30e.jpg"
+                                alt="深圳某互联网科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某互联网科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.08.31</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2d5bbea18e790af9eded7f65e395e433.jpg"
+                                alt="上海某网络科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某网络科技公司办公家具采购案例</p>
+                            <p>上海<span>2024.08.17</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6377d34f6ab45fdda4ed2ae248ec401b.jpg"
+                                alt="北京某研究院有限公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某研究院有限公司二手办公家具采购案例</p>
+                            <p>北京<span>2024.08.05</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7d0576c0579c8e525d1cfa035f9f7148.jpg"
+                                alt="上海某知名游戏公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某知名游戏公司办公家具采购案例</p>
+                            <p>上海<span>2024.07.17</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a0ae81d07b92dbb78a1d8abe7fb4152e.jpg"
+                                alt="浙江某技术运营公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">浙江某技术运营公司办公家具采购案例</p>
+                            <p>杭州<span>2024.07.10</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/42614fe9d4bdb6837a81e056121fc71e.jpg"
+                                alt="北京某环境技术公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某环境技术公司办公家具采购案例</p>
+                            <p>北京<span>2024.07.01</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/247a0ca2b25c08ac0d8b48ba999c7a8b.jpg"
+                                alt="国内某知名电商平台（成都）办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">国内某知名电商平台（成都）办公家具采购案例</p>
+                            <p>成都<span>2024.06.24</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a1b83f6f313a42208360cd45ddd0c66e.jpg"
+                                alt="天津某国际贸易公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某国际贸易公司办公家具采购案例</p>
+                            <p>天津<span>2024.06.11</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/f1e9016794170892cf38b0bdaba25f9a.jpg"
+                                alt="天津某电商公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某电商公司办公家具采购案例</p>
+                            <p>天津<span>2024.06.08</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/1009d9c3126d829cd93277167e625de4.jpg"
+                                alt="深圳某数据科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某数据科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.05.26</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/9be66efa8c292060d7a0cc36be284685.jpg"
+                                alt="广州某服饰网络科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某服饰网络科技公司办公家具采购案例</p>
+                            <p>广州<span>2024.05.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/dda8460fa1f48e06e429787847dccaaa.jpg"
+                                alt="国内某知名电子商务公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">国内某知名电子商务公司办公家具采购案例</p>
+                            <p>成都<span>2024.05.04</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/368294b4533371504cdb358b46d362f3.jpg"
+                                alt="北京某教育科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某教育科技公司办公家具采购案例</p>
+                            <p>北京<span>2024.05.01</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6c32a2ce095d9c0c2f1559008bf320f9.jpg"
+                                alt="杭州某电子商务公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某电子商务公司办公家具采购案例</p>
+                            <p>杭州<span>2024.04.30</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 2">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e70fda44d2031cf58830ac8036d14cc8.jpg"
+                                alt="上海某医疗科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某医疗科技公司办公家具采购案例</p>
+                            <p>上海<span>2024.10.04</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/730915ec8fb208d3119e574449f24f55.jpg"
+                                alt="国内某教育培训公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">国内某教育培训公司二手办公家具采购案例</p>
+                            <p>北京/西安<span>2024年5-8月</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/60806504ea3912468c21a9b8fa931d06.jpg"
+                                alt="国内某知名在线教育集团（济南）办公家具采购项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">国内某知名在线教育集团（济南）办公家具采购项目</p>
+                            <p>天津<span>2024.06.26</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ea4eb98f346e4bef5935a2a81dfdbbd1.jpg"
+                                alt="国内某知名口腔护理公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">国内某知名口腔护理公司办公家具采购案例</p>
+                            <p>山东济南<span>2024.06.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/f146111d9ba7aaf0bb7486bceda061ea.jpg"
+                                alt="北京某知名教育培训公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某知名教育培训公司办公家具采购案例</p>
+                            <p>北京<span>2024.05.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/1bb4dc25d94274462310a8bb87352bab.jpg"
+                                alt="苏州某医药连锁公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某医药连锁公司办公家具采购案例</p>
+                            <p>杭州<span>2024.05.11</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7cf50767d181b04d84b4301764324e02.jpg"
+                                alt="上海某医疗科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某医疗科技公司办公家具采购案例</p>
+                            <p>上海<span>2024.03.25</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/3a399c1495e359abe94cf04226df903b.jpg"
+                                alt="深圳某生物科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某生物科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.02.25</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6dc8e99fa3019d42eb68a96c3676817f.jpg"
+                                alt="杭州某教育服务公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某教育服务公司办公家具采购案例</p>
+                            <p>杭州<span>2023.12.2</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7c07c474dc057902f0e049c0fa39a5b0.jpg"
+                                alt="天津某教育咨询公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某教育咨询公司办公家具采购案例</p>
+                            <p>天津<span>2023.09.28</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e6d76800d42071b5c70ec6b80b1ec610.jpg"
+                                alt="上海某教育公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某教育公司办公家具采购案例</p>
+                            <p>上海<span>2023.08.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/4c2d8dc88a2642871d26b3ff441772bc.jpg"
+                                alt="某在线教育集团（北京）办公家具采购项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">某在线教育集团（北京）办公家具采购项目</p>
+                            <p>北京<span>2023.08.19</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e49c881db7d2c6324fef9206357d0830.jpg"
+                                alt="杭州某美容机构公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某美容机构公司办公家具采购案例</p>
+                            <p>杭州<span>2023.07.27</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/8c749afba74d8ec1c913c0a6ee0e6f23.jpg"
+                                alt="上海某生物科技公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某生物科技公司二手办公家具采购案例</p>
+                            <p>上海<span>2023.07.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b1cefb60c31bf68cdb0cc88c0f57524a.jpg"
+                                alt="杭州某医疗科技公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某医疗科技公司二手办公家具采购案例</p>
+                            <p>杭州<span>2023.06.29</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/fc669d3ef467cc20ba8760b9ae183d13.jpg"
+                                alt="深圳某教育科技公司办公家具租赁案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某教育科技公司办公家具租赁案例</p>
+                            <p>深圳<span>2023.06.21</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 3">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b80c8cc7ab7308769b873ab657d34cb0.jpg"
+                                alt="广州某设计工程公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某设计工程公司办公家具采购案例</p>
+                            <p>广州<span>2024.10.10</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b0a241c05a384a177d1b8d25a81c8232.jpg"
+                                alt="上海某置业公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某置业公司办公家具采购案例</p>
+                            <p>上海<span>2024.09.03</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ab4c40d7ee250d6540d32664000918d9.jpg"
+                                alt="北京某建筑科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某建筑科技公司办公家具采购案例</p>
+                            <p>北京<span>2024.08.08</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a1ab9b0fe64385a937b86ac3a794226f.jpg"
+                                alt="山西某煤化公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">山西某煤化公司办公家具采购案例</p>
+                            <p>山西<span>2024.05.26</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/bc8087968c2fe57f75ab452d453bcf69.jpg"
+                                alt="北京某建筑工程公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某建筑工程公司办公家具采购案例</p>
+                            <p>北京<span>2024.05.14</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/1bd28e42b75b59b18f27fd484a43f3ce.jpg"
+                                alt="深圳某设计公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某设计公司办公家具采购案例</p>
+                            <p>深圳<span>2024.03.25</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/5dd2c552b84ad269da6f7f1872f05623.jpg"
+                                alt="东莞某环境工程技术公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">东莞某环境工程技术公司办公家具采购案例</p>
+                            <p>深圳<span>2024.02.24</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/aa476a9c6fc0b21ff4653d3f01fcaf5d.jpg"
+                                alt="天津某汽车设计公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某汽车设计公司办公家具采购案例</p>
+                            <p>天津<span>2023.11.16</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/976dce3478de4053735008999be62f76.jpg"
+                                alt="杭州某建筑装饰公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某建筑装饰公司办公家具采购案例</p>
+                            <p>杭州<span>2023.09.06</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/256a526048d2e8c3f2e66a92f3bfb362.jpg"
+                                alt="天津某房地产经济公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某房地产经济公司办公家具采购案例</p>
+                            <p>天津<span>2023.09.05</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cb144ab4c3e38efaec6e38de802f4d62.jpg"
+                                alt="重庆某房地产管理公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">重庆某房地产管理公司办公家具采购案例</p>
+                            <p>重庆<span>2023.09.02</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/23927b950ba4b72539f8c30aa4a6ecb4.jpg"
+                                alt="上海某建设工程公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某建设工程公司办公家具采购案例</p>
+                            <p>上海<span>2023.08.14</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2fa13311361ac008429080caba40046c.jpg"
+                                alt="广州某建筑工程公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某建筑工程公司办公家具采购案例</p>
+                            <p>广州<span>2023.06.25</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/18faa4902091ce078052c74b2b243602.jpg"
+                                alt="杭州某装饰工程公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某装饰工程公司办公家具采购案例</p>
+                            <p>杭州<span>2023.05.23</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7dd8fde7a8d726a514827f48f4c2c323.jpg"
+                                alt="广州某贸易公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某贸易公司办公家具采购案例</p>
+                            <p>广州<span>2023.03.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6800e0dca0a3ce5f9b81982c1fc16abb.jpg"
+                                alt="重庆某动漫影视公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">重庆某动漫影视公司办公家具采购案例</p>
+                            <p>重庆<span>2023.03</span></p>
+                        </dd>
+                    </dl>
+                </div>
+
+                <div class="list-box" v-show="case_new == 6">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/51e83147af98407a1c3d376d9a77e965.jpg"
+                                alt="北京某电气科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某电气科技公司办公家具采购案例</p>
+                            <p>北京<span>2024.10.11</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c2145ada03b4879adbca8acfcf4e8d44.jpg"
+                                alt="广州某技术科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某技术科技公司办公家具采购案例</p>
+                            <p>广州<span>2024.10.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c3ff8998d5d858f772f4f7f57047e935.jpg"
+                                alt="深圳某智能清洁科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某智能清洁科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c555ee8e20486108a1c9a194fd4de963.jpg"
+                                alt="深圳某电子科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某电子科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.26</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c6e5f3c197f8536d2fe00b581886b94b.jpg"
+                                alt="成都某科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都某科技公司办公家具采购案例</p>
+                            <p>成都<span>2024.09.20</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/fb8decde74b2e6c54744fff4d9d23bdc.jpg"
+                                alt="杭州某科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某科技公司办公家具采购案例</p>
+                            <p>杭州<span>2024.09.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/763ad3d711d73f2cb16c3eb8d6f6d4ad.jpg"
+                                alt="广州某信息技术公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某信息技术公司办公家具采购案例</p>
+                            <p>广州<span>2024.09.09</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/5bc73c054ef4d4128b316df8b7cfa7d1.jpg"
+                                alt="杭州某数智科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某数智科技公司办公家具采购案例</p>
+                            <p>杭州<span>2024.09.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/78d75f01b8c2950e9862eb0e9d6584ae.jpg"
+                                alt="杭州某智能科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某智能科技公司办公家具采购案例</p>
+                            <p>杭州<span>2024.08.25</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c3ec73cb142fb9be511f668e1380b371.jpg"
+                                alt="成都某网信科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都某网信科技公司办公家具采购案例</p>
+                            <p>成都<span>2024.08.17</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/0ecfa896ff5fdc5fa453598edcec21cf.jpg"
+                                alt="广州某电子科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某电子科技公司办公家具采购案例</p>
+                            <p>广州<span>2024.08.08</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/9f62a5345bb36aa94521dcf56c029ae8.jpg"
+                                alt="杭州某数字科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某数字科技公司办公家具采购案例</p>
+                            <p>杭州<span>2024.08.06</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c47f407729afe0a5668e24d809f38439.jpg"
+                                alt="深圳某智能科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某智能科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.08.02</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b3ef96fe1f4bea1fc44d4576aa9cea44.jpg"
+                                alt="杭州某技术科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某技术科技公司办公家具采购案例</p>
+                            <p>杭州<span>2024.07.20</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2b4ad97439b844bc6b07c597db8ccae5.jpg"
+                                alt="深圳某电子科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某电子科技公司办公家具采购案例</p>
+                            <p>深圳<span>2024.07.16</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/bd9ffd149f19aedfdbcc0e5ec765ba42.jpg"
+                                alt="成都某智能科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都某智能科技公司办公家具采购案例</p>
+                            <p>成都<span>2024.07.12</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 7">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/27d967d4a14d80dd950924b3c83bc3d5.jpg"
+                                alt="中国建筑集团溧阳市政府办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">中国建筑集团溧阳市政府办公家具采购案例</p>
+                            <p>江苏<span>2024.03.17</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b1c1e6bc4c3aaa83c3ee4d215a4d1601.jpg"
+                                alt="成都大运会办公家具租赁项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都大运会办公家具租赁项目</p>
+                            <p>成都<span>2023年7月</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/316a428870e87eaf23cc0b18eaa8abc8.jpg"
+                                alt="南京某电力公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">南京某电力公司办公家具采购案例</p>
+                            <p>南京<span>2024.01.19</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a062b3ad43495ec6220cad01024bc24c.jpg"
+                                alt="重庆某电力工程公司办公家具安装项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">重庆某电力工程公司办公家具安装项目</p>
+                            <p>重庆<span>2023年9月</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c3b6dcdba39502503089539cfd881dfc.jpg"
+                                alt="重庆某电力工程公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">重庆某电力工程公司二手办公家具采购案例</p>
+                            <p>重庆<span>2023.09.26</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/8979979c2fceda052e94afbd1edf8a12.jpg"
+                                alt="成都大运动会项目二手办公家具租赁项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都大运动会项目二手办公家具租赁项目</p>
+                            <p>成都<span>2023.05.04</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b93d6e4f9b96fb9aa0b48793b707839b.jpg"
+                                alt="武汉某农业开发公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">武汉某农业开发公司办公家具采购案例</p>
+                            <p>武汉<span>2022.12</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a07bdf4c370cfa377260b719a38f3d60.jpg"
+                                alt="四川某文化传媒公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">四川某文化传媒公司办公家具采购案例</p>
+                            <p>成都<span>2022年10月</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/85504d4dcb29bc12c4e0fa3bc38d54d2.jpg"
+                                alt="中勤万信会计师事务所湖北分所安装项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">中勤万信会计师事务所湖北分所安装项目</p>
+                            <p>武汉<span>2022年4月</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 8">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b60e12c5d36adc0053f7060ff3aa2e06.jpg"
+                                alt="上海某财务管理咨询公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某财务管理咨询公司办公家具采购案例</p>
+                            <p>上海<span>2024.04.25</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/deb391467895dc905be19d1f10a99a9a.jpg"
+                                alt="杭州某商业银行公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某商业银行公司办公家具采购案例</p>
+                            <p>杭州<span>2023.11.04</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c482d52c416c13e652a35558ad66f719.jpg"
+                                alt="广州某金融机构办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某金融机构办公家具采购案例</p>
+                            <p>广州<span>2023.10.18</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/5df961c7baa5077cb6dd80406bcb9715.jpg"
+                                alt="深圳某金融服务公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某金融服务公司办公家具采购案例</p>
+                            <p>深圳<span>2023.03</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ecb70f917f27d1636a0054aa2fae1d57.jpg"
+                                alt="杭州某金融公司二手办公家具租赁案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某金融公司二手办公家具租赁案例</p>
+                            <p>杭州<span>2022.10</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7deb310e0b618c03c2af8323913b3929.jpg"
+                                alt="上海某金融服务公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某金融服务公司二手办公家具采购案例</p>
+                            <p>上海<span>2022年10月</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/81fa1adb8ee29022c9434cd2af66a016.jpg"
+                                alt="杭州某网络科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某网络科技公司办公家具采购案例</p>
+                            <p>杭州<span>2022年9月</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cb0bd398d43c8644936c082aff8a6fa6.jpg"
+                                alt="中国某健康保险公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">中国某健康保险公司办公家具采购案例</p>
+                            <p>北京朝阳区<span>2022年6月</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 9">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/0b044e656d287a208beeea3263d2a9cb.jpg"
+                                alt="苏州某能源科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某能源科技公司办公家具采购案例</p>
+                            <p>上海<span>2024.10.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/aac8d09e628b4bff47672a4f5e6d788f.jpg"
+                                alt="天津某复合材料公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某复合材料公司办公家具采购案例</p>
+                            <p>天津<span>2024.09.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a38e437c36e57177110ed76e7e8f0f91.jpg"
+                                alt="上海某自动化技术公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某自动化技术公司办公家具采购案例</p>
+                            <p>上海<span>2024.09.27</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/d48fbb42471acc81e11a6e75ddb46d2f.jpg"
+                                alt="苏州某设备研发公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某设备研发公司办公家具采购案例</p>
+                            <p>苏州<span>2024.09.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6984017099b6b9caab286fee80295bc8.jpg"
+                                alt="天津某液压技术公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某液压技术公司办公家具采购案例</p>
+                            <p>天津<span>2024.09.06</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b54b1eb26aec3fc9662c9d3126a74be3.jpg"
+                                alt="深圳某五金塑胶制品公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某五金塑胶制品公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.04</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/34b397387ad4f73f16faa5fd99301f03.jpg"
+                                alt="天津某工业研究院公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某工业研究院公司办公家具采购案例</p>
+                            <p>天津<span>2024.08.17</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/f560ae623de1a913acad7cb2ae2cf733.jpg"
+                                alt="常州某能源装备上市公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">常州某能源装备上市公司办公家具采购案例</p>
+                            <p>常州<span>2024.08.13</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7fd5d4559f458bb3b1d7ea24ba8705e4.jpg"
+                                alt="某知名保健品公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">某知名保健品公司办公家具采购案例</p>
+                            <p>上海<span>2024.07.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c7fbb201ed447423b0b745c475c74cd3.jpg"
+                                alt="苏州某智能设备公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某智能设备公司办公家具采购案例</p>
+                            <p>苏州<span>2024.07.10</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e187c2d944aa6e6911e4e6d9f27bbe98.jpg"
+                                alt="杭州某护理用品公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某护理用品公司办公家具采购案例</p>
+                            <p>杭州<span>2024.05.16</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2af4df1ca08a3b1f2cc3b899dfbe6e6e.jpg"
+                                alt="广州某包装制品公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某包装制品公司办公家具采购案例</p>
+                            <p>广州<span>2024.04.12</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b9aa93c951652b1bbe2d0d888f313adb.jpg"
+                                alt="苏州某光电公司二手办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">苏州某光电公司二手办公家具采购案例</p>
+                            <p>苏州<span>2024.02.28</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6ded33255aa16a8e6d417e342c82adb5.jpg"
+                                alt="天津某机电股份公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某机电股份公司办公家具采购案例</p>
+                            <p>天津<span>2024.01.28</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/d0d3a6d1d588427833dfa4c15f6f16f3.jpg"
+                                alt="上海某电路设计公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某电路设计公司办公家具采购案例</p>
+                            <p>上海<span>2024.01.27</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c70d81f656325cd731f8d7a3ebd15583.jpg"
+                                alt="天津某汽车设计公司办公家具采购案例（第二期）" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">天津某汽车设计公司办公家具采购案例（第二期）</p>
+                            <p>天津<span>2024.01.14</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="list-box" v-show="case_new == 10">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cbeff4383bcf0921a3e43e510c61a89d.jpg"
+                                alt="深圳某知名口腔护理公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某知名口腔护理公司办公家具采购案例</p>
+                            <p>深圳<span>2024.10.09</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/40320e8c1ac53c512a7641a0471ac219.jpg"
+                                alt="广州某体育文化发展公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某体育文化发展公司办公家具采购案例</p>
+                            <p>广州<span>2024.09.23</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/283783f5e0bb9bf48cd9ac26f0182043.jpg"
+                                alt="深圳某商务发展公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某商务发展公司办公家具采购案例</p>
+                            <p>深圳<span>2024.09.13</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c9e009e5393be81457f03845b6ca9624.jpg"
+                                alt="北京某文化发展公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某文化发展公司办公家具采购案例</p>
+                            <p>北京<span>2024.09.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/432bad48a3e5e784bd972f4905dd6a05.jpg"
+                                alt="北京某文化发展公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">北京某文化发展公司办公家具采购案例</p>
+                            <p>北京<span>2024.09.07</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cd11b1f114946d26b1322f657cd6589c.jpg"
+                                alt="广州某传媒公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某传媒公司办公家具采购案例</p>
+                            <p>广州<span>2024.09.01</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/93e1026c5a79941fc77b60bc86274c86.jpg"
+                                alt="上海某创业孵化器公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某创业孵化器公司办公家具采购案例</p>
+                            <p>上海<span>2024.08.30</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/4962c9d53cba21be68171befa1e58172.jpg"
+                                alt="上海某创业中心办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某创业中心办公家具采购案例</p>
+                            <p>上海<span>2024.08.28</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/75a6663d1b6979b1bc40a6202cd9906c.jpg"
+                                alt="广州某人才服务公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">广州某人才服务公司办公家具采购案例</p>
+                            <p>广州<span>2024.08.28</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/fa05d0f7e1211e0011f077aa07b7d720.jpg"
+                                alt="深圳某创意文化公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某创意文化公司办公家具采购案例</p>
+                            <p>深圳<span>2024.08.21</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/03412d835e39eb15f3ed0416fd6c9122.jpg"
+                                alt="杭州某人力资源公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">杭州某人力资源公司办公家具采购案例</p>
+                            <p>杭州<span>2024.08.15</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/efa4a365a3bb4dbbf8fc8757db6978e2.jpg"
+                                alt="深圳某货运代理公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">深圳某货运代理公司办公家具采购案例</p>
+                            <p>深圳<span>2024.08.14</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/30977d7fbaab3a520e7f0cd7d9eebf3b.jpg"
+                                alt="佛山某文化传媒公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">佛山某文化传媒公司办公家具采购案例</p>
+                            <p>佛山<span>2024.08.14</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6237d3a8adf2639cc92f31def03f7e89.jpg"
+                                alt="成都某网盾科技公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都某网盾科技公司办公家具采购案例</p>
+                            <p>成都<span>2024.08.06</span></p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/c3abd154505bd12d66dc3ed6fa396d85.jpg"
+                                alt="成都某文化传媒公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">成都某文化传媒公司办公家具采购案例</p>
+                            <p>成都<span>2024.08.01</span></p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/8447158116182f14c5cc2f42aee84b24.jpg"
+                                alt="佛山某服务管理公司办公家具采购案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">佛山某服务管理公司办公家具采购案例</p>
+                            <p>广州<span>2024.07.10</span></p>
+                        </dd>
+                    </dl>
+                </div>
+                <a href="/case/list/casetype=1" style="cursor: unset;" target="_blank">
+                    <div class="case-more ">点击了解更多安装案例 &gt;&gt;</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="case-recycling">
+        <div class="w1280">
+            <div class="layout-tilte">
+                <p>1500+家具回收合作伙伴</p>
+                <p>成功服务1500余家在华世界500强及知名大中型知名企业</p>
+            </div>
+            <div class="case-list">
+                <div style="width: 1280px;height: 411px">
+                    <img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/brand.png" alt="企业品牌" class="">
+                </div>
+
+                <div class="recycling-box">
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/3b1167b53f5acae2630b7b8cf6663a10.jpg"
+                                alt="国内某知名短视频企业回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">国内某知名短视频企业回收项目</p>
+                            <p>2023年10月，为该公司提供全国范围内的回收服务，回收家具包含：员工办公桌椅柜、文件柜、沙发茶几、餐桌椅等</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/2a714edad51ee5def06265de01fd5198.jpg"
+                                alt="上海某互娱科技公司回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">上海某互娱科技公司回收项目</p>
+                            <p>2023年8月，从该互娱科技公司回收500多套二手办公家具。</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/251eba131557b0418a53f3fabd3fbd26.jpg"
+                                alt="某500强国际银行回收项目（上海）" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">某500强国际银行回收项目（上海）</p>
+                            <p>2023年5月，为世界500强国际银行提供办公家具回收服务，回收家具品牌为：海沃氏。</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/60e2fc4b4a415cfc4fb52ee3a2968534.jpg"
+                                alt="某连锁水果品牌办公家具回收项目（广州）" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">某连锁水果品牌办公家具回收项目（广州）</p>
+                            <p>2023年4-5月，为某水果连锁品牌公司提供办公家具回收服务，家具品牌：欧林、震旦等</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/eb2d14ac33fb4a0e64786eb13966d431.jpg"
+                                alt="领英（北京）回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">领英（北京）回收项目</p>
+                            <p>2023年1月，为领英（北京）公司提供办公家具回收服务，家具品牌：海沃氏、国林等</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a15e224188b7b7a9e5cfdd489b6ae471.jpg"
+                                alt="某跨境电商企业回收项目（深圳）" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">某跨境电商企业回收项目（深圳）</p>
+                            <p>2023年2月，为某跨境电商公司提供办公家具回收服务，家具品牌：科誉、玛祖铭立等</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/d7c2f4e3ae0c27719e3148661628dfab.jpg"
+                                alt="IBM（广州）回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">IBM（广州）回收项目</p>
+                            <p>2022年，为IBM广州分部提供办公家具回收服务，家具品牌：海沃氏、世楷等</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a7cf7e01dce26b46368c5a740c1eb915.jpg"
+                                alt="阿里巴巴（杭州）回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">阿里巴巴（杭州）回收项目</p>
+                            <p>2022年，为阿里巴巴杭州分部提供办公家具回收服务，回收办公家具约1000多套。</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/5c4a6d6cbcc0c1dfa40142f5ba56a5e1.jpg"
+                                alt="荣耀公司回收项目（杭州）" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">荣耀公司回收项目（杭州）</p>
+                            <p>2022年，为荣耀公司杭州分部提供办公家具回收服务，家具品牌：百利、海沃氏等</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a1ac519899fb0e5e2366ba0a794381b9.jpg"
+                                alt="有赞微商城回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">有赞微商城回收项目</p>
+                            <p>2022年，为有赞微商城提供全国范围内的办公家具回收服务，约3000多套。</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/84c9768a2eb8157007fc8254d069f2a3.jpg"
+                                alt="无限极研究所回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">无限极研究所回收项目</p>
+                            <p>2022年，为无限极研究所广州公司提供办公家具回收服务，家具品牌：科誉等。</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e745275cb3f2405f5c6e460211128c3a.jpg"
+                                alt="猿辅导在线教育回收案例" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">猿辅导在线教育回收案例</p>
+                            <p>2021-2022年，和猿辅导达成合作关系，全国回收上千套诺伟品牌办公家具产品。</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/899ce190225514f02b1cab78945f683b.jpg"
+                                alt="SAP思爱普公司办公家具回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">SAP思爱普公司办公家具回收项目</p>
+                            <p>2021年，为思爱普公司提供办公家具回收项目，家具品牌大多是海沃氏。</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/55bbdf59a0de408e9151e42e976b054d.jpg"
+                                alt="强生（上海）回收项目" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">强生（上海）回收项目</p>
+                            <p>2016年，为强生（上海）提供办公家具回收服务，家具品牌：海沃氏、世楷等。</p>
+                        </dd>
+                    </dl>
+                    <dl class="margin-rb">
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ccdd523cd648f5ae46bb8dadbd79bda3.jpg"
+                                alt="仲量联行JLL公司回收项目(上海)" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">仲量联行JLL公司回收项目(上海)</p>
+                            <p>2017年，为仲量联行JLL提供办公家具回收服务，家具品牌为海沃氏。</p>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/3b5ee97652deb900f13b1da0415094e0.jpg"
+                                alt="百事可乐公司回收项目（中国）" class="lazyload"></dt>
+                        <dd>
+                            <p class="over1">百事可乐公司回收项目（中国）</p>
+                            <p>2017年，与百事可乐公司达成合作，提供上海公司的办公家具回收项目。</p>
+                        </dd>
+                    </dl>
+                </div>
+                <a href="/case/list/casetype=2" style="cursor: unset;" target="_blank">
+                    <div class="case-more ">点击了解更多回收案例 &gt;&gt;</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="banner-bottom w1280">
+        <a href="news/detail/29.html" target="_blank"><img data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/banner-bottom.jpg"
+                class="lazyload"></a>
+    </div>
+</section>
+{{ end }}
+
+{{ define "footscript" }}
+<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/case.js"></script>
+{{ end }}

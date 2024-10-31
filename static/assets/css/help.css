@@ -1,0 +1,67 @@
+.help-nav ul{
+    display: flex;
+    padding: 12px 0;
+}
+
+.help-box{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.help-box .help-box-left{
+    width: 280px;
+    height: max-content;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.help-box .help-box-left ul{
+    padding: 0 20px;
+}
+.help-box .help-box-left ul b{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.help-box .help-box-left ul .active{
+    color: #50972c;
+}
+.help-box .help-box-left ul .active em{
+    background-color: #50972c;
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    left: -20px;
+    top: 4px;
+}
+.help-box .help-box-left ul li{
+    font-size: 16px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.help-box .help-box-left ul li b{
+    /*border-bottom: 3px solid #50972c;*/
+    padding-bottom: 5px;
+}
+.help-box .help-box-right{
+    width: 960px;
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+.help-box-right .box-right-content p{
+    margin-bottom: 15px !important;
+}
+.help-box-right .box-right-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 60px;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 10px;
+}
+.help-box-right .box-right-content{
+    min-height: 500px;
+    padding: 10px 60px;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+}

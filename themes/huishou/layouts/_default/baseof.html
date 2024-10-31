@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+	<link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+	<meta name="applicable-device" content="pc" />
+	{{ hugo.Generator }}
+	{{ block "meta" . }}{{ end }}
+	<link href="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/css/style.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcdn.net/ajax/libs/Swiper/6.6.2/swiper-bundle.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcdn.net/ajax/libs/layui/2.7.6/css/layui.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/css/animate.min.css"  rel="stylesheet"/>
+  	{{ block "headscript" . }}{{ end }}
+</head>
+
+<body>
+
+	<div class="wrap">
+		<!-- Header -->
+		<div class="header">
+			<header>
+				{{ if eq .IsHome true }}<h1 class="header-left">{{ else }}<div class="header-left">{{ end }}
+					<a href="/" target="_blank">
+						<img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" alt="" style="width: 100%">
+					</a>
+				{{ if eq .IsHome true }}</h1>{{ else }}</div>{{ end }}
+				<ul class="navHref">
+					{{ range .Site.Menus.main }}
+					<li>
+						<a{{ if eq (relURL .URL) (relURL $.Permalink) }} class="activity"{{ end }} href="{{ .URL }}" title="{{ .Name }}">
+						{{ .Name }}
+						{{ if eq .URL "/" }}<em>HOT</em>{{ end }}
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+				<div class="header-right">电话：{{ .Site.Params.company.Tel }}</div>
+			</header>
+		</div>
+
+		<!--主体-->
+    {{ block "main" . }}{{ end }}
+		<!-- 主体 -->
+
+		<!-- Footer -->
+		<div class="footer">
+			<footer>
+				<div class="footer-guarantee">
+					<div class="w1280 flexRC" style="border-bottom: 1px solid #bfbfbf;">
+						<dl>
+							<dt><img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/footer-bz1.png" alt="全国连锁"></dt>
+							<dd>
+								<p>全国连锁</p>
+								<p>全国13家分公司</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/footer-bz2.png" alt="专业服务"></dt>
+							<dd>
+								<p>专业服务</p>
+								<p>15年成熟服务经验</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/footer-bz3.png" alt="现货仓储"></dt>
+							<dd>
+								<p>现货仓储</p>
+								<p>全国近10万平仓储面积</p>
+							</dd>
+						</dl>
+						<dl>
+							<dt><img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/footer-bz4.png" alt="国内外名企回收货源"></dt>
+							<dd style="width: 160px;">
+								<p>品质货源</p>
+								<p>国内外名企回收货源</p>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="footer-mode flexRC">
+					<div class="w1280 flexR" style="padding-top: 45px;">
+						<!--<div class="logo flexCC"><a href="/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png"></a></div>-->
+						<ul class="nav ">
+							<li><b>认识我们</b></li>
+							<li><a href="/help/?type=5" title="关于我们" target="_blank">关于我们</a></li>
+							<li><a href="/help/?type=6" title="发展历程" target="_blank">发展历程</a></li>
+							<li><a href="/help/?type=7" title="展厅地址" target="_blank">展厅地址</a></li>
+							<li><a href="/help/?type=8" title="爱心公益" target="_blank">爱心公益</a></li>
+							<li><a href="/case.html" title="服务案例" target="_blank">服务案例</a></li>
+							<li><a href="/esg.html" title="ESG碳减排" target="_blank">ESG碳减排</a></li>
+						</ul>
+						<ul class="nav ">
+							<li><b>产品种类</b></li>
+							<li><a href="/product.html?type=2" title="工位/职员桌" target="_blank">工位/职员桌</a></li>
+							<li><a href="/product.html?type=3" title="班台/经理桌" target="_blank">班台/经理桌</a></li>
+							<li><a href="/product.html?type=1" title="办公椅/电脑椅" target="_blank">办公椅/电脑椅</a></li>
+							<li><a href="/product.html?type=5" title="件柜/小推柜" target="_blank">文件柜/小推柜</a></li>
+							<li><a href="/product.html?type=4" target="_blank">会议桌/洽谈桌</a></li>
+							<li><a href="/product.html?type=6" title="件柜/小推柜" target="_blank">沙发/茶几</a></li>
+						</ul>
+						<ul class="nav ">
+							<li><b>服务支持</b></li>
+							<li><a href="/help/?type=1" title="租赁业务" target="_blank">租赁业务</a></li>
+							<li><a href="/help/?type=2" title="回收业务" target="_blank">回收业务</a></li>
+							<li><a href="/help/?type=3" title="售后保障" target="_blank">售后保障</a></li>
+							<li><a href="/help/?type=4" title="配送说明" target="_blank">配送说明</a></li>
+						</ul>
+						<ul class="nav ">
+							<li><b>资讯动态</b></li>
+							<li><a href="/news.html?type=3" title="企业动态" target="_blank">企业动态</a></li>
+							<li><a href="/news.html?type=4" title="市场资讯" target="_blank">市场资讯</a></li>
+							<li><a href="/news.html?type=5" title="优惠活动" target="_blank">优惠活动</a></li>
+							<li><a href="/news.html?type=6" title="好货推荐" target="_blank">好货推荐</a></li>
+							<li><a href="/news.html?type=7" title="家具知识" target="_blank">家具知识</a></li>
+						</ul>
+						<div class="mode-link">
+							<div class="link-center"></div>
+						</div>
+						<div class="contact ">
+							<p>
+								<a href="/" target="_blank">
+									<img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" style="width: 180px;">
+								</a>
+							</p>
+							<p>全国统一服务热线</p>
+							<p>{{ .Site.Params.company.Tel }}</p>
+							<p>（周一至周日 08:00-22:00）</p>
+							<p>关注我们</p>
+							<ul>
+								<li onmousemove="qrcodeShow(1)" onmouseout="qrcodeHide()">
+									<img class="qrcode-no" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ico-wx-no.png"
+										style="width:32px;height:32px;cursor: pointer;padding-right: 30px">
+									<img class="qrcode-yes" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ico-wx-yes.png"
+										style="width:32px;height:32px;cursor: pointer;display:none;padding-right: 30px">
+									<div class="qrcode-img pop-img01">
+										<img src="https://qun.qq.com/qrcode/index?data={{ .Site.Params.company.Weixin }}">
+									</div>
+								</li>
+								<li onmousemove="qrcodeShow(2)" onmouseout="qrcodeHide()">
+									<img class="qrcode-no" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ico-wb-no.png"
+										style="width:32px;height:32px;cursor: pointer;padding-right: 30px">
+									<img class="qrcode-yes" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ico-wb-yes.png"
+										style="width:32px;height:32px;cursor: pointer;display:none;padding-right: 30px">
+									<div class="qrcode-img pop-img02">
+										<img src="https://qun.qq.com/qrcode/index?data={{ .Site.Params.company.Weibo }}">
+									</div>
+								</li>
+								<li onmousemove="qrcodeShow(3)" onmouseout="qrcodeHide()">
+									<img class="qrcode-no" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ico-dy-no.png"
+										style="width:32px;height:32px;cursor: pointer;">
+									<img class="qrcode-yes" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/ico-dy-yes.png"
+										style="width:32px;height:32px;cursor: pointer;display:none;">
+									<div class="qrcode-img pop-img03">
+										<img src="https://qun.qq.com/qrcode/index?data={{ .Site.Params.company.Douyin }}">
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--<div class="attention"><img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/wx.png" >关注公众号</div>-->
+					</div>
+				</div>
+
+				<div class="footer-links">
+					<div class="w1280 links-box">
+						<div class="links-left">
+							友情链接：
+						</div>
+						<div class="links-right">
+							<ul>
+								<li><a href="https://www.wooooden.com/" target="_blank">北京二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">上海二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">广州二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">深圳二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">天津二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">武汉二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">杭州二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">成都二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">重庆二手办公家具</a></li>
+								<li><a href="https://www.wooooden.com/" target="_blank">二手办公家具回收</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyright">
+					<div class="w1280 flexRC">
+						<p>中国 • 上海 & 装配狮 ©{{ .Site.Params.company.Start }}-{{ now.Year }}</p>
+						<p>&nbsp;|&nbsp;{{ .Site.Params.company.Name }} 版权所有 {{ .Site.Params.company.Address }} <a href="https://www.issem.cn" target="_blank">楚莺营销</a>提供网络营销技术支持&nbsp;|&nbsp;&nbsp;
+						</p>
+						<p><a href="https://beian.miit.gov.cn/" target="_blank" rel="external nofollow">{{ .Site.Params.company.Icp }}</a></p>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!--右侧导航-->
+		<ul class="rightMenu">
+			<li onmousemove="rightMenuShow(1)" onmouseout="rightMenuHide()">
+				<a href="javascript:void (0)" title="">
+					<span class="maximg">
+						<img class="img1" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-01.png" style="height: 100%;" />
+						<img class="img2" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-on-01.png" style="height: 100%;" />
+					</span>
+					<p>咨询热线</p>
+				</a>
+				<div class="rightMenu-show pop-menu01">
+					<p>{{ .Site.Params.company.Tel }}</p>
+					<p>周一至周日 8:00-22:00</p>
+				</div>
+			</li>
+			<li>
+				<a href="javascript:void (0)" title="" class="shangqiao">
+					<span class="maximg">
+						<img class="img1" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-03.png" />
+						<img class="img2" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-on-03.png" />
+					</span>
+					<p>联系客服</p>
+				</a>
+			</li>
+			<!--<li style="display: none">-->
+			<!--<a >-->
+			<!--<span class="maximg">-->
+			<!--<img class="img1" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-04.png" />-->
+			<!--<img class="img2" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-on-04.png" />-->
+			<!--</span>-->
+			<!--<p>批量采购</p>-->
+			<!--</a>-->
+			<!--</li>-->
+			<li class="zhiding" id="zhiding">
+				<a href="javascript:void(0)" title="">
+					<span class="maximg">
+						<img class="img1" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-05.png" />
+						<img class="img2" alt="" src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/rightnav-on-05.png" />
+					</span>
+					<p>回到顶部</p>
+				</a>
+			</li>
+		</ul>
+
+		<!--底部悬浮表单-->
+		<div class="footerForm">
+			<div id="colseFrom" class="colse check-open" onclick="showFooterForm()"></div>
+			<div style="background: rgba(0, 0, 0, 0.7);">
+				<div class="w1280 footerForm-in">
+					<span>一站式办公家具服务　<strong>省钱买 放心用</strong></span>
+					<input placeholder="请输入姓名" maxlength="8" type="text" id="userNameFrom" />
+					<input placeholder="请输入手机号" maxlength="11" type="text" id="userPhoneFrom" />
+					<button type="button" onclick="saveConsult()" style="cursor: pointer">提交申请</button>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!--JS引用-->
+	<script src="https://cdn.bootcdn.net/ajax/libs/layui/2.7.6/layui.min.js"></script>
+	<script>var layer = layui.layer,element = layui.element,form = layui.form;</script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/Swiper/6.6.2/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/jquery.lazyload.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/scrollreveal.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/axios/1.7.2/axios.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/area.js"></script>
+	{{ block "footscript" . }}{{ end }}
+  	<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/common.js"></script>
+</body>
+
+</html>

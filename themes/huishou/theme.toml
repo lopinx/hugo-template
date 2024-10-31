@@ -1,0 +1,25 @@
+name = 'huishou'
+license = 'MIT'
+licenselink = 'https://github.com/lopins/hugo-template/LICENSE'
+description = 'A fast and flexible static site generator built with love by bep, spf13, and friends in Go.'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/lopins/hugo-template'
+
+# If you have a running demo of the theme
+demosite = 'https://lopins.github.io/hugo-template'
+
+# Taxonomy terms
+tags = ['blog', 'company']
+features = ['some', 'awesome', 'features']
+
+# If the theme has a single author
+[author]
+  name = 'lopins'
+  homepage = 'https://lopins.github.io'
+
+# If porting an existing theme
+[original]
+  author = 'lopins'
+  homepage = 'https://lopins.github.io'
+  repo = 'https://github.com/lopins/hugo-template'

@@ -1,0 +1,18 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range (where .Site.RegularPages "Params.hidden" "!=" true) -}}
+    {{- $tags := .Params.tags -}}
+    {{- $categories := .Params.categories -}}
+    {{- $.Scratch.Add "index" (dict
+        "title" .Title
+        "permalink" .Permalink
+        "content" .Plain
+        "date" .Date
+        "lastmod" .Lastmod
+        "tags" $tags
+        "categories" $categories
+        "draft" .Draft
+        "type" .Type
+        "kind" .Kind
+    ) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

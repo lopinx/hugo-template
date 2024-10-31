@@ -1,0 +1,903 @@
+{{ define "meta" }}
+<title>世界500强企业用的办公家具-二手办公家具出售|租赁-装配狮</title>
+<meta name="keywords" content="办公家具,二手办公家具,二手办公家具网,装配狮" />
+<meta name="description" content="二手办公家具出售|租赁，提供一站式二手办公家具服务，千余款办公家具现货供应，即装即用，货源来自在华世界500强及国内知名企业。" />
+{{ end }}
+
+{{ define "headscript" }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/css/product.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/css/select.css">
+<style>
+    .footer-mode {
+        background-color: #efefef !important;
+    }
+
+    .layui-form-item .layui-form-checkbox[lay-skin=primary] {
+        margin-top: unset
+    }
+
+    .layui-form-item .layui-form-checkbox {
+        margin-top: unset
+    }
+
+    .layui-layer-btn .layui-layer-btn0 {
+        background: linear-gradient(to right, #109a30, #5dc376) !important;
+        font-size: 18px;
+        border: unset;
+    }
+
+    .layui-form-search {
+        width: 200px;
+        position: relative;
+    }
+
+    .layui-form-search .input-submit {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .layui-form-search .search-input {
+        background: url(https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/search.png) no-repeat right 5px center;
+        padding-right: 40px;
+    }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<section id="content" style="background-color: #f8f8f8">
+    <div class="w1280">
+        <div class="crumbs-nav">
+            <div class="crumbs-nav-main clearfix">
+                <span><a href="/">首页</a></span>
+                <span class="arrow">&gt;</span>
+                商品结果
+            </div>
+            <div class="layui-form-search">
+                <input type="text" id="keyWord" name="keyWord" placeholder="请输入商品关键词搜索" value=""
+                    class="layui-input search-input" style="height: 30px;line-height: 30px">
+                <div class="input-submit" lay-submit lay-filter="search"></div>
+            </div>
+        </div>
+        <div class="selector">
+            <div class="right-extra">
+                <div class="u_cloose" style="display:none;">
+                    <dl>
+                        <dt>已选条件：</dt>
+                        <dd class="give_up_all"><a href="/product.html" class="ftx-05">全部撤销</a></dd>
+                    </dl>
+                </div>
+                <div class="screen-item">
+                    <ul class="attr_father">
+                        <li class="s-line">
+                            <div class="s-l-wrap  ">
+                                <div class="s-l-tit brand_name_l">类型：</div>
+                                <div class="s-l-value">
+                                    <div class="type_auto ">
+                                        <div class="type_range">
+                                            <a class="selected" href="/product.html"><span>不限</span></a>
+                                        </div>
+                                        <div class="type_range">
+                                            <a class="" href="/product.html?type=2"
+                                                title="二手工位/职员桌"><span>工位/职员桌</span></a>
+                                        </div>
+                                        <div class="type_range">
+                                            <a class="" href="/product.html?type=3"
+                                                title="二手班台/经理桌"><span>班台/经理桌</span></a>
+                                        </div>
+                                        <div class="type_range">
+                                            <a class="" href="/product.html?type=1"
+                                                title="二手办公椅/电脑椅"><span>办公椅/电脑椅</span></a>
+                                        </div>
+                                        <div class="type_range">
+                                            <a class="" href="/product.html?type=5"
+                                                title="二手文件柜/小推柜"><span>文件柜/小推柜</span></a>
+                                        </div>
+                                        <div class="type_range">
+                                            <a class="" href="/product.html?type=4"
+                                                title="二手会议桌/洽谈桌"><span>会议桌/洽谈桌</span></a>
+                                        </div>
+                                        <div class="type_range">
+                                            <a class="" href="/product.html?type=6"
+                                                title="二手沙发/茶几"><span>沙发/茶几</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="attr_father">
+                        <li class="s-line">
+                            <div class="s-l-wrap  ">
+                                <div class="s-l-tit brand_name_l">品牌：</div>
+                                <div class="s-l-value brand_select_more">
+                                    <div class="brand_auto" :class="{'brand_img':brandShowIdx == 0}">
+                                        <div class="brand_range">
+                                            <a class="selected" href="/product.html">
+                                                <span>不限</span>
+                                            </a>
+                                        </div>
+
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=4" title="二手海沃氏办公家具">
+                                                <span>海沃氏</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=5" title="二手赫曼米勒办公家具">
+                                                <span>赫曼米勒</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=9" title="二手优门设办公家具">
+                                                <span>优门设</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=6" title="二手世楷办公家具">
+                                                <span>世楷</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=7" title="二手欧林办公家具">
+                                                <span>欧林</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=11" title="二手美时办公家具">
+                                                <span>美时</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=12" title="二手圣奥办公家具">
+                                                <span>圣奥</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=13" title="二手百利文仪办公家具">
+                                                <span>百利文仪</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=15" title="二手科誉办公家具">
+                                                <span>科誉</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=18" title="二手诺梵办公家具">
+                                                <span>诺梵</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=16" title="二手震旦办公家具">
+                                                <span>震旦</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=20" title="二手诺伟办公家具">
+                                                <span>诺伟</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=10" title="二手冈村办公家具">
+                                                <span>冈村</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=8" title="二手国产办公家具">
+                                                <span>国产</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=14" title="二手玛祖铭立办公家具">
+                                                <span>玛祖铭立</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=17" title="二手保友办公家具">
+                                                <span>保友</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=19" title="二手9am办公家具">
+                                                <span>9am</span>
+                                            </a>
+                                        </div>
+                                        <div class="brand_range">
+                                            <a class="" href="/product.html?brand=21" title="二手国誉办公家具">
+                                                <span>国誉</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s-l-opt sl-ext" v-show="brandShowIdx==0">
+                                    <div class="choose_more s-l-multiple" @click="isBrandShow(1)"><i
+                                            class="layui-icon layui-icon-addition"></i>更多</div>
+                                </div>
+                                <div class="s-l-opt sl-ext" v-show="brandShowIdx==1">
+                                    <div class="choose_more s-l-multiple" @click="isBrandShow(0)"><i
+                                            class="layui-icon layui-icon-subtraction"></i>折叠</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="attr_father">
+                        <li class="s-line">
+                            <div class="s-l-wrap ">
+                                <div class="s-l-tit brand_name_l">所在地：</div>
+                                <div class="s-l-value ">
+                                    <div class="area_auto">
+                                        <div class="area_range">
+                                            <a class="selected" href="/product.html">
+                                                <span>不限</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=1" title="北京二手办公家具">
+                                                <span>北京</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=2" title="上海二手办公家具">
+                                                <span>上海</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=3" title="广州二手办公家具">
+                                                <span>广州</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=4" title="深圳二手办公家具">
+                                                <span>深圳</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=5" title="天津二手办公家具">
+                                                <span>天津</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=6" title="成都二手办公家具">
+                                                <span>成都</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=7" title="杭州二手办公家具">
+                                                <span>杭州</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=10" title="武汉二手办公家具">
+                                                <span>武汉</span>
+                                            </a>
+                                        </div>
+                                        <div class="area_range">
+                                            <a class="" href="/product.html?area=11" title="重庆二手办公家具">
+                                                <span>重庆</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="attr_father">
+                        <li class="s-line">
+                            <div class="s-l-wrap  ">
+                                <div class="s-l-tit brand_name_l">成色：</div>
+                                <div class="s-l-value ">
+                                    <div class="new_auto">
+                                        <div class="new_range">
+                                            <a class="selected" href="/product.html">
+                                                <span>不限</span>
+                                            </a>
+                                        </div>
+                                        <div class="new_range">
+                                            <a class="" href="/product.html?new=1" title="全新办公家具">
+                                                <span>全新</span>
+                                            </a>
+                                        </div>
+                                        <div class="new_range">
+                                            <a class="" href="/product.html?new=2" title="99成新办公家具">
+                                                <span>99成新</span>
+                                            </a>
+                                        </div>
+                                        <div class="new_range">
+                                            <a class="" href="/product.html?new=3" title="95成新办公家具">
+                                                <span>95成新</span>
+                                            </a>
+                                        </div>
+                                        <div class="new_range">
+                                            <a class="" href="/product.html?new=4" title="9成新办公家具">
+                                                <span>9成新</span>
+                                            </a>
+                                        </div>
+                                        <div class="new_range">
+                                            <a class="" href="/product.html?new=5" title="85成新办公家具">
+                                                <span>85成新</span>
+                                            </a>
+                                        </div>
+                                        <div class="new_range">
+                                            <a class="" href="/product.html?new=6" title="8成新办公家具">
+                                                <span>8成新</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="click_more s-more" style="display: none"><span class="sm-wrap"
+                        style="display: none"><strong>更多选项</strong> <i
+                            class="layui-icon layui-icon-down"></i></span></div>
+            </div>
+        </div>
+        <div class="w1280">
+            <div class="product-content">
+                <!-- <div class="product-tab">
+                    <div class="tab-left">
+                        <a href="/product.html">
+                            <p class="selected-txt">全部<em class="selected"></em></p>
+                        </a>
+                        <p></p>
+                        <a href="/product.html?isSpecial=1">
+                            <p>精选<img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/hot.png" alt=""></p>
+                        </a>
+                    </div>
+                    <div class="tab-right">
+                        <ul>
+                            <a href="/product.html?orderType/default.html">
+                                <li>智能排序<em class="tab-line"></em></li>
+                            </a>
+                            <a href="/product.html?orderType/new.html">
+                                <li class="">最新上架<em class="tab-line"></em></li>
+                            </a>
+                            <a href="/product.html?orderType/priceMin.html">
+                                <li class="">价格最低<em class="tab-line"></em></li>
+                            </a>
+                            <a href="/product.html?orderType/priceMax.html">
+                                <li class="">价格最高</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="product-box">
+                    <div class="scheme_right">
+                        <ul>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/294.html" target="_blank"
+                                    title="9成新雅风品牌二手办公桌员工电脑桌屏风工位二手卡座">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7d3bd3fb105430c66de4787c0e68abb2.jpg"
+                                                class="lazyload loaded-img" alt="9成新雅风品牌二手办公桌员工电脑桌屏风工位二手卡座"></p>
+                                        <p class="over1">9成新雅风品牌二手办公桌员工电脑桌屏风工位二手卡座</p>
+                                        <p class="over1">数量很多 满足大批量需求 上海本地可送货安装</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>240</em></p>
+                                        <p style="display: none"><del>新品参考价¥1500</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/293.html" target="_blank"
+                                    title="9成新玛拉蒂二手开放式工位员工办公桌电脑桌 白色 1.4米/1.5米尺寸">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/464a18baae1b0107fe9eedabd5985816.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="9成新玛拉蒂二手开放式工位员工办公桌电脑桌 白色 1.4米/1.5米尺寸"></p>
+                                        <p class="over1">9成新玛拉蒂二手开放式工位员工办公桌电脑桌 白色 1.4米/1.5米尺寸</p>
+                                        <p class="over1">2个尺寸可选 搭配同套办公椅柜满30套828元</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>380</em></p>
+                                        <p style="display: none"><del>新品参考价¥1600</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/292.html" target="_blank"
+                                    title="9成新世楷steelcase二手Reply系列二手人体工学椅办公椅电脑椅职员椅子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/4cafe07fa62061eae340bc081f9d7913.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="9成新世楷steelcase二手Reply系列二手人体工学椅办公椅电脑椅职员椅子"></p>
+                                        <p class="over1">9成新世楷steelcase二手Reply系列二手人体工学椅办公椅电脑椅职员椅子</p>
+                                        <p class="over1">现货包邮 4d扶手 腰托可上下调节</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>599</em></p>
+                                        <p style="display: none"><del>新品参考价¥3000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/291.html" target="_blank"
+                                    title="海沃氏Haworth二手办公桌L型屏风工位职员电脑桌">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/bad06a264f20f70baf9564337a263c30.jpg"
+                                                class="lazyload loaded-img" alt="海沃氏Haworth二手办公桌L型屏风工位职员电脑桌">
+                                        </p>
+                                        <p class="over1">海沃氏Haworth二手办公桌L型屏风工位职员电脑桌</p>
+                                        <p class="over1">1.5米尺寸 国际品牌 质量好</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>700</em></p>
+                                        <p style="display: none"><del>新品参考价¥3000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/product/detail/290.html" target="_blank"
+                                    title="Steelcase/世楷think系列二手人体工学椅网格转椅办公椅灰色">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/37a4c75b1b6be0a5c388b042c892ea20.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="Steelcase/世楷think系列二手人体工学椅网格转椅办公椅灰色"></p>
+                                        <p class="over1">Steelcase/世楷think系列二手人体工学椅网格转椅办公椅灰色</p>
+                                        <p class="over1">新款非旧款 支撑性更好 成色非常新 瑕疵少</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>2200</em></p>
+                                        <p style="display: none"><del>新品参考价¥8000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/289.html" target="_blank"
+                                    title="世楷二手Series 1系列二手人体工学椅办公椅电脑椅职员座椅">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/47ebc6dd713577a0f6b219faf78e8f81.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="世楷二手Series 1系列二手人体工学椅办公椅电脑椅职员座椅"></p>
+                                        <p class="over1">世楷二手Series 1系列二手人体工学椅办公椅电脑椅职员座椅</p>
+                                        <p class="over1">世楷官方4000元左右 仅使用2年不到 成色非常新 强烈推荐</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>1880</em></p>
+                                        <p style="display: none"><del>新品参考价¥4000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/288.html" target="_blank"
+                                    title="9成新百利文仪二手办公桌员工工位开放式电脑桌职员桌">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/4d874037511679f1c7b4efddbd331f0e.jpg"
+                                                class="lazyload loaded-img" alt="9成新百利文仪二手办公桌员工工位开放式电脑桌职员桌"></p>
+                                        <p class="over1">9成新百利文仪二手办公桌员工工位开放式电脑桌职员桌</p>
+                                        <p class="over1">知名家具品牌 质量成色好</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>350</em></p>
+                                        <p style="display: none"><del>新品参考价¥1600</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/287.html" target="_blank"
+                                    title="9成新简约二手折叠椅会议椅洽谈开会四脚椅子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/4971233feae163df4c7b0b39f0a8f118.jpg"
+                                                class="lazyload loaded-img" alt="9成新简约二手折叠椅会议椅洽谈开会四脚椅子"></p>
+                                        <p class="over1">9成新简约二手折叠椅会议椅洽谈开会四脚椅子</p>
+                                        <p class="over1">可折叠设计 节省空间 数量很多 详情咨询客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>200</em></p>
+                                        <p style="display: none"><del>新品参考价¥580</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/286.html" target="_blank"
+                                    title="9成新Wework二手办公桌电脑桌职员桌子员工独立桌二手工位">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6acbb2edbc6443e008fd877313238988.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="9成新Wework二手办公桌电脑桌职员桌子员工独立桌二手工位"></p>
+                                        <p class="over1">9成新Wework二手办公桌电脑桌职员桌子员工独立桌二手工位</p>
+                                        <p class="over1">可独立使用 详情咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>220</em></p>
+                                        <p style="display: none"><del>新品参考价¥600</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/product/detail/285.html" target="_blank"
+                                    title="9成新美时二手办公桌员工开放式工位电脑桌职员桌子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/dc5177ead9d9df3a01cacda9014c80f9.jpg"
+                                                class="lazyload loaded-img" alt="9成新美时二手办公桌员工开放式工位电脑桌职员桌子"></p>
+                                        <p class="over1">9成新美时二手办公桌员工开放式工位电脑桌职员桌子</p>
+                                        <p class="over1">国内知名家具品牌 1.6米大尺寸</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>550</em></p>
+                                        <p style="display: none"><del>新品参考价¥2000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/284.html" target="_blank" title="9成新网布二手办公椅电脑椅职员座椅">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b59f80552a25c8a29673aeb9461ea186.jpg"
+                                                class="lazyload loaded-img" alt="9成新网布二手办公椅电脑椅职员座椅"></p>
+                                        <p class="over1">9成新网布二手办公椅电脑椅职员座椅</p>
+                                        <p class="over1">带头枕 坐感舒适 批量采购更优惠</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>240</em></p>
+                                        <p style="display: none"><del>新品参考价¥800</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/283.html" target="_blank" title="全新尚客思皮质商务沙发黑色经典沙发组合 ">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b0c18963a6ed631b707b3f9eeaf98611.jpg"
+                                                class="lazyload loaded-img" alt="全新尚客思皮质商务沙发黑色经典沙发组合 "></p>
+                                        <p class="over1">全新尚客思皮质商务沙发黑色经典沙发组合 </p>
+                                        <p class="over1">3人位*1+单人位*2 优质皮革</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>2680</em></p>
+                                        <p style="display: none"><del>新品参考价¥3500</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/282.html" target="_blank"
+                                    title="9成新二手班台老板桌L型经理桌办公桌电脑桌 带副柜">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/4a5223f2b95e14f3117800bbb7f503db.jpg"
+                                                class="lazyload loaded-img" alt="9成新二手班台老板桌L型经理桌办公桌电脑桌 带副柜"></p>
+                                        <p class="over1">9成新二手班台老板桌L型经理桌办公桌电脑桌 带副柜</p>
+                                        <p class="over1">带副柜，高实用性，枫木色，简约百搭</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>1500</em></p>
+                                        <p style="display: none"><del>新品参考价¥4000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/281.html" target="_blank"
+                                    title="9成新钢制二手活动柜小推柜三抽桌下可移动柜子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/3c06badef87da86e5a8bb02c4118b208.jpg"
+                                                class="lazyload loaded-img" alt="9成新钢制二手活动柜小推柜三抽桌下可移动柜子"></p>
+                                        <p class="over1">9成新钢制二手活动柜小推柜三抽桌下可移动柜子</p>
+                                        <p class="over1">全冷轧材质 结实耐用</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>200</em></p>
+                                        <p style="display: none"><del>新品参考价¥800</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/product/detail/280.html" target="_blank"
+                                    title="9成新木质二手小推柜活动柜桌下储物柜三抽柜移动小柜子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/5dd1e3ecda4a3235474c4a43b253b70e.jpg"
+                                                class="lazyload loaded-img" alt="9成新木质二手小推柜活动柜桌下储物柜三抽柜移动小柜子">
+                                        </p>
+                                        <p class="over1">9成新木质二手小推柜活动柜桌下储物柜三抽柜移动小柜子</p>
+                                        <p class="over1">高性价比柜子，百搭实用</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>70</em></p>
+                                        <p style="display: none"><del>新品参考价¥380</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/279.html" target="_blank"
+                                    title="9成新品牌二手办公桌电脑桌职员办公桌屏风二手工位 1.2米尺寸">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/5bd53d4f78a554172a50a061a6e92650.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="9成新品牌二手办公桌电脑桌职员办公桌屏风二手工位 1.2米尺寸"></p>
+                                        <p class="over1">9成新品牌二手办公桌电脑桌职员办公桌屏风二手工位 1.2米尺寸</p>
+                                        <p class="over1">开放式设计 简约百搭 从某知名企业回收</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>240</em></p>
+                                        <p style="display: none"><del>新品参考价¥1500</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/278.html" target="_blank"
+                                    title="9成新科誉二手直板屏风工位员工办公桌电脑桌 1.6米桌子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/be115aed404f6f6c2c746a05c55c9bc9.jpg"
+                                                class="lazyload loaded-img" alt="9成新科誉二手直板屏风工位员工办公桌电脑桌 1.6米桌子">
+                                        </p>
+                                        <p class="over1">9成新科誉二手直板屏风工位员工办公桌电脑桌 1.6米桌子</p>
+                                        <p class="over1">大尺寸员工办公桌 品质和质量都很好</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>550</em></p>
+                                        <p style="display: none"><del>新品参考价¥1800</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/277.html" target="_blank"
+                                    title="9成新赫曼米勒Embody二手人体工学椅办公椅电脑椅高科技座椅">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/e3f6a2b1819b1a340ae530e94bffe5af.jpg"
+                                                class="lazyload loaded-img"
+                                                alt="9成新赫曼米勒Embody二手人体工学椅办公椅电脑椅高科技座椅"></p>
+                                        <p class="over1">9成新赫曼米勒Embody二手人体工学椅办公椅电脑椅高科技座椅</p>
+                                        <p class="over1">成色还不错，3年质保，数量不多，现货包邮，下单可咨询客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>6499</em></p>
+                                        <p style="display: none"><del>新品参考价¥14000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/276.html" target="_blank"
+                                    title="9成新木制二手文件柜储物中柜带花槽双开门柜子 可作为隔断">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/62851d61e1891f4ff3e17275cb1b8efc.jpg"
+                                                class="lazyload loaded-img" alt="9成新木制二手文件柜储物中柜带花槽双开门柜子 可作为隔断">
+                                        </p>
+                                        <p class="over1">9成新木制二手文件柜储物中柜带花槽双开门柜子 可作为隔断</p>
+                                        <p class="over1">带花槽 全钢材质 质量好 详情咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>380</em></p>
+                                        <p style="display: none"><del>新品参考价¥1000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/product/detail/275.html" target="_blank"
+                                    title="9成新玛祖铭立二手办公椅电脑椅员工职员升降椅 黑色网布座椅">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a22eaba66cafc0612a5a747225d3e0fc.jpg"
+                                                class="lazyload loaded-img" alt="9成新玛祖铭立二手办公椅电脑椅员工职员升降椅 黑色网布座椅">
+                                        </p>
+                                        <p class="over1">9成新玛祖铭立二手办公椅电脑椅员工职员升降椅 黑色网布座椅</p>
+                                        <p class="over1">黑色带脚踏 </p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>580</em></p>
+                                        <p style="display: none"><del>新品参考价¥2000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/274.html" target="_blank"
+                                    title="9成新二手会议椅四脚椅洽谈会议椅现代简约餐椅">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/10c9623c35db2d33c7289b6c8a40e1d8.jpg"
+                                                class="lazyload loaded-img" alt="9成新二手会议椅四脚椅洽谈会议椅现代简约餐椅"></p>
+                                        <p class="over1">9成新二手会议椅四脚椅洽谈会议椅现代简约餐椅</p>
+                                        <p class="over1">四色可选，多用途使用，数量很多，详情咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>150</em></p>
+                                        <p style="display: none"><del>新品参考价¥300</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/273.html" target="_blank"
+                                    title="9成新白色二手会议桌椅洽谈桌椅接待会议桌子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/364ecec6b815e4cf3061604a7d52d285.jpg"
+                                                class="lazyload loaded-img" alt="9成新白色二手会议桌椅洽谈桌椅接待会议桌子"></p>
+                                        <p class="over1">9成新白色二手会议桌椅洽谈桌椅接待会议桌子</p>
+                                        <p class="over1">一桌三椅 从某知名无人机企业回收</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>600</em></p>
+                                        <p style="display: none"><del>新品参考价¥1200</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/272.html" target="_blank" title="9成新欧林二手会议桌大尺寸会议室开会桌子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/6611bebac4ef97203725ca55140e3023.jpg"
+                                                class="lazyload loaded-img" alt="9成新欧林二手会议桌大尺寸会议室开会桌子"></p>
+                                        <p class="over1">9成新欧林二手会议桌大尺寸会议室开会桌子</p>
+                                        <p class="over1">3.6米大尺寸 满足更多需求</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>1800</em></p>
+                                        <p style="display: none"><del>新品参考价¥4000</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/271.html" target="_blank"
+                                    title="85成新白色二手文件柜办公室矮柜储物柜移动木质办公柜子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/aafa5fae8de3a463facec26500e463ec.jpg"
+                                                class="lazyload loaded-img" alt="85成新白色二手文件柜办公室矮柜储物柜移动木质办公柜子">
+                                        </p>
+                                        <p class="over1">85成新白色二手文件柜办公室矮柜储物柜移动木质办公柜子</p>
+                                        <p class="over1">仅限上海本地采购，详情咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>220</em></p>
+                                        <p style="display: none"><del>新品参考价¥800</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/product/detail/270.html" target="_blank"
+                                    title="诺梵Novah二手办公椅电脑椅职员椅网布简约椅子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/b28598ed69347f21ac86838aaafeb9a8.jpg"
+                                                class="lazyload loaded-img" alt="诺梵Novah二手办公椅电脑椅职员椅网布简约椅子"></p>
+                                        <p class="over1">诺梵Novah二手办公椅电脑椅职员椅网布简约椅子</p>
+                                        <p class="over1">新品在1500元以上，质量好，详情咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>350</em></p>
+                                        <p style="display: none"><del>新品参考价¥1500</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/269.html" target="_blank"
+                                    title="网布二手办公椅电脑椅职员椅简约二手升降椅子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/cd0a1336da33521deafd5939cf5d290f.jpg"
+                                                class="lazyload loaded-img" alt="网布二手办公椅电脑椅职员椅简约二手升降椅子"></p>
+                                        <p class="over1">网布二手办公椅电脑椅职员椅简约二手升降椅子</p>
+                                        <p class="over1">数量还挺多 带头枕带腰托 详情咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>580</em></p>
+                                        <p style="display: none"><del>新品参考价¥1200</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/268.html" target="_blank"
+                                    title="开放式二手办公桌电脑桌职员二手工位带屏风简约现代">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/7ef173e2412cbe05baa1f5a67b84edea.jpg"
+                                                class="lazyload loaded-img" alt="开放式二手办公桌电脑桌职员二手工位带屏风简约现代"></p>
+                                        <p class="over1">开放式二手办公桌电脑桌职员二手工位带屏风简约现代</p>
+                                        <p class="over1">简约美观 1.4米尺寸 满足更多办公需求</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>350</em></p>
+                                        <p style="display: none"><del>新品参考价¥1350</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/267.html" target="_blank"
+                                    title="85成新欧林二手办公椅电脑椅职员座椅简约二手椅子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/aa2d9318eab9bf4f88644270ebfcd058.jpg"
+                                                class="lazyload loaded-img" alt="85成新欧林二手办公椅电脑椅职员座椅简约二手椅子"></p>
+                                        <p class="over1">85成新欧林二手办公椅电脑椅职员座椅简约二手椅子</p>
+                                        <p class="over1">简约百搭 </p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>200</em></p>
+                                        <p style="display: none"><del>新品参考价¥800</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="margin-rb">
+                                <a href="#/product/detail/266.html" target="_blank"
+                                    title="9成新保友联友金卓系列二手人体工学椅办公椅电脑椅">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/48e623c6550664da0ea5377a04245783.jpg"
+                                                class="lazyload loaded-img" alt="9成新保友联友金卓系列二手人体工学椅办公椅电脑椅"></p>
+                                        <p class="over1">9成新保友联友金卓系列二手人体工学椅办公椅电脑椅</p>
+                                        <p class="over1">知名人体工学椅 坐感舒适</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>750</em></p>
+                                        <p style="display: none"><del>新品参考价¥1500</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/product/detail/265.html" target="_blank"
+                                    title="9成新网布二手员工转椅办公椅电脑椅现代简约二手椅子">
+                                    <div class="scheme_li">
+                                        <p class="loaded-filter"><img
+                                                data-original="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/picture/a4676d46315c2d25daeb227ad3e3e355.jpg"
+                                                class="lazyload loaded-img" alt="9成新网布二手员工转椅办公椅电脑椅现代简约二手椅子"></p>
+                                        <p class="over1">9成新网布二手员工转椅办公椅电脑椅现代简约二手椅子</p>
+                                        <p class="over1">多颜色可选 简约时尚 详情可咨询在线客服</p>
+                                        <p
+                                            style="background: linear-gradient(to right, #109a30, #5dc376);color: #ffffff;padding: 6px 16px;text-align: center;">
+                                            立即咨询</p>
+                                        <p style="display: none">企业价 ¥<em>260</em></p>
+                                        <p style="display: none"><del>新品参考价¥800</del></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="goods-page"></div>
+            </div>
+        </div>
+</section>
+{{ end }}
+
+{{ define "footscript" }}
+<script src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/js/product-md.js"></script>
+{{ end }}
