@@ -42,7 +42,7 @@
                 "url": "{{ .Permalink }}",
                 "name": "{{ .Title }}",
                 "isPartOf": {
-                    "@id": "{{ .Site.BaseURL | absURL }}#website"
+                    "@id": "{{ .Site.BaseURL | absLangURL }}#website"
                 },
                 "primaryImageOfPage": {
                     "@id": "{{ .Permalink }}#primaryimage"
@@ -84,13 +84,13 @@
                         "@type": "ListItem",
                         "position": 1,
                         "name": "首页",
-                        "item": "{{ .Site.BaseURL | absURL }}"
+                        "item": "{{ .Site.BaseURL | absLangURL }}"
                     },
                     {
                         "@type": "ListItem",
                         "position": 2,
                         "name": "行业资讯",
-                        "item": "{{ .Site.BaseURL | absURL }}news.html"
+                        "item": "{{ .Site.BaseURL | absLangURL }}news.html"
                     },
                     {
                         "@type": "ListItem",
@@ -102,19 +102,19 @@
             },
             {
                 "@type": "WebSite",
-                "@id": "{{ .Site.BaseURL | absURL }}#website",
-                "url": "{{ .Site.BaseURL | absURL }}",
+                "@id": "{{ .Site.BaseURL | absLangURL }}#website",
+                "url": "{{ .Site.BaseURL | absLangURL }}",
                 "name": "{{ .Site.Title }}",
                 "description": "{{ .Site.Params.description }}",
                 "publisher": {
-                    "@id": "{{ .Site.BaseURL | absURL }}#organization"
+                    "@id": "{{ .Site.BaseURL | absLangURL }}#organization"
                 },
                 "potentialAction": [
                     {
                         "@type": "SearchAction",
                         "target": {
                             "@type": "EntryPoint",
-                            "urlTemplate": "{{ .Site.BaseURL | absURL }}?s={search_term_string}"
+                            "urlTemplate": "{{ .Site.BaseURL | absLangURL }}?s={search_term_string}"
                         },
                         "query-input": {
                             "@type": "PropertyValueSpecification",
@@ -125,7 +125,7 @@
                 ],
                 "inLanguage": "zh_CN",
                 "copyrightHolder": {
-                    "@id": "{{ .Site.BaseURL | absURL }}#organization"
+                    "@id": "{{ .Site.BaseURL | absLangURL }}#organization"
                 }
             },
             {
@@ -133,13 +133,13 @@
                     "Organization",
                     "Brand"
                 ],
-                "@id": "{{ .Site.BaseURL | absURL }}#organization",
+                "@id": "{{ .Site.BaseURL | absLangURL }}#organization",
                 "name": "{{ .Site.Params.company.Name }}",
-                "url": "{{ .Site.BaseURL | absURL }}",
+                "url": "{{ .Site.BaseURL | absLangURL }}",
                 "logo": {
                     "@type": "ImageObject",
                     "inLanguage": "zh_CN",
-                    "@id": "{{ .Site.BaseURL | absURL }}#/schema/logo/image/",
+                    "@id": "{{ .Site.BaseURL | absLangURL }}#/schema/logo/image/",
                     "url": "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png",
                     "contentUrl": "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png",
                     "width": 453,
@@ -147,7 +147,7 @@
                     "caption": "{{ .Site.Params.company.Name }}"
                 },
                 "image": {
-                    "@id": "{{ .Site.BaseURL | absURL }}#/schema/logo/image/"
+                    "@id": "{{ .Site.BaseURL | absLangURL }}#/schema/logo/image/"
                 },
                 "sameAs": [
                     "https://www.wooooden.com/",
@@ -203,8 +203,8 @@
                   </a>
                   {{ range .Params.categories }}
                   <li style="padding: 0 5px"> > </li>
-                    <a href="{{ "categories/" | absURL }}{{ .slug | urlize }}">
-                        <li>{{ .name }}</li>
+                    <a href="{{ "categories/" | absLangURL }}{{ . | urlize }}.html">
+                        <li>{{ . }}</li>
                     </a>
                   {{ end }}
                   <li style="padding: 0 5px"> > </li>
@@ -222,7 +222,7 @@
                   <ul>
                         {{- if .Date -}}<li>发布时间：{{- .Date.Format "2006-01-02" -}}{{- if $.Site.Params.showLastUpdated -}}{{- .Lastmod.Format "2006-01-02" -}}{{- end -}}</li>{{- end -}}
                         {{- with .Params.Author -}}<li>作者：{{ . }}</li>{{- end -}}
-                        <li>{{ range .Params.tags }}#<a href="{{ (urlize (printf "tag/%s/" .slug)) | absLangURL }}" title="{{ .name }}">{{ .name }}</a>&nbsp;{{ end }}</li>
+                        <li>{{ range .Params.tags }}#<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}.html" title="{{ . }}">{{ . }}</a>&nbsp;{{ end }}</li>
                   </ul>
               </div>
               <div class="info-remark">

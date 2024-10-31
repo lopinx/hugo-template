@@ -4,14 +4,8 @@ date = 2024-10-10T10:26:00+08:00
 author = "lopins"
 keywords = ['二手办公家具' , '二手办公桌椅', '二手办公家具市场']
 description = '二手与全新组合的办公家具采购方案具有显著的成本控制优势、环保节能效益、灵活多样的搭配方案以及提升员工满意度与归属感等多重优势。'
-categories = [
-  { name = "行业常识", slug = "knowledge" }
-]
-tags = [
-    { name = "二手办公家具", slug = "second-hand-office-furniture" },
-    { name = "二手办公桌椅", slug = "second-hand-office-desks-and-chairs" },
-    { name = "二手办公家具市场", slug = "second-hand-office-furniture-market" }
-]
+categories = ["行业常识"]
+tags = ["二手办公家具","二手办公桌椅","二手办公家具市场"]
 readingTime = false
 hideComments = false
 isCJKLanguage = true

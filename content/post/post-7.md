@@ -4,14 +4,8 @@ date = 2024-10-10T10:26:00+08:00
 author = "lopins"
 keywords = ['二手办公家具' , '二手办公桌椅', '采购二手办公家具']
 description = '由于企业成本控制、环保意识增强等，大型企业也开始选择二手办公家具来满足发展的需求。'
-categories = [
-  { name = "行业常识", slug = "knowledge" }
-]
-tags = [
-    { name = "二手办公家具", slug = "second-hand-office-furniture" },
-    { name = "二手办公桌椅", slug = "second-hand-office-desks-and-chairs" },
-    { name = "采购二手办公家具", slug = "purchase-second-hand-office-furniture" }
-]
+categories = ["行业常识"]
+tags = ["二手办公家具","二手办公桌椅","采购二手办公家具"]
 readingTime = false
 hideComments = false
 isCJKLanguage = true

@@ -4,14 +4,8 @@ date = 2024-10-10T10:26:00+08:00
 author = "lopins"
 keywords = ['二手办公家具' , '二手办公桌椅', '办公家具设计']
 description = '封闭式办公家具和开放式办公家具，两种不同风格的家具所营造的办公环境及氛围各有特点，哪一种更适合您的企业呢？本期内容为您来解答。'
-categories = [
-  { name = "行业常识", slug = "knowledge" }
-]
-tags = [
-    { name = "二手办公家具", slug = "second-hand-office-furniture" },
-    { name = "二手办公桌椅", slug = "second-hand-office-desks-and-chairs" },
-    { name = "办公家具设计", slug = "office-furniture-design" }
-]
+categories = ["行业常识"]
+tags = ["二手办公家具","二手办公桌椅","办公家具设计"]
 readingTime = false
 hideComments = false
 isCJKLanguage = true

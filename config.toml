@@ -1,16 +1,19 @@
-baseURL = 'https://lopins.gitee.io/hugo-template/'
+baseURL = 'https://lopins.github.io/hugo-template/'
 title = '装配师'
 theme = 'huishou'
 
 # 常规设置
+defaultContentLanguageInSubdir = false          # 在子目录中呈现默认内容语言，例如content/en/。然后站点根目录/将重定向到/en/。默认为false
 enableRobotsTXT = true                          
 enableEmoji = true
 languageCode = 'zh-cn'                          # en / zh-cn 
-defaultContentLanguage = "zh-cn"                # en / zh-cn
+defaultContentLanguage = "zh-cn"                # en / zh-cn 没有语言指示的内容将默认使用此语言。默认值为en。
 hasCJKLanguage = true                           # has chinese/japanese/korean ? # 自动检测是否包含 中文\日文\韩文
 uglyURLs = true                                 # Use the .html suffix
+canonifyURLs = true                             # 转换链接为绝对链接，<a href="/about"> → <a href="https://example.org/about/">
+# relativeURLs = true                             # 转换链接为相对链接，<a href="/about"> → <a href="../../about">
 # 忽略一些构建错误
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+# ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # 跳过渲染 ["page", "home", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
 disableKinds = ["section", "RSS"]
 
@@ -33,17 +36,10 @@ disableKinds = ["section", "RSS"]
   profile = ""
 
 [permalinks]
-  [permalinks.page]
-    post = '/posts/:slug/'
-    page = '/:slug/'
-  [permalinks.section]
-    post = '/archive'
-#  [permalinks.taxonomy]
-#    tags = '/tag/:slug/'
-#    categories = '/category/:slug/'
-  [permalinks.term]
-    tags = '/tag/:slug/'
-    categories = '/category/:slug/'
+  post = "posts/:slug"
+  page = ":slug"
+  tags = "tags/:slug"
+  categories = "categories/:slug"
 
 # Markdown渲染
 [markup]
@@ -114,14 +110,13 @@ disableKinds = ["section", "RSS"]
     weight = 7
 
 # ####################### 自定义变量 ####################### # 
-
 # 自定义变量
 # {{ .Site.Params.xxxx.xxxx }}
 [params]
-  # excludeTypes = ["case", "esg", "kefu", "news", "help", "about", "contact"]
-  # contentTypeName = "post"
   fastSearch = true                             # 是否开启本地搜索
   PagerSize = 10                                # 分页设置
+  # summaryLength = 300                           # 摘要字数
+  # copyright = ''                                # 站点版权信息
 
   # 公司信息
   # {{ .Site.Params.company.Tel }}
@@ -143,3 +138,8 @@ disableKinds = ["section", "RSS"]
     hugo = { name = "Hugo 官方文档", url = "https://gohugo.io/", description = "Hugo 的官方文档" }
     github = { name = "GitHub", url = "https://github.com/", description = "代码托管平台" }
     stackoverflow = { name = "Stack Overflow", url = "https://stackoverflow.com/", description = "编程问答社区" }
+
+
+[services]
+  [services.googleAnalytics]
+    ID = 'G-XXXXXXXXX'
