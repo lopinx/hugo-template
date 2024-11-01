@@ -1,9 +1,23 @@
+// 百度商桥代码
+var _hmt = _hmt || [];
+(function(){
+	var _token = ["566b31777728579c3005d1e6318bdbae"];
+	var _stat = "https://hm.baidu.com/hm.js?";
+	_token.forEach(function(token) { 
+		var script = document.createElement("script");
+		script.src = _stat + token;document.head.appendChild(script); 
+	});
+})();
 // 客服链接
 $(function() {
 	//点击按钮时判断 百度商桥代码中的“我要咨询”按钮的元素是否存在，存在的话就执行一次点击事件
 	$(".shangqiao").click(function(event) {
 		// 跳转到kefu页面
 		window.location.href = "/kefu.html";
+		// var api = $53.createApi();
+		// api.push('cmd', 'kfclient');
+		// api.push('type', 'popup');
+		// api.query();
 	});
 });
 
@@ -26,26 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
-/*
-var _hmt = _hmt || [];
-(function() {
-	var hm = document.createElement("script");
-	hm.src = "https://hm.baidu.com/hm.js?566b31777728579c3005d1e6318bdbae";
-	var s = document.getElementsByTagName("script")[0];
-	s.parentNode.insertBefore(hm, s);
-})();
-
-$(function() {
-	//点击按钮时判断 百度商桥代码中的“我要咨询”按钮的元素是否存在，存在的话就执行一次点击事件
-	$(".shangqiao").click(function(event) {
-		var api = $53.createApi();
-		api.push('cmd', 'kfclient');
-		api.push('type', 'popup');
-		api.query();
-	});
-});
-*/
 
 (function () {
 	$("img.lazyload").lazyload();
