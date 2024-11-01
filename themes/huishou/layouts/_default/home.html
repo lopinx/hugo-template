@@ -2147,12 +2147,17 @@
           {{ $firstPage := index (first 1 $pages) 0 }}
           {{ if $firstPage }}
             {{ $content := $firstPage.Content }}
-            {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+            {{ $matches := findRE `src="([^"]+)"` $content -1 }}
             {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}
             {{ if $matches }}
-                {{ $firstMatch := index $matches 0 }}
-                {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
-                {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+              {{ $firstMatch := index $matches 0 }}
+              {{ $extractedUrl := replaceRE `src="([^"]+)"` "${1}" $firstMatch }}
+              {{ if not (or (hasPrefix $extractedUrl "http://") (hasPrefix $extractedUrl "https://")) }}
+                  {{ $baseUrl := .Site.BaseURL }}
+                  {{ $imageUrl = printf "%s%s" $baseUrl $extractedUrl }}
+              {{ else }}
+                  {{ $imageUrl = $extractedUrl }}
+              {{ end }}
             {{ end }}
             <a href="{{ $firstPage.Permalink }}" title="{{ $firstPage.Title }}" target="_blank">
               <dl>

@@ -3,7 +3,7 @@ title = '装配师'
 theme = 'huishou'
 
 # 常规设置
-defaultContentLanguageInSubdir = false          # 在子目录中呈现默认内容语言，例如content/en/。然后站点根目录/将重定向到/en/。默认为false
+# defaultContentLanguageInSubdir = false          # 在子目录中呈现默认内容语言，例如content/en/。然后站点根目录/将重定向到/en/。默认为false
 enableRobotsTXT = true                          
 enableEmoji = true
 languageCode = 'zh-cn'                          # en / zh-cn 

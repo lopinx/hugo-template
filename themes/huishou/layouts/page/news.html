@@ -95,12 +95,17 @@
                 <div class="box-content">
                     {{ range first 10 ((where .Site.RegularPages "Params.hidden" "!=" true)) }}
                         {{ $content := .Content }}
-                        {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+                        {{ $matches := findRE `src="([^"]+)"` $content -1 }}
                         {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}
                         {{ if $matches }}
                             {{ $firstMatch := index $matches 0 }}
-                            {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
-                            {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+                            {{ $extractedUrl := replaceRE `src="([^"]+)"` "${1}" $firstMatch }}
+                            {{ if not (or (hasPrefix $extractedUrl "http://") (hasPrefix $extractedUrl "https://")) }}
+                                {{ $baseUrl := .Site.BaseURL }}
+                                {{ $imageUrl = printf "%s%s" $baseUrl $extractedUrl }}
+                            {{ else }}
+                                {{ $imageUrl = $extractedUrl }}
+                            {{ end }}
                         {{ end }}
                         <a href="{{ .Permalink }}" target="_blank" title="{{ .LinkTitle }}">
                             <dl>
@@ -188,12 +193,17 @@
                     {{ range $index := $randomIndices }}
                         {{ $page := index $pages $index }}
                         {{ $content := $page.Content }}
-                        {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+                        {{ $matches := findRE `src="([^"]+)"` $content -1 }}
                         {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}                        
                         {{ if $matches }}
                             {{ $firstMatch := index $matches 0 }}
-                            {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
-                            {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+                            {{ $extractedUrl := replaceRE `src="([^"]+)"` "${1}" $firstMatch }}
+                            {{ if not (or (hasPrefix $extractedUrl "http://") (hasPrefix $extractedUrl "https://")) }}
+                                {{ $baseUrl := .Site.BaseURL }}
+                                {{ $imageUrl = printf "%s%s" $baseUrl $extractedUrl }}
+                            {{ else }}
+                                {{ $imageUrl = $extractedUrl }}
+                            {{ end }}
                         {{ end }}
                         <a href="{{ $page.Permalink }}" target="_blank" title="{{ $page.Title }}">
                             <dl>

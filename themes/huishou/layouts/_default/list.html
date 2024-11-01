@@ -42,22 +42,22 @@
           <div class="box-list">
               <div class="box-tab">
                   <ul>
-                      <a href="/news/list.html">
+                      <a href="/news.html">
                           <li class="active">全部内容</li>
                       </a>
-                      <a href="/news/list/type/3.html">
+                      <a href="/news.html?type=3">
                           <li class="">企业动态</li>
                       </a>
-                      <a href="/news/list/type/4.html">
+                      <a href="/news.html?type=4">
                           <li class="">市场资讯</li>
                       </a>
-                      <a href="/news/list/type/5.html">
+                      <a href="/news.html?type=5">
                           <li class="">优惠活动</li>
                       </a>
-                      <a href="/news/list/type/6.html">
+                      <a href="/news.html?type=6">
                           <li class="">好货推荐</li>
                       </a>
-                      <a href="/news/list/type/7.html">
+                      <a href="/news.html?type=7">
                           <li class="">家具知识</li>
                       </a>
                   </ul>
@@ -66,16 +66,21 @@
               <div class="box-content">
                   {{ range .Paginator.Pages }}
                     {{ $content := .Content }}
-                    {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+                    {{ $matches := findRE `src="([^"]+)"` $content -1 }}
                     {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}
                     {{ if $matches }}
                         {{ $firstMatch := index $matches 0 }}
-                        {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
-                        {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+                        {{ $extractedUrl := replaceRE `src="([^"]+)"` "${1}" $firstMatch }}
+                        {{ if not (or (hasPrefix $extractedUrl "http://") (hasPrefix $extractedUrl "https://")) }}
+                            {{ $baseUrl := .Site.BaseURL }}
+                            {{ $imageUrl = printf "%s%s" $baseUrl $extractedUrl }}
+                        {{ else }}
+                            {{ $imageUrl = $extractedUrl }}
+                        {{ end }}
                     {{ end }}
                     <a href="{{ .Permalink }}" target="_blank" title="{{ .LinkTitle }}">
                         <dl>
-                            <dt style="background-image: url('{{ $imageUrl }})">
+                            <dt style="background-image: url('{{ $imageUrl }}')">
                             </dt>
                             <dd>
                                 <p class="over1">{{ .LinkTitle }}</p>
@@ -119,12 +124,17 @@
                     {{ $page := index $pages $index }}
                     
                     {{ $content := $page.Content }}
-                    {{ $matches := findRE `src="(https?://[^\"]+)"` $content -1 }}
+                    {{ $matches := findRE `src="([^"]+)"` $content -1 }}
                     {{ $imageUrl := "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}
                     {{ if $matches }}
                         {{ $firstMatch := index $matches 0 }}
-                        {{ $imageUrl = replaceRE `^src="` "" $firstMatch }}
-                        {{ $imageUrl = replaceRE `"$` "" $imageUrl }}
+                        {{ $extractedUrl := replaceRE `src="([^"]+)"` "${1}" $firstMatch }}
+                        {{ if not (or (hasPrefix $extractedUrl "http://") (hasPrefix $extractedUrl "https://")) }}
+                            {{ $baseUrl := .Site.BaseURL }}
+                            {{ $imageUrl = printf "%s%s" $baseUrl $extractedUrl }}
+                        {{ else }}
+                            {{ $imageUrl = $extractedUrl }}
+                        {{ end }}
                     {{ end }}
                     <a href="{{ $page.Permalink }}" target="_blank" title="{{ $page.Title }}">
                         <dl>
