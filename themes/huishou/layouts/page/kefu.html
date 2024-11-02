@@ -1,7 +1,7 @@
 {{ define "meta" }}
-<title>办公家具采购平台客服 - {{ .Site.Title }}</title>
-<meta name="keywords" content="二手办公家具,二手办公家具出售,二手办公家具租赁,装配狮企业采购平台-二手办公家具出售-二手办公家具租赁回收二手办公家具回收,二手办公桌椅,二手办公桌,二手办公椅,二手工位,二手文件柜,二手班台,二手沙发茶几" />
-<meta name="description" content="装配狮主营二手办公家具销售租赁回收及仓储寄存业务，涵盖了二手办公桌,二手办公椅,二手工位,二手班台,二手文件柜,二手沙发茶几等多种二手家具。" />
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="keywords" content="{{- with or .Keywords .Params.tags -}}{{ delimit . ", " }}{{- end -}}">
+<meta name="description" content="{{- .Description | default .Summary -}}">
 {{ end }}
 
 {{ define "headscript" }}
@@ -10,11 +10,12 @@
     iframe{width: 100%;height: 700px;padding: 0;margin: 0;border: none;}
     #wrap{width: 100%;height: 100%;}
 </style>
+<script>window.location.assign('{{ .Site.Params.company.Kefu }}');</script>
 {{ end }}
 
 {{ define "main" }}
 <section id="content" style="background-color: #f8f8f8">
-    <iframe src="https://affim.baidu.com/unique_44585358/chat?siteId=18630889&userId=44585358&siteToken=566b31777728579c3005d1e6318bdbae"></iframe>
+    <iframe src="{{ .Site.Params.company.Kefu }}"></iframe>
 </section>
 {{ end }}
 

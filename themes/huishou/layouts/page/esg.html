@@ -1,7 +1,7 @@
 {{ define "meta" }}
-<title>二手办公家具ESG碳减排-装配狮循环家具</title>
-<meta name="keywords" content="ESG碳减排,二手办公家具ESG,办公家具ESG,办公家具碳减排,装配狮企业责任,装配狮碳中和,装配狮碳减排" />
-<meta name="description" content="ESG碳减排聚焦于二手办公家具循环再利用，帮助企业实现办公家具ESG碳减排，促进社会经济绿色可持续发展，推动二手办公家具行业进步。" />
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="keywords" content="{{- with or .Keywords .Params.tags -}}{{ delimit . ", " }}{{- end -}}">
+<meta name="description" content="{{- .Description | default .Summary -}}">
 {{ end }}
 
 {{ define "headscript" }}

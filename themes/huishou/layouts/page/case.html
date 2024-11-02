@@ -1,7 +1,7 @@
 {{ define "meta" }}
-<title>二手办公家具采购回收案例-装配狮</title>
-<meta name="keywords" content="二手办公家具采购,二手办公家具回收,二手办公桌椅,二手办公家具解决方案,装配狮" />
-<meta name="description" content="装配狮提供一站式二手办公家具解决方案，二手办公家具采购回收一条龙服务，装配狮现已成功服务众多国内大型及知名企业。" />
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="keywords" content="{{- with or .Keywords .Params.tags -}}{{ delimit . ", " }}{{- end -}}">
+<meta name="description" content="{{- .Description | default .Summary -}}">
 {{ end }}
 
 {{ define "headscript" }}

@@ -23,7 +23,7 @@ $(function() {
 
 // 所有链接都跳转到kefu页面
 document.addEventListener('DOMContentLoaded', function() {
-	const excludePrefixes = [
+    const excludePrefixes = [
         'javascript:', 'mailto:', '#', 'tel:', 'sms:', 'callto:', 'data:', 'intent:', 'geo:',
 		'.', '/index.html', '/product.html', '/case.html', '/kefu.html', '/news.html', '/esg.html', '/about.html', '/contact.html', '/tags.html', '/categories.html', '/posts/', '/help/', '/page/', '/tags/', '/tag/', '/categorys/', '/category/', '/archives/', '/article/',
         'https://www.wooooden.com', 'https://www.issem.cn', 'https://beian.miit.gov.cn', 'https://www.dosprings.com', 'https://www.lopins.cn','https://lopins.github.io','https://lopinv.github.io',,'http://127.0.0.1'

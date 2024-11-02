@@ -1,7 +1,7 @@
 {{ define "meta" }}
-<title>世界500强企业用的办公家具-二手办公家具出售|租赁-装配狮</title>
-<meta name="keywords" content="办公家具,二手办公家具,二手办公家具网,装配狮" />
-<meta name="description" content="二手办公家具出售|租赁，提供一站式二手办公家具服务，千余款办公家具现货供应，即装即用，货源来自在华世界500强及国内知名企业。" />
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="keywords" content="{{- with or .Keywords .Params.tags -}}{{ delimit . ", " }}{{- end -}}">
+<meta name="description" content="{{- .Description | default .Summary -}}">
 {{ end }}
 
 {{ define "headscript" }}

@@ -1,4 +1,4 @@
-baseURL = 'https://lopins.github.io/hugo-template/'
+baseURL = 'https://lopins.github.io/hugo-template'
 title = '装配师'
 theme = 'huishou'
 
@@ -13,7 +13,7 @@ uglyURLs = true                                 # Use the .html suffix
 canonifyURLs = true                             # 转换链接为绝对链接，<a href="/about"> → <a href="https://example.org/about/">
 # relativeURLs = true                             # 转换链接为相对链接，<a href="/about"> → <a href="../../about">
 # 忽略一些构建错误
-# ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # 跳过渲染 ["page", "home", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
 disableKinds = ["section", "RSS"]
 
@@ -21,19 +21,19 @@ disableKinds = ["section", "RSS"]
   tag = "tags"
   category = "categories"
 
-[outputs]
-  home = [ "HTML", "JSON" ]                             # 首页
-  page = [ "HTML" ]                             # 单个页面（通常是静态页面，如关于页面、联系页面等，可以理解为文章详情页和一些指定页面）
-  section = [ "HTML" ]                          # 部分（section），例如博客部分、文档部分等（可以理解为一类文章的归档的页面）。
-  taxonomy = [ "HTML" ]                         # 分类和标签的列表页面（可以理解为分类、标签的归档页，就是列出所有分类、标签的聚合页面）
-  term = [ "HTML" ]                             # 具体的分类或标签页面（分类、标签等文章列表页，列出属于某个分类、标签下文章列表的页面）
+[outputFormats]
+  [outputFormats.SearchIndex]
+    isPlainText = true
+    notAlternative = true
+    mediaType = "application/json"
+    path = "/search/"
 
-# 作者信息 profile：简介信息
-[author]
-  name = "lopins"
-  link = "https://www.lopins.cn"
-  email = "lopins@qq.com"
-  profile = ""
+[outputs]
+  home = [ "HTML", "JSON", "SearchIndex", "Sitemap" ]  # 首页
+  page = [ "HTML" ]                               # 单个页面（通常是静态页面，如关于页面、联系页面等，可以理解为文章详情页和一些指定页面）
+  section = [ "HTML" ]                            # 部分（section），例如博客部分、文档部分等（可以理解为一类文章的归档的页面）。
+  taxonomy = [ "HTML" ]                           # 分类和标签的列表页面（可以理解为分类、标签的归档页，就是列出所有分类、标签的聚合页面）
+  term = [ "HTML" ]                               # 具体的分类或标签页面（分类、标签等文章列表页，列出属于某个分类、标签下文章列表的页面）
 
 [permalinks]
   post = "posts/:slug"
@@ -113,10 +113,21 @@ disableKinds = ["section", "RSS"]
 # 自定义变量
 # {{ .Site.Params.xxxx.xxxx }}
 [params]
+  title = '企业办公家具采购-二手办公家具出售-二手办公家具租赁回收'
+  keywords = '二手办公家具,二手办公家具出售,二手办公家具租赁,二手办公家具租赁,二手办公家具回收,二手办公桌椅,二手办公桌,二手办公椅,二手工位,二手文件柜,二手班台,二手沙发茶几'
+  description = '装配狮主营二手办公家具销售租赁回收及仓储寄存业务，涵盖了二手办公桌,二手办公椅,二手工位,二手班台,二手文件柜,二手沙发茶几等多种二手家具。'
+  
   fastSearch = true                             # 是否开启本地搜索
   PagerSize = 10                                # 分页设置
   # summaryLength = 300                           # 摘要字数
   # copyright = ''                                # 站点版权信息
+
+  # 作者信息 profile：简介信息
+  [params.author]
+    name = "lopins"
+    link = "https://www.lopins.cn"
+    email = "lopins@qq.com"
+    profile = ""
 
   # 公司信息
   # {{ .Site.Params.company.Tel }}
@@ -128,6 +139,7 @@ disableKinds = ["section", "RSS"]
     Address = '上海市松江区石湖荡镇石湖新路95号'
     Start = '2018'
     Icp = '沪ICP备2021004498号'
+    Kefu = 'https://affim.baidu.com/unique_44585358/chat?siteId=18630889&userId=44585358&siteToken=566b31777728579c3005d1e6318bdbae'
     Weixin = 'https://u.wechat.com/EKP6dBfMFC_Cv38uRfdXgGQ?s=2'
     Weibo = 'https://u.wechat.com/EKP6dBfMFC_Cv38uRfdXgGQ?s=2'
     Douyin = 'https://u.wechat.com/EKP6dBfMFC_Cv38uRfdXgGQ?s=2'           
@@ -139,7 +151,12 @@ disableKinds = ["section", "RSS"]
     github = { name = "GitHub", url = "https://github.com/", description = "代码托管平台" }
     stackoverflow = { name = "Stack Overflow", url = "https://stackoverflow.com/", description = "编程问答社区" }
 
+  [params.build]
+    noJSConfigInAssets = true
 
-[services]
-  [services.googleAnalytics]
-    ID = 'G-XXXXXXXXX'
+  [params.security]
+    enableInlineShortcodes = true
+
+  [params.services]
+    [params.services.googleAnalytics]
+      ID = 'G-XXXXXXXXX'

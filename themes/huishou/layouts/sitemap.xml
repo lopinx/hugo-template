@@ -1,0 +1,72 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    {{- range (where .Site.RegularPages "Params.hidden" "!=" true) -}}
+        <url>
+            <loc>
+                {{- .Permalink -}}
+            </loc>
+            {{- if not .Lastmod.IsZero -}}
+                <lastmod>
+                    {{- .Lastmod.Format "2006-01-02T15:04:05+08:00" -}}
+                </lastmod>
+            {{- end -}}
+            {{- with .Sitemap.ChangeFreq -}}
+                <changefreq>
+                    {{- . -}}
+                </changefreq>
+            {{- end -}}
+
+            {{- if ge .Sitemap.Priority 0.0 -}}
+                {{- $weeks := div (sub now.Unix .Lastmod.Unix) 604800 -}}
+                {{- $priority := sub 1 (div $weeks 10.0 ) -}}
+                {{- if ge .Sitemap.Priority $priority -}}
+                    <priority>{{ .Sitemap.Priority }}</priority>
+                {{- else -}}
+                    <priority>{{ $priority }}</priority>
+                {{- end -}}
+            {{- end -}}
+
+            {{- if .IsTranslated -}}
+                {{- range .Translations -}}
+                    <xhtml:link
+                        rel="alternate"
+                        hreflang="{{ .Lang }}"
+                        href="{{ .Permalink }}"
+                        />
+                {{- end -}}
+                <xhtml:link
+                    rel="alternate"
+                    hreflang="{{ .Lang }}"
+                    href="{{ .Permalink }}"
+                    />
+            {{- end -}}
+
+            {{- $content := .Content }}
+            {{- $matches := findRE `src="([^"]+)"` $content -1 }}
+            {{- $imageUrls := slice }}
+            {{- if $matches }}
+                {{- range $matches }}
+                    {{- $extractedUrl := replaceRE `src="([^"]+)"` "${1}" . }}
+                    {{- $image := "" }}
+                    {{- if not (or (hasPrefix $extractedUrl "http://") (hasPrefix $extractedUrl "https://")) }}
+                        {{- $baseUrl := .Site.BaseURL }}
+                        {{- $image = printf "%s%s" $baseUrl $extractedUrl }}
+                    {{- else }}
+                        {{- $image = $extractedUrl }}
+                    {{- end }}
+                    {{- $imageUrls = $imageUrls | append $image }}
+                {{- end }}
+            {{- else }}
+                {{- $imageUrls = $imageUrls | append "https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" }}
+            {{- end }}
+            {{- $page := . }}
+            {{- if $imageUrls }}
+                {{- range $imageUrls }}
+                    <image:image>
+                        <image:loc>{{- . -}}</image:loc>
+                        <image:caption>{{- $page.Title -}}</image:caption>
+                    </image:image>
+                {{- end }}
+            {{- end }}
+        </url>
+    {{- end -}}
+</urlset>

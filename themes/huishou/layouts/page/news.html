@@ -1,7 +1,7 @@
 {{ define "meta" }}
-<title>二手办公家具行业资讯_二手办公家具市场动态-装配狮</title>
-<meta name="keywords" content="二手办公家具行业资讯,二手办公家具市场动态,二手办公家具市场哪里有,二手办公家具行业值得加入吗,二手办公家具市场前景" />
-<meta name="description" content="二手办公家具市场前景如何？二手办公家具值得买吗？装配狮为您带来最新的二手办公家具行业资讯、最详细的二手办公家具市场动态。" />
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="keywords" content="{{- with or .Keywords .Params.tags -}}{{ delimit . ", " }}{{- end -}}">
+<meta name="description" content="{{- .Description | default .Summary -}}">
 {{ end }}
 
 {{ define "headscript" }}

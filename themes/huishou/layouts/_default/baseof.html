@@ -22,16 +22,15 @@
 		<div class="header">
 			<header>
 				{{ if eq .IsHome true }}<h1 class="header-left">{{ else }}<div class="header-left">{{ end }}
-					<a href="/" target="_blank">
+					<a href="{{ .Site.BaseURL | absLangURL }}" title="{{- .Site.Params.title -}}" target="_blank">
 						<img src="https://cdn.jsdelivr.net/gh/lopinv/wooooden.com/static/assets/images/logo.png" alt="" style="width: 100%">
 					</a>
 				{{ if eq .IsHome true }}</h1>{{ else }}</div>{{ end }}
 				<ul class="navHref">
 					{{ range .Site.Menus.main }}
 					<li>
-						<a{{ if eq (relURL .URL) (relURL $.Permalink) }} class="activity"{{ end }} href="{{ .URL }}" title="{{ .Name }}">
-						{{ .Name }}
-						{{ if eq .URL "/" }}<em>HOT</em>{{ end }}
+						<a{{ if eq (relURL .URL) (relURL $.Permalink) }} class="activity"{{ end }} href="{{ .URL | absLangURL }}" title="{{ .Name }}">
+						{{ .Name }}{{ if eq .URL "/" }}<em>HOT</em>{{ end }}
 						</a>
 					</li>
 					{{ end }}
