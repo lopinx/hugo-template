@@ -1,0 +1,27 @@
+{{ define "meta" }}
+    <title>404: Not Found - {{ .Site.Title }}</title>
+    <meta name="keywords" content="{{ .Site.Params.keywords }}" />
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    <meta name="robots" content="none" />
+{{ end }}
+
+{{ define "headscript" }}
+    <link href="/assets/css/index.css" rel="stylesheet" type="text/css" />
+{{ end }}
+
+{{ define "main" }}
+<section class="error404 content">
+    <div class="">
+        <img src="/assets/images/404.png" alt="">
+    </div>
+    <p>Error，页面出错啦！！   请点击返回首页或者刷新页面~</p>
+    <div class="">
+        <a href="/">返回首页</a>
+        <a href="javascript:window.location.reload()">刷新页面</a>
+    </div>
+    
+</section>
+{{ end }}
+
+{{ define "footscript" }}
+{{ end }}

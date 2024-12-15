@@ -12,4 +12,5 @@ isCJKLanguage = true
 draft = false
 url = '/news/1'
 slug = 'url-of-the-article'
+thumbnail = 'path/to/thumbnail.jpg'
 +++

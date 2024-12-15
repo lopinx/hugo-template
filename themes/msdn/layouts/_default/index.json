@@ -1,0 +1,25 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range (where .Site.RegularPages "Params.hidden" "!=" true) -}}
+    {{- $tags := .Params.tags -}}
+    {{- $categories := .Params.categories -}}
+    {{- $.Scratch.Add "index" (dict
+        "title" .Title
+        "permalink" .Permalink
+        "content" .Content
+        "date" .Date
+        "lastmod" .Lastmod
+        "tags" $tags
+        "categories" $categories
+        "description" (.Params.description | default .Summary | plainify)
+        "summary" (.Summary | plainify)
+        "readingtime" .ReadingTime
+        "wordcount" .WordCount
+        "weight" .Weight
+        "toc" .TableOfContents
+        "thumbnail" .Params.thumbnail
+        "draft" .Draft
+        "type" .Type
+        "kind" .Kind
+    ) -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

@@ -1,0 +1,279 @@
+{{ define "meta" }}
+<title>{{ .Title }} - {{ .Site.Title }}</title>
+<meta name="keywords" content="{{- with or .Keywords .Params.tags -}}{{ delimit . ", " }}{{- end -}}">
+<meta name="description" content="{{- .Description | default .Summary -}}">
+{{ end }}
+
+{{ define "headscript" }}
+	<link href="/assets/css/help.css" rel="stylesheet" type="text/css" />
+{{ end }}
+
+{{ define "main" }}
+	<!-- 横幅 -->
+	<div class="other-banner content">
+		<p>大白菜超级U盘装机工具</p>
+		<span>一键装机增强支持GHO ISO WIN ESD SWM快速装机</span>
+		<div class="flo">
+			<a href="https://down.dabaicai.com:99/DaBaiCai_ud_v6.0_2207.zip" target="_blank" class="custom-down banner"
+				rel="nofollow" data-tag="now">立即下载</a>
+			<a>最新版本V6.0</a>
+		</div>
+	</div>
+	<!-- 横幅 -->
+
+	<!-- 主体部分 -->
+	<div class="other-main content flo">
+		<!-- 文章 -->
+		<div class="other-article">
+			<div class="other-top">
+				<a href="/"><span></span></a>
+				<h1><a>{{ .Title }}</a></h1>
+			</div>
+      
+			<div class="other-article-main">
+			{{ $paginator := .Paginate .Data.Pages }}
+			{{ range .Paginator.Pages }}
+				<div class="help-article-main-div">
+					<a href="{{ .Permalink }}"><img src="{{ .Params.thumbnail }}" alt="{{ .LinkTitle }}" style="width: 111px;height: 79px;"></a>
+					<div class="" style="width: 563px;">
+						<a href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .Title }}</a>
+            			<!-- <span>阅读量：<script src="assets/js/click.js" type='text/javascript'></script></span> -->
+						<p class="help-sldiv" style="width: 563px;">{{ .Summary | plainify }}</p>
+					</div>
+				</div>
+        	{{ end }}
+			</div>
+			<!-- 分页 -->
+			{{ $paginator := .Paginate .Data.Pages }}
+			<ul class="page">
+				<li>
+					<!-- <a href='down-1.html' class="first">首&nbsp;&nbsp;页</a> -->
+					{{if $paginator.HasPrev}}
+						<a class="newer-posts" href="{{ $paginator.Prev.URL }}">上一页</a>
+					{{end}}
+					<strong>{{ $paginator.PageNumber }}</strong>
+					{{if $paginator.HasNext}}
+						<a class="older-posts" href="{{ $paginator.Next.URL }}">下一页</a>
+					{{end}}
+					<!-- <a href='down-8.html' class="last">尾&nbsp;&nbsp;页</a> -->
+				</li>
+			</ul>
+		</div>
+
+		<!-- 侧边栏 -->
+		<div class="other-aside">
+			<!-- 常见问题 -->
+			<div class="other-aside-div1">
+				<div class="other-aside-top">
+					<img src="assets/picture/common_problem.png">
+					<span>常见问题</span>
+				</div>
+				<div class="other-aside-problem">
+					<div class="aside-problem-div">
+						<a href="/manual_464.html" title="如何制作大白菜u盘启动盘？"><img
+								src="assets/picture/2-200f611325c44-lp.png" alt="如何制作大白菜u盘启动盘？"
+								style="width: 120px;height: 84px;"></a>
+						<div>
+							<a href="/manual_464.html" title="如何制作大白菜u盘启动盘？" style="width: 255px;">如何制作大白菜u盘启动盘？</a>
+							<p style="width: 256px;">
+								<span class="aside-sldiv"
+									title="U盘，是大家经常用到的一个传输、存储数据的辅助工具。而如今，它的作用却远不仅如此，它还是u盘重装系统中必不可少的一个重要工具。那么小编今天就教教大家如何制作u盘启动盘">U盘，是大家经常用到的一个传输、存储数据的辅助工具。而如今，它的作用却远不仅如此，它还是u盘重装系统中必不可少的一个重要工具。那么小编今天就教教大家如何制作u盘启动盘</span>
+								<a href="/manual_464.html" style="margin-right: 5px">查看详情</a>
+							</p>
+						</div>
+					</div>
+					<div class="aside-problem-div">
+						<a href="/manual_465.html" title="如何进入大白菜u盘pe系统？"><img
+								src="assets/picture/2-200f6114z5a7-lp.png" alt="如何进入大白菜u盘pe系统？"
+								style="width: 120px;height: 84px;"></a>
+						<div>
+							<a href="/manual_465.html" title="如何进入大白菜u盘pe系统？" style="width: 255px;">如何进入大白菜u盘pe系统？</a>
+							<p style="width: 256px;">
+								<span class="aside-sldiv"
+									title="在U盘重装的过程中，有一个环节至关重要且经常容易出错，那就是u盘启动bios设置。简单来说，就是进入U盘PE系统。那么下面小编就跟大家介绍一下如何进入大白菜u盘pe系统。">在U盘重装的过程中，有一个环节至关重要且经常容易出错，那就是u盘启动bios设置。简单来说，就是进入U盘PE系统。那么下面小编就跟大家介绍一下如何进入大白菜u盘pe系统。</span>
+								<a href="/manual_465.html" style="margin-right: 5px">查看详情</a>
+							</p>
+						</div>
+					</div>
+					<div class="aside-problem-div">
+						<a href="/manual_466.html" title="大白菜u盘启动快捷键查询怎么操作？"><img
+								src="assets/picture/2-200f6120543345-lp.png" alt="大白菜u盘启动快捷键查询怎么操作？"
+								style="width: 120px;height: 84px;"></a>
+						<div>
+							<a href="/manual_466.html" title="大白菜u盘启动快捷键查询怎么操作？"
+								style="width: 255px;">大白菜u盘启动快捷键查询怎么操作？</a>
+							<p style="width: 256px;">
+								<span class="aside-sldiv"
+									title="在u盘装系统的过程中，有一个中间环节至关重要，那就是进入u盘PE系统。如今比较常用的方式就是通过u盘启动快捷键进入大白菜pe系统。那么大白菜u盘启动快捷键查询怎么操作呢？">在u盘装系统的过程中，有一个中间环节至关重要，那就是进入u盘PE系统。如今比较常用的方式就是通过u盘启动快捷键进入大白菜pe系统。那么大白菜u盘启动快捷键查询怎么操作呢？</span>
+								<a href="/manual_466.html" style="margin-right: 5px">查看详情</a>
+							</p>
+						</div>
+					</div>
+					<div class="aside-problem-div">
+						<a href="/manual_468.html" title="如何利用大白菜超级u盘装机工具重装系统win7？"><img
+								src="assets/picture/2-200fg12959491-lp.png" alt="如何利用大白菜超级u盘装机工具重装系统win7？"
+								style="width: 120px;height: 84px;"></a>
+						<div>
+							<a href="/manual_468.html" title="如何利用大白菜超级u盘装机工具重装系统win7？"
+								style="width: 255px;">如何利用大白菜超级u盘装机工具重装系统win7？</a>
+							<p style="width: 256px;">
+								<span class="aside-sldiv"
+									title="很多人在升级为新系统后却还是觉得win7更适合自己，看来习惯真的是个很奇妙的东西。那么小编今天要跟大家分享的就是如何利用大白菜超级u盘装机工具重装系统win7?">很多人在升级为新系统后却还是觉得win7更适合自己，看来习惯真的是个很奇妙的东西。那么小编今天要跟大家分享的就是如何利用大白菜超级u盘装机工具重装系统win7?</span>
+								<a href="/manual_468.html" style="margin-right: 5px">查看详情</a>
+							</p>
+						</div>
+					</div>
+					<div class="aside-problem-div1"><a href="/manual.html">查看更多+</a></div>
+				</div>
+			</div>
+			<div class="other-aside-div2">
+				<div class="other-aside-top">
+					<img src="assets/picture/recommended_questions.png">
+					<span>大白菜下载</span>
+				</div>
+				<div class="aside-recommended">
+					<ul>
+						<li>
+							<i></i><a href="down_1691.html" title="大白菜U盘启动盘制作工具V6.0_2408"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2408</a>
+							<div class="aside-recommended-div">
+								<a href="down_1691.html" title="大白菜U盘启动盘制作工具V6.0_2408"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2408"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title="主程序： 1、解决部分系统重装过程中出现的失败问题 2、解决部分系统在环境下组件下载失败的困扰 3、优化程序在线下载组件的体验，提高成功率  PE： 1、优化一键装机程序在线下载系统的体验，提高成功率">
+										主程序： 1、解决部分系统重装过程中出现的失败问题 2、解决部分系统在环境下组件下载失败的困扰 3、优化程序在线下载组件的体验，提高成功率 PE：
+										1、优化一键装机程序在线下载系统的体验，提高成功率</p>
+									<a href="down_1691.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1688.html" title="大白菜U盘启动盘制作工具V6.0_2311"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2311</a>
+							<div class="aside-recommended-div">
+								<a href="down_1688.html" title="大白菜U盘启动盘制作工具V6.0_2311"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2311"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title=" 大白菜U盘启动盘制作工具V6.0_2311  1、解决部分系统重装过程中出现的失败问题 2、解决部分系统在环境下组件下载失败的困扰 3、修复部分已知bug,让安装更完善 4、减少扩展工具的内存占用问题">
+										大白菜U盘启动盘制作工具V6.0_2311 1、解决部分系统重装过程中出现的失败问题 2、解决部分系统在环境下组件下载失败的困扰
+										3、修复部分已知bug,让安装更完善 4、减少扩展工具的内存占用问题</p>
+									<a href="down_1688.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1685.html" title="大白菜U盘启动盘制作工具V6.0_2304"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2304</a>
+							<div class="aside-recommended-div">
+								<a href="down_1685.html" title="大白菜U盘启动盘制作工具V6.0_2304"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2304"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title="新手必看：系统镜像一般为ISO格式，ISO文件里面含有GHO/WIM/ESD等系统安装文件，安装系统实际上就是将GHO WIM或ESD等文件还原/解压到硬盘分区上并重建Windows系统引导的过程。一般情况下GHO格式的是GHOST封装系统，还有一种是含有WIM/ESD文件的微软原版系统镜像，无论是GHOST版还是微软原版系统都可以使用PE里的大白菜智能快速装机PE版来进行系统的安装!">
+										新手必看：系统镜像一般为ISO格式，ISO文件里面含有GHO/WIM/ESD等系统安装文件，安装系统实际上就是将GHO
+										WIM或ESD等文件还原/解压到硬盘分区上并重建Windows系统引导的过程。一般情况下GHO格式的是GHOST封装系统，还有一种是含有WIM/ESD文件的微软原版系统镜像，无论是GHOST版还是微软原版系统都可以使用PE里的大白菜智能快速装机PE版来进行系统的安装!
+									</p>
+									<a href="down_1685.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1686.html" title="大白菜U盘启动盘制作工具V6.0_2306"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2306</a>
+							<div class="aside-recommended-div">
+								<a href="down_1686.html" title="大白菜U盘启动盘制作工具V6.0_2306"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2306"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title="新手必看：系统镜像一般为ISO格式，ISO文件里面含有GHO/WIM/ESD等系统安装文件，安装系统实际上就是将GHO WIM或ESD等文件还原/解压到硬盘分区上并重建Windows系统引导的过程。一般情况下GHO格式的是GHOST封装系统，还有一种是含有WIM/ESD文件的微软原版系统镜像，无论是GHOST版还是微软原版系统都可以使用PE里的大白菜智能快速装机PE版来进行系统的安装!">
+										新手必看：系统镜像一般为ISO格式，ISO文件里面含有GHO/WIM/ESD等系统安装文件，安装系统实际上就是将GHO
+										WIM或ESD等文件还原/解压到硬盘分区上并重建Windows系统引导的过程。一般情况下GHO格式的是GHOST封装系统，还有一种是含有WIM/ESD文件的微软原版系统镜像，无论是GHOST版还是微软原版系统都可以使用PE里的大白菜智能快速装机PE版来进行系统的安装!
+									</p>
+									<a href="down_1686.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1689.html" title="大白菜U盘启动盘制作工具V6.0_2404"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2404</a>
+							<div class="aside-recommended-div">
+								<a href="down_1689.html" title="大白菜U盘启动盘制作工具V6.0_2404"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2404"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title="主程序： 1、优化程序在线下载组件的体验，提高成功率 2、修复部分已知bug,让安装更完善  PE： 1、优化一键装机程序在线下载系统的体验，提高成功率">
+										主程序： 1、优化程序在线下载组件的体验，提高成功率 2、修复部分已知bug,让安装更完善 PE： 1、优化一键装机程序在线下载系统的体验，提高成功率</p>
+									<a href="down_1689.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1690.html" title="大白菜U盘启动盘制作工具V6.0_2406"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2406</a>
+							<div class="aside-recommended-div">
+								<a href="down_1690.html" title="大白菜U盘启动盘制作工具V6.0_2406"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2406"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title="主程序： 1、优化程序在线下载组件的体验，提高成功率  PE： 1、优化一键装机程序在线下载系统的体验，提高成功率 2、修改已知BUG">主程序：
+										1、优化程序在线下载组件的体验，提高成功率 PE： 1、优化一键装机程序在线下载系统的体验，提高成功率 2、修改已知BUG</p>
+									<a href="down_1690.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1682.html" title="大白菜U盘启动盘制作工具V6.0_2209"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2209</a>
+							<div class="aside-recommended-div">
+								<a href="down_1682.html" title="大白菜U盘启动盘制作工具V6.0_2209"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2209"></a>
+								<div>
+									<p class="aside-sldiv1"
+										title="1、新增给Win7及以后版本的系统离线注入磁盘、网卡、USB驱动 2、Win10PE增加新的网卡驱动 3、解决部分系统安装失败的问题 4、减少扩展工具的内存占用 5、更新ToDesk 4.2.9、AIDA64 6.75、CPU-Z 2.01">
+										1、新增给Win7及以后版本的系统离线注入磁盘、网卡、USB驱动 2、Win10PE增加新的网卡驱动 3、解决部分系统安装失败的问题 4、减少扩展工具的内存占用
+										5、更新ToDesk 4.2.9、AIDA64 6.75、CPU-Z 2.01</p>
+									<a href="down_1682.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<i></i><a href="down_1403.html" title="大白菜U盘启动盘制作工具V6.0_2204"
+								class="aside-recommended-a">大白菜U盘启动盘制作工具V6.0_2204</a>
+							<div class="aside-recommended-div">
+								<a href="down_1403.html" title="大白菜U盘启动盘制作工具V6.0_2204"><img
+										src="assets/picture/1-2111011021393c.png" alt="大白菜U盘启动盘制作工具V6.0_2204"></a>
+								<div>
+									<p class="aside-sldiv1" title="1、新增支持最新的Intel第十二代CPU的台式机VMD磁盘驱动器
+2、修复了在部分电脑上，因为ESP分区挂载失败导致引导修复失败的问题
+3、解决挂载ISO后再运行装机工具，若ISO中有多个镜像">1、新增支持最新的Intel第十二代CPU的台式机VMD磁盘驱动器
+										2、修复了在部分电脑上，因为ESP分区挂载失败导致引导修复失败的问题
+										3、解决挂载ISO后再运行装机工具，若ISO中有多个镜像</p>
+									<a href="down_1403.html">查看详情</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="aside-problem-div1"><a href="/help.html">查看更多+</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 主体部分 -->
+	<!-- 主体部分 -->
+{{ end }}
+
+{{ define "footscript" }}
+	<script>
+		document.querySelectorAll('oembed[url]').forEach(element => {
+			const videoLable = document.createElement('video');
+
+			videoLable.setAttribute('src', element.getAttribute('url'));
+			videoLable.setAttribute('controls', 'controls');
+			videoLable.setAttribute('style', ' width: 100%;height: 100%; ');
+
+			element.appendChild(videoLable);
+		});
+	</script>
+{{ end }}

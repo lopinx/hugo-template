@@ -1,12 +1,15 @@
 +++
-title = "公司介绍-关于我们-客服电话"
-date = 2024-10-29
-keywords = ["公司介绍","关于我们","客服电话","联系方式"]
-description = "装配狮主营二手办公家具销售租赁回收及仓储寄存业务，涵盖了二手办公桌,二手办公椅,二手工位,二手班台,二手文件柜,二手沙发茶几等多种二手家具。"
-tags = []
+title = '关于我们'
+keywords = ["u盘启动快捷键","u盘启动","u盘启动快捷方式","usb启动热键"]
+description = "U盘启动热键，不同型号设备U盘启动设置快捷键查询，电脑进入u盘启动界面的快捷方式，进入U盘启动盘。"
+tags = ["u盘启动快捷键","u盘启动","u盘启动快捷方式","usb启动热键"]
 slug = "about"
 layout = "about"
 hidden = true
+draft = false
+thumbnail = 'https://www.dabaicai.com/uploads/allimg/210924/3-2109241201402H.png'
 +++
 
-This is the about page content.
+Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
+pariatur do dolor ipsum enim. Consequat tempor do dolor eu. Non id id anim anim
+excepteur excepteur pariatur nostrud qui irure ullamco.

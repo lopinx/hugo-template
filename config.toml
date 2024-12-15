@@ -1,6 +1,6 @@
-baseURL = 'https://lopins.github.io/hugo-template'
-title = '装配师'
-theme = 'huishou'
+baseURL = "https://msdn.lopins.cn"
+title = 'MSDN镜像库'
+theme = 'msdn'
 
 # 常规设置
 # defaultContentLanguageInSubdir = false          # 在子目录中呈现默认内容语言，例如content/en/。然后站点根目录/将重定向到/en/。默认为false
@@ -15,7 +15,7 @@ canonifyURLs = true                             # 转换链接为绝对链接，
 # 忽略一些构建错误
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 # 跳过渲染 ["page", "home", "section", "taxonomy", "term", "RSS", "sitemap", "robotsTXT", "404"]
-disableKinds = ["section", "RSS"]
+disableKinds = ["RSS"]
 
 [taxonomies]
   tag = "tags"
@@ -29,7 +29,7 @@ disableKinds = ["section", "RSS"]
     path = "/search/"
 
 [outputs]
-  home = [ "HTML", "JSON", "SearchIndex", "Sitemap" ]  # 首页
+  home = [ "HTML", "JSON", "SearchIndex" ]        # 首页
   page = [ "HTML" ]                               # 单个页面（通常是静态页面，如关于页面、联系页面等，可以理解为文章详情页和一些指定页面）
   section = [ "HTML" ]                            # 部分（section），例如博客部分、文档部分等（可以理解为一类文章的归档的页面）。
   taxonomy = [ "HTML" ]                           # 分类和标签的列表页面（可以理解为分类、标签的归档页，就是列出所有分类、标签的聚合页面）
@@ -79,43 +79,33 @@ disableKinds = ["section", "RSS"]
     url = "/"
     weight = 1
   [[menu.main]]
-    identifier = "product"
-    name = "产品中心"
-    url = "/product.html"
+    identifier = "windows"
+    name = "Windows下载"
+    url = "/windows.html"
     weight = 2
   [[menu.main]]
-    identifier = "case"
-    name = "案例展示"
-    url = "/case.html"
+    identifier = "office"
+    name = "Office下载"
+    url = "/office.html"
     weight = 3
   [[menu.main]]
-    identifier = "esg"
-    name = "ESG理念"
-    url = "/esg.html"
+    identifier = "soft"
+    name = "软件下载"
+    url = "/soft.html"
     weight = 4
   [[menu.main]]
-    identifier = "news"
-    name = "行业资讯"
-    url = "/news.html"
+    identifier = "posts"
+    name = "帮助中心"
+    url = "/posts.html"
     weight = 5
-  [[menu.main]]
-    identifier = "about"
-    name = "关于我们"
-    url = "/about.html"
-    weight = 6
-  [[menu.main]]
-    identifier = "kefu"
-    name = "联系我们"
-    url = "/kefu.html"
-    weight = 7
 
 # ####################### 自定义变量 ####################### # 
 # 自定义变量
 # {{ .Site.Params.xxxx.xxxx }}
 [params]
-  title = '企业办公家具采购-二手办公家具出售-二手办公家具租赁回收'
-  keywords = '二手办公家具,二手办公家具出售,二手办公家具租赁,二手办公家具租赁,二手办公家具回收,二手办公桌椅,二手办公桌,二手办公椅,二手工位,二手文件柜,二手班台,二手沙发茶几'
-  description = '装配狮主营二手办公家具销售租赁回收及仓储寄存业务，涵盖了二手办公桌,二手办公椅,二手工位,二手班台,二手文件柜,二手沙发茶几等多种二手家具。'
+  title = 'MSDN镜像库 - 微软官方原版Windows/Office镜像下载'
+  keywords = 'MSDN,系统库,镜像库,原版系统,原版windows,原版office,原版win11,原版win10,原版win7,原版win8,原版xp,原版server,原版lstc'
+  description = 'MSDN镜像库为你提供MSDN官方原版镜像，原版win11，win10，win8/8.1，win7，win xp，win server，office全系列官方镜像下载与安装等服务。'
   
   fastSearch = true                             # 是否开启本地搜索
   PagerSize = 10                                # 分页设置
@@ -150,6 +140,11 @@ disableKinds = ["section", "RSS"]
     hugo = { name = "Hugo 官方文档", url = "https://gohugo.io/", description = "Hugo 的官方文档" }
     github = { name = "GitHub", url = "https://github.com/", description = "代码托管平台" }
     stackoverflow = { name = "Stack Overflow", url = "https://stackoverflow.com/", description = "编程问答社区" }
+    blog = { name = "个人博客", url = "https://www.lopins.cn/", description = "站长博客网站" }
+    hugo1 = { name = "Hugo 官方文档", url = "https://gohugo.io/", description = "Hugo 的官方文档" }
+    github1 = { name = "GitHub", url = "https://github.com/", description = "代码托管平台" }
+    stackoverflow1 = { name = "Stack Overflow", url = "https://stackoverflow.com/", description = "编程问答社区" }
+    blog1 = { name = "个人博客", url = "https://www.lopins.cn/", description = "站长博客网站" }
 
   [params.build]
     noJSConfigInAssets = true
@@ -160,3 +155,5 @@ disableKinds = ["section", "RSS"]
   [params.services]
     [params.services.googleAnalytics]
       ID = 'G-XXXXXXXXX'
+    [params.services.googleAdsense]
+      ID = 'ca-pub-5757955455076259'
