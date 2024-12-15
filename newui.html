@@ -74,7 +74,7 @@
     $(document).ready(function() {
         $.ajax({
             type: "get",
-            url: "./data/" + (dataFlag || 'windows') + ".json?t=" + Date.now(),
+            url: "https://cdn.jsdelivr.net/gh/lopinx/msdn-images-update@main/docs/data/" + (dataFlag || 'windows') + ".json?t=" + Date.now(),
             dataType: "json",
             success: function (res) {
                 let box = $(".container");

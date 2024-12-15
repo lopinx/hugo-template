@@ -34,7 +34,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "get",
-            url: "https://cdn.jsdelivr.net/gh/lopinx/msdn-images-update/docs/data/" + dataFlag + ".json?t=" + Date.now(),
+            url: "https://cdn.jsdelivr.net/gh/lopinx/msdn-images-update@main/docs/data/" + dataFlag + ".json?t=" + Date.now(),
             dataType: "json",
             success: function (res) {
                 let data = [];
