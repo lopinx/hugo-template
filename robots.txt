@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /index
-Disallow: /*/page/1/
-
-Sitemap: https://msdn.lopins.cn/sitemap.xml
