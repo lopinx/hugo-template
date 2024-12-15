@@ -1,67 +1,86 @@
-.help-nav ul{
-    display: flex;
-    padding: 12px 0;
+/* 帮助中心 */
+/* 内容 */
+.other-article-main {
+	margin-top: 10px;
+	width: 752px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px 0px rgba(98, 127, 107, 0.2);
 }
 
-.help-box{
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
+.help-article-main-div {
+	width: 696px;
+	margin: auto;
+	border-top: 1px #f2f2f2 solid;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
-.help-box .help-box-left{
-    width: 280px;
-    height: max-content;
-    background-color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 10px;
+
+.help-article-main-div:nth-child(1) {
+	border-top: none;
 }
-.help-box .help-box-left ul{
-    padding: 0 20px;
+
+.help-article-main-div a {
+	display: inline-block;
+	vertical-align: top;
 }
-.help-box .help-box-left ul b{
-    margin-bottom: 10px;
-    font-size: 18px;
+
+.help-article-main-div a img {
+	width: 76px;
+	height: 80px;
+	vertical-align: top;
+	margin-right: 15px;
 }
-.help-box .help-box-left ul .active{
-    color: #50972c;
+
+.help-article-main-div>div {
+	width: 600px;
+	display: inline-block;
 }
-.help-box .help-box-left ul .active em{
-    background-color: #50972c;
-    width: 3px;
-    height: 15px;
-    position: absolute;
-    left: -20px;
-    top: 4px;
+
+.help-article-main-div>div p {
+	width: 600px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #999999;
+	margin-top: 13px;
+	line-height: 25px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
 }
-.help-box .help-box-left ul li{
-    font-size: 16px;
-    padding-bottom: 20px;
-    position: relative;
+
+.help-article-main-div>div span {
+	float: right;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #999999;
 }
-.help-box .help-box-left ul li b{
-    /*border-bottom: 3px solid #50972c;*/
-    padding-bottom: 5px;
+
+.help-article-main-div>div a {
+	font-size: 18px;
+	font-weight: normal;
+	color: #333333;
+	margin-top: -2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 450px;
+	display: inline-block;
+
 }
-.help-box .help-box-right{
-    width: 960px;
-    background-color: #ffffff;
-    padding: 40px 0;
+
+.help-article-main-div>div a:hover {
+	color: #1ec456;
 }
-.help-box-right .box-right-content p{
-    margin-bottom: 15px !important;
+
+/* 帮助中心-详情页 */
+.help-details-main {
+	width: 100%;
+	box-shadow: 0px 1px 7px 0px rgba(98, 127, 107, 0.2);
+	margin-top: 10px;
+	padding-bottom: 30px;
+	margin-bottom: 80px;
 }
-.help-box-right .box-right-title{
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0 60px;
-    border-bottom: 1px solid #bfbfbf;
-    padding-bottom: 10px;
-}
-.help-box-right .box-right-content{
-    min-height: 500px;
-    padding: 10px 60px;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: 1px;
-}
+
+
+
