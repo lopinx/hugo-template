@@ -25,7 +25,7 @@ document.write('<div class="nav">\n' +
     '    </p>\n' +
     '    </div>\n' +
     '    <div class="qrcode">\n' +
-    '    <img src="/assets/picture/bottom_wechat.png" />\n' +
+    '    <img src="../picture/bottom_wechat.png" />\n' +
     '    </div>\n' +
     '    <div class="clear"></div>\n' +
     '    </div>');
