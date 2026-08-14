@@ -1,4 +1,4 @@
-baseURL = "https://msdn.lopins.cn"
+baseURL = "https://lopinx.github.io/hugo-template"
 title = 'MSDN镜像库'
 theme = 'LoveIt'
 
