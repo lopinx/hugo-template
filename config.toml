@@ -1,6 +1,6 @@
 baseURL = "https://msdn.lopins.cn"
 title = 'MSDN镜像库'
-theme = 'cleanwhite'
+theme = 'LoveIt'
 
 # 常规设置
 # defaultContentLanguageInSubdir = false          # 在子目录中呈现默认内容语言，例如content/en/。然后站点根目录/将重定向到/en/。默认为false

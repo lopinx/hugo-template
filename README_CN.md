@@ -44,7 +44,7 @@ baseURL = "https://lopins.github.io/hugo-template"
 **第一步 — 添加主题作为 submodule**
 
 ```bash
-git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 git submodule update --init --recursive
 cp -r exampleSite/* ../
 ```
@@ -54,7 +54,7 @@ cp -r exampleSite/* ../
 在 `config.toml` 中修改 `theme` 属性：
 
 ```toml
-theme = "cleanwhite"
+theme = "LoveIt"
 ```
 
 </details>
@@ -100,16 +100,16 @@ git add . && git commit -m "🔧 docs(themes): 添加或更新配置文件" && g
 
 ```bash
 # ── 添加 / 更新 Submodule ───────────────────────────────────────
-git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 git submodule update --init --recursive
 
 # ── 删除 Submodule ──────────────────────────────────────────────
-git submodule deinit -f themes/cleanwhite
-rm -rf .git/modules/themes/cleanwhite
-rm -rf themes/cleanwhite
-git config --remove-section submodule.themes/cleanwhite
-git config -f .gitmodules --remove-section submodule.themes/cleanwhite
-git rm --cached themes/cleanwhite
+git submodule deinit -f themes/LoveIt
+rm -rf .git/modules/themes/LoveIt
+rm -rf themes/LoveIt
+git config --remove-section submodule.themes/LoveIt
+git config -f .gitmodules --remove-section submodule.themes/LoveIt
+git rm --cached themes/LoveIt
 git add . && git commit -m 'Update .gitmodules before removing submodule'
 
 # ── 查看 / 拉取 / 同步 Submodule ────────────────────────────────
