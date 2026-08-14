@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://msdn.lopins.cn/sitemap.xml
+Sitemap: https://lopinx.github.io/sitemap.xml
