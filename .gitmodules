@@ -1,6 +1,3 @@
-[submodule "themes/cleanwhite"]
-	path = themes/cleanwhite
-	url = https://github.com/lopinx/hugo-theme-cleanwhite.git
 [submodule "themes/LoveIt"]
 	path = themes/LoveIt
 	url = https://github.com/dillonzq/LoveIt.git
