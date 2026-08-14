@@ -2,83 +2,108 @@
    <a href="README_CN.md">中文</a> | <strong>English</strong>
 </div>
 
-<img src="https://cdn.fosstodon.org/accounts/avatars/111/137/925/464/599/407/original/5a723b0c04db75a8.png" alt="Hugo logo" width="100" height="100" align="right" />
+<br/>
 
 <div align="center">
-
-<h1> Hugo Template </h1>
-
-<p>A fast and flexible static site generator built with love by bep, spf13, and friends in <a href="https://go.dev/">Go</a>.</p>
-
+  <img src="https://cdn.fosstodon.org/accounts/avatars/111/137/925/464/599/407/original/5a723b0c04db75a8.png" alt="Hugo logo" width="120" height="120" />
+  <h1>Hugo Template</h1>
+  <p>A fast and flexible static site generator built with love by bep, spf13, and friends in <a href="https://go.dev/">Go</a>.</p>
 </div>
 
-<hr/>
+<br/>
 
 <div align="center">
-<a href="https://themes.gohugo.io">Demo</a> | 
-<a href="https://gohugo.io">Official</a> | 
-<a href="https://gohugo.io/documentation/">Docs</a> | 
-<a href="https://discourse.gohugo.io">Community</a>
+  <a href="https://themes.gohugo.io"><kbd>Demo</kbd></a>
+  &nbsp;·&nbsp;
+  <a href="https://gohugo.io"><kbd>Official</kbd></a>
+  &nbsp;·&nbsp;
+  <a href="https://gohugo.io/documentation/"><kbd>Docs</kbd></a>
+  &nbsp;·&nbsp;
+  <a href="https://discourse.gohugo.io"><kbd>Community</kbd></a>
 </div>
 
-<hr/>
+<br/>
 
-## Get Started
+---
 
-### Define Domain
+## 🚀 Get Started
 
-Change the `baseURL` in `config.yml` or `config.toml` to your site's URL
+### 1. Define Domain
 
-```yml
-baseURL: "https://lopins.github.io/hugo-template"
+Change the `baseURL` in `config.toml` to your site's URL:
+
+```toml
+baseURL = "https://lopins.github.io/hugo-template"
 ```
 
-### [Configure Theme](https://github.com/lopins/hugo-template/issues/2)
+### 2. Configure Theme
 
-1. pull theme into `themes/` and update it.
+<details>
+<summary>Click to expand theme configuration steps</summary>
 
-   `git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite && git submodule update --init --recursive`
+**Step 1 — Add the theme as a submodule**
 
-   `cp -r exampleSite/* ../`
+```bash
+git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite
+git submodule update --init --recursive
+cp -r exampleSite/* ../
+```
 
-2. In `config.yml` or `config.toml`, change the value of the `theme` property to "cleanwhite"
+**Step 2 — Set the theme in config**
 
-~~3. update `editPost: "https://github.com/lopins/hugo-template/tree/main/content"` in `config.yml` or `config.toml`~~
+In `config.toml`, change the `theme` property:
 
-### Push to Github
+```toml
+theme = "cleanwhite"
+```
 
-`git add . && git commit -m ':wrench:docs(themes): Add or update configuration files' && git push origin main`
+</details>
 
-### [Publish Article](https://github.com/lopins/hugo-template/issues/1)
+### 3. Push to GitHub
 
-1. Install
+```bash
+git add . && git commit -m "🔧 docs(themes): Add or update configuration files" && git push origin main
+```
 
-   Click "Use this template" -> "Create a new repository"
+---
+
+## ✍️ Publish Articles
+
+<details>
+<summary>Click to expand article publishing guide</summary>
+
+**1. Install**
+
+Click **"Use this template"** → **"Create a new repository"** to fork this template.
 
 ![1. Create a new repository](https://github.com/user-attachments/assets/1046f118-8c2a-4ed8-bc8b-1258941455c4)
 
-2. Set up
+**2. Set up GitHub Pages**
 
-   Set up and enable GitHub Pages service
+Go to **Settings → Pages** and select the `gh-pages` branch as the source.
 
 ![2. Set up GitHub Pages branch](https://github.com/user-attachments/assets/acd90bfd-0a25-4809-a39b-fc5d562f414b)
 
-3. Publish
+**3. Publish an article**
 
-   Publish an article on the "hugo branch" of Github.
+Add a new Markdown file under the `content/posts/` directory, then push to the `main` branch. GitHub Actions will build and deploy automatically.
 
-![3. Write or Upload an Markdown file](https://github.com/user-attachments/assets/2b1a97ea-ac79-4647-a340-f71569699c11)
+![3. Write or Upload a Markdown file](https://github.com/user-attachments/assets/2b1a97ea-ac79-4647-a340-f71569699c11)
 
-## Notice
+</details>
 
-### **Submodule** to Change Theme
+---
 
-```
-# Add Submodule - Upadte Submodule
+## ⚠️ Notice
+
+### Submodule Management
+
+```bash
+# ── Add / Update Submodule ──────────────────────────────────────
 git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite
 git submodule update --init --recursive
 
-# Delete Submodule
+# ── Delete Submodule ────────────────────────────────────────────
 git submodule deinit -f themes/cleanwhite
 rm -rf .git/modules/themes/cleanwhite
 rm -rf themes/cleanwhite
@@ -87,21 +112,24 @@ git config -f .gitmodules --remove-section submodule.themes/cleanwhite
 git rm --cached themes/cleanwhite
 git add . && git commit -m 'Update .gitmodules before removing submodule'
 
-
-# Display Submodule - Pull Submodule - Sync Submodule
+# ── View / Pull / Sync Submodule ────────────────────────────────
 git submodule status
 git submodule foreach git pull origin main
 git submodule sync
 ```
 
-### Permission
+### Permission Issues
 
-If you meet the problem like `remote: Permission to xxx denied to github-actions[bot].` 
+If you encounter the error:
 
-When you push your changes, you need to give the permission to the `github-actions[bot]` in your repo's.
+> `remote: Permission to xxx denied to github-actions[bot].`
 
-By following the steps below: `Settings -> Actions -> General -> Workflow permissions -> Read and write permissions -> Save`.
+Grant write permissions to `github-actions[bot]` in your repository:
 
-## License
+> **Settings → Actions → General → Workflow permissions → Read and write permissions → Save**
 
-[MIT License](LICENSE).
+---
+
+## 📄 License
+
+[MIT License](LICENSE)
