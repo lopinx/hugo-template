@@ -44,7 +44,7 @@ baseURL = "https://lopins.github.io/hugo-template"
 **Step 1 — Add the theme as a submodule**
 
 ```bash
-git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite
+git submodule add git@github.com:lopinx/hugo-theme-cleanwhite.git themes/msdn
 git submodule update --init --recursive
 cp -r exampleSite/* ../
 ```
@@ -54,7 +54,7 @@ cp -r exampleSite/* ../
 In `config.toml`, change the `theme` property:
 
 ```toml
-theme = "cleanwhite"
+theme = "msdn"
 ```
 
 </details>
@@ -62,7 +62,7 @@ theme = "cleanwhite"
 ### 3. Push to GitHub
 
 ```bash
-git add . && git commit -m "🔧 docs(themes): Add or update configuration files" && git push origin main
+git add . && git commit -m "🔧 docs(themes): Add or update configuration files" && git push origin master
 ```
 
 ---
@@ -100,21 +100,21 @@ Add a new Markdown file under the `content/posts/` directory, then push to the `
 
 ```bash
 # ── Add / Update Submodule ──────────────────────────────────────
-git submodule add git@github.com:zhaohuabing/hugo-theme-cleanwhite.git themes/cleanwhite
+git submodule add git@github.com:lopinx/hugo-theme-cleanwhite.git themes/msdn
 git submodule update --init --recursive
 
 # ── Delete Submodule ────────────────────────────────────────────
-git submodule deinit -f themes/cleanwhite
-rm -rf .git/modules/themes/cleanwhite
-rm -rf themes/cleanwhite
-git config --remove-section submodule.themes/cleanwhite
-git config -f .gitmodules --remove-section submodule.themes/cleanwhite
-git rm --cached themes/cleanwhite
+git submodule deinit -f themes/msdn
+rm -rf .git/modules/themes/msdn
+rm -rf themes/msdn
+git config --remove-section submodule.themes/msdn
+git config -f .gitmodules --remove-section submodule.themes/msdn
+git rm --cached themes/msdn
 git add . && git commit -m 'Update .gitmodules before removing submodule'
 
 # ── View / Pull / Sync Submodule ────────────────────────────────
 git submodule status
-git submodule foreach git pull origin main
+git submodule foreach git pull origin master
 git submodule sync
 ```
 
